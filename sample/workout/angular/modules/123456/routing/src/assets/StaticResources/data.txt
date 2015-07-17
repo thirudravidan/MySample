@@ -1,0 +1,11 @@
+﻿{
+	 "getGlobalUrl":"http://localhost:19055/",
+	 "getGlobalServiceUrl":"http://ghstaging.csscorp.com/NetgearClientService/CSSNetgearService/NetgearClientService.asmx/",
+      "chatURL":"http://10.40.2.46:8082/netgear",
+      "getGlobalFeedbackServiceUrl":"http://10.8.16.40:8097/CSSConnectClientService/CSSNetgearService/NetgearClientService.asmx/",
+      "ngproductdetailsurl" : "http://is-dev.csscorp.com/activei/assets/StaticResources/NGProductDetails.txt",
+      "renew":"https://my.netgear.com/myNetgear/gearhead/portal/pta.aspx?portalid=",
+      "registerproduct":"https://my.netgear.com/myNetgear/gearhead/portal/pta.aspx?portalid=",
+      "Client" : "GearHead"
+}
+

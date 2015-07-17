@@ -1,0 +1,185 @@
+<style type="text/css">
+    .regwidth{word-wrap: break-word;max-width:150px;}
+</style>
+<div class="right_bg_cont" ng-init="showRegistryCleaner();">
+    <div class="data_cont rightdivHeight">
+        <div class="rightdivnewTick">
+            <div class="cont_title">
+                <span>Registry Cleaner</span>
+            </div>
+            <div id="dvregScanOptions" class="container_mid" style="display:none;">
+                <div class="container-sec">
+                    <section>
+                    <div class="subheader_regcleaner">
+                    Scan Options
+                    </div>
+                    <div class="left_control">
+                    <div class="fixed_cont">
+                    <span class="anti_input"><input type="checkbox" class="chkregistryscan" ng-model="ischkControlScan"  /></span>
+                    <span class="anti_inputtext"><i class="icon-spinner10"></i> Control Scan</span>
+                    </div>
+                    <div class="fixed_cont">
+                    <span class="anti_input"><input type="checkbox" class="chkregistryscan" ng-model="ischkUserScan"  /></span>
+                    <span class="anti_inputtext"><i class="icon-user"></i> User Scan</span>
+                    </div>
+                    <div class="fixed_cont">
+                    <span class="anti_input"><input type="checkbox" class="chkregistryscan" ng-model="ischkSysSoftwareScan"  /></span>
+                    <span class="anti_inputtext"><i class="icon-optimizationsuite"></i> System Softwares</span>
+                    </div>
+                    <div class="fixed_cont">
+                    <span class="anti_input"><input type="checkbox" class="chkregistryscan" ng-model="isSysFontScan"  /></span>
+                    <span class="anti_inputtext"><i class="icon-font"></i> System Fonts</span>
+                    </div>
+                    <div class="fixed_cont">
+                    <span class="anti_input"><input type="checkbox" class="chkregistryscan" ng-model="ischksysHelipFilesScan"  /></span>
+                    <span class="anti_inputtext"><i class="icon-file-text2"></i> System Help Files</span>
+                    </div>
+                    <div class="fixed_cont">
+                    <span class="anti_input"><input type="checkbox" class="chkregistryscan" ng-model="ischkSharedLibScan"  /></span>
+                    <span class="anti_inputtext"><i class="icon-cogs"></i> Shared Library</span>
+                    </div>
+                    </div>
+                    <div class="left_control" >
+
+                    <div class="fixed_cont">
+                    <span class="anti_input"><input type="checkbox" class="chkregistryscan" ng-model="ischkStartUpScan"  /></span>
+                    <span class="anti_inputtext"><i class="icon-file-text"></i> Startup Entries</span>
+                    </div>
+                    <div class="fixed_cont">
+                    <span class="anti_input"><input type="checkbox" class="chkregistryscan" ng-model="ischkInstallationstrScan"  /></span>
+                    <span class="anti_inputtext"><i class="icon-upload3"></i> Installation Strings</span>
+                    </div>
+                    <div class="fixed_cont">
+                    <span class="anti_input"><input type="checkbox" class="chkregistryscan" ng-model="ischkVirtualDevScan"  /></span>
+                    <span class="anti_inputtext"><i class="icon-display"></i> Virtual Devices</span>
+                    </div>
+
+                    <div class="fixed_cont">
+                    <span class="anti_input"><input type="checkbox" class="chkregistryscan" ng-model="ischkHistoryScan"  /></span>
+                    <span class="anti_inputtext"><i class="icon-history"></i> History and Start Menu</span>
+                    </div>
+
+                    <div class="fixed_cont">
+                    <span class="anti_input"><input type="checkbox" class="chkregistryscan" ng-model="ischkDeepScan"  /></span>
+                    <span class="anti_inputtext"><i class="icon-podcast"></i> Deep System Scans</span>
+                    </div>
+
+                    <div class="fixed_cont">
+                    <span class="anti_input"><input type="checkbox" class="chkregistryscan" ng-model="ischkMRUlstScan"  /></span>
+                    <span class="anti_inputtext"><i class="icon-file-text"></i> MRU List</span>
+                    </div>
+                    </div>
+                    <div class="fixed_cont" style="display:none;">
+                    <span class="anti_input"><input type="checkbox" ng-model="ischkSysRestoreScan"  /></span>
+                    <span class="anti_inputtext">Create a System Restore Point (recommended)</span>
+                    </div>
+                    
+                    </section>
+                </div>
+            </div>
+            <div id="dvregScanningFileDetails" class="container_mid" style="display:none;">
+                    <div class="container-sec">
+                    <section>
+                    <div class="subheader_regcleaner">
+                    Scanning
+                    </div>
+                    <div>
+                    <table  id="scanDet" class="regcleanscanDet" border="1px">
+                        <tbody>
+                        <tr>
+                            <td>Scan Name :</td>
+                            <td class="regwidth"><span id="scanName"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Scan Description :</td>
+                            <td class="regwidth"> <span id="scanDescription"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Match Count :</td>
+                            <td class="regwidth"> <span id="matchCount"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Last Match :</td>
+                            <td class="regwidth"> <span id="lastMatch"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Scan Hive :</td>
+                            <td class="regwidth"> <span id="scanHive"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Sub Key :</td>
+                            <td class="regwidth"> <span id="subKey"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Key Count :</td>
+                            <td class="regwidth"> <span id="keyCount"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Segments Scanned :</td>
+                            <td class="regwidth"> <span id="segmentsScanned "></span></td>
+                        </tr>
+                        <tr>
+                            <td>Segments Remaining :</td>
+                            <td class="regwidth"> <span id="segmentsRemaining"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Time Elapsed :</td>
+                            <td class="regwidth"> <span id="timeElapsed"></span></td>
+                        </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                    </section>
+                    </div>
+                    
+            
+            </div>
+            <div id="dvregScannnedDetails" class="container_mid" style="display:none;">
+                 <div class="scan_table">
+                    <table class="pcoptimize_fix" cellpadding="0" cellspacing="0" border="1">
+                        <tbody>
+                            <tr>
+                                <th>
+                                   <!--  <input id="chkAllFiles" ng-model="chkAllconfirmed" type="checkbox" /> -->
+                                </th>
+                                <th>
+                                    Root
+                                </th>
+                                <th>
+                                    Name
+                                </th>
+                                <th>
+                                    Key
+                                </th>
+                            </tr>
+                            <tr ng-repeat="scanfiles in scannedRegistryFiles" class="table-row table-row-group">
+                                <td>
+                                    <input type="checkbox" ng-model="scanfiles.Check" checked>
+                                </td>
+                                <td class="table-column table-column-group">
+                                    {{scanfiles.Root}}
+                                </td>
+                                <td class="table-column table-column-group">
+                                    {{scanfiles.Name}}
+                                </td>
+                                 <td class="table-column table-column-group">
+                                    {{scanfiles.Key}}
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+             <div class="foot-button">
+                        <input id="btnRestoreRegistry" type="button" value="Restore Registry" ng-click="restoreRegistry();"  class="orange_color align_but">
+                        <input id="btnStartScan" type="button" value="Start" ng-click="startRegistryScanning();" class="orange_color align_but">
+                        <input id="btnStopScan" type="button" value="Stop Scan" style="display:none;" ng-click="stopRegistryScan();" class="orange_color align_but">
+                        <input id="btnViewDetails" type="button" value="View Details" ng-click="viewRegistryFiles();" class="orange_color align_but">
+
+                        <input id="btnFix" type="button" value="Fix" ng-click="fixRegistryClean();" class="orange_color align_but">
+            </div>
+
+        </div>
+       
+    </div>
+</div>

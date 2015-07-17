@@ -1,0 +1,23 @@
+<form name="LoginForm" ng-init="redirectToHome();rememberPass();" ng-show="showlogin">
+<div class="login_right_cont" >
+    <input ng-model="txtUserName" class="form-control mar_zero logininput_tag"  name="txtUserName"
+        type="email" placeholder="UserName" required autofocus tabindex="1" />
+    <input ng-model="txtPassword" class="form-control mar_zero logininput_tag"  name="txtPassword"
+        type="password" placeholder="Password" required tabindex="2" />
+    <input type="submit" class="btn btn-primary login_but pull-right" value="Login"
+            ng-click="getUserDetails(LoginForm.$valid);" ui-sref="" tabindex="4"/>
+    <div class="mar_zero">
+    <span class="rememberme">
+        <input type="checkbox" ng-model="chkremembermeval" tabindex="3"/>&nbsp;Remember Me
+    </span>
+    <div class="clearfix"> </div>
+        <span class="pull-left helpText"><a style="cursor:pointer;" tabindex="5" ng-click="redirectToForgetPassword();" class="orange">I cannot access my account</a>
+            <!-- or <a href="#" class="orange">Sign up now</a> --></span>
+        
+        
+    </div>
+    <div class="clearfix"> </div>
+    <div class="customer_care">
+       {{tollfreeno}} <span class="orange">24X7 Tech Support</span></div>
+</div>
+</form>

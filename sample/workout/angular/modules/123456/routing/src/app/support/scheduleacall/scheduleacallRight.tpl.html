@@ -1,0 +1,37 @@
+<div class="right_bg_cont" ng-init="scheduledcase();">
+
+<div class="data_cont">
+<div class="cont_title"> Schedule a Call </div>
+ <div class="container_mid_schedule">
+<div class="widget-table scheduledCalendar" id="divWidget">
+        <!--Content section start-->
+        <div style="">
+            <div class="bg_calender_opacity">
+            </div>
+            <div id="calendar">
+            </div>
+            <div id="btnsec" class="btnposition schedulebtn_position" ng-show="isShowbutton">
+                <input type="button" class="btn btn-primary login_but" ng-click="redirectToNewSchedule();" value="New Schedule"
+                    id="btnSdle" />
+                <input type="button" class="btn btn-primary login_but padd_sch" id="btnRefresh" value="Refresh" ng-click="refreshScheduleacall();"/>
+            </div>
+        </div>
+        <!-- end of cont sect-->
+    </div> 
+    </div> 
+</div> 
+<div id="fullCalModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header"> 
+                <h4 id="modalTitle" class="modal-titlee"></h4>
+            </div>
+            <!-- <div id="modalBody" class="modal-bodyy"><pre></pre></div> -->
+            <label id="lblSchedule" class="modal-bodyy"></label>
+            <div class="modal-footer">
+                <button type="button" class="large red button" data-dismiss="modal">Close</button>  
+            </div>
+        </div>
+    </div>
+</div>
+ 

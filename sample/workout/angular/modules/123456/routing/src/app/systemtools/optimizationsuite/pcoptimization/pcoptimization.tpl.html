@@ -1,0 +1,127 @@
+<div class="right_bg_cont">
+    <div class="data_cont rightdivHeight">
+        <div class="rightdivnewTick">
+            <div class="cont_title">
+                <span>PC Optimization</span>
+            </div>
+            <div id="dvpcOptimizatoinScan" class="container_mid" style="display: none">
+                <div class="pcoptimize_cont">
+                    <!-- <div>
+                        <span id="spnRecordCount" style="display: none;"></span></br></div> -->
+                    <div class="tuner_cont">
+                        <div id="junkimg" class="tuner_space">
+                            <i class="icon-junkfiles junk_icon"></i>
+                        </div>
+                        <div class="junk_checkbox">
+                            <span class="junk_input">
+                                <input type="checkbox" id="chkJunkFiles" ng-model="chkJunkFile" checked></span><span
+                                    class="file_folder">Junk Files &amp; Folders</span></div>
+                    </div>
+                    <div class="tuner_cont">
+                        <div id="internetimg" class="tuner_space">
+                            <i class=" icon-internet junk_icon"></i>
+                        </div>
+                        <div class="junk_checkbox">
+                            <span class="junk_input">
+                                <input type="checkbox" id="chkJunkInternetOptimizer" checked ng-model="chkInternetOptimizer"></span><span
+                                    class="file_folder">Internet Optimizer</span></div>
+                    </div>
+                    <div class="tuner_cont">
+                        <div id="diskimg" class=" tuner_space">
+                            <i class="icon-discperformance junk_icon"></i>
+                        </div>
+                        <!-- <div>
+                            <a id="diskperofromanceReport" ng-click="showDisperfomanceDetails();" style="display: none;">
+                                Show Report</a>
+                        </div> -->
+                        <div class="junk_checkbox">
+                            <span class="junk_input">
+                                <input type="checkbox" id="chkDiskPerformance" ng-model="chkDiskPerformance"></span><span
+                                    class="file_folder">Disk Performance &amp;
+                                    <br>
+                                    Space Scan </span>
+                        </div>
+                    </div> 
+                    
+                </div>
+
+        <div style="clear:both;display:none;" id="dvshowresults">       
+                            <div id="dvshowwarning" class="alertwarning alert-warning_color fade in">
+                                <span id="spnRecordCount">&nbsp;</span>
+                            </div>
+                            <div class="alertwarning alert-success_color fade in" id="dvRecordCountsuccess">
+                                <span id="spnRecordCountsuccess"></span><span id="spanresult" class="resultlink"><a id="diskperofromanceReport" ng-click="showDisperfomanceDetails();">
+                                Show Report</a></span>
+                            </div>
+        </div>
+                <!-- <div class="blankpage">
+                            <center><img src="assets/Content/img/progressbar.gif" style="width: 11vw;" ng-model="loaderdisplay" ng-show="loaderdisplay"></center>
+                    </div> -->
+                        <div class="bottom_button">
+                        <input type="button" value="Show Details" id="btnShowDetails" ng-click="showJunkFileDetails();"
+                            class="orange_color align_but optimizescan optimizescan_pcopt" style="display: none;">
+                              <input type="button" value="Fix" id="btnFixAll" ng-click="deleteJunkFiles();" class="orange_color align_but optimizescan optimizescan_pcopt"
+                            style="display: none;">
+                        <input type="button" value="Scan Now" id="btnScanNow" ng-click="scanJunkFiles();"
+                            class="orange_color align_but optimizescan optimizescan_pcopt">
+
+                        <input type="button" value="Stop Scan" id="btnStopScan" ng-click="stopDiskScan();"
+                            class="orange_color align_but optimizescan optimizescan_pcopt" style="display: none;">
+                    </div>
+
+            </div>
+            <div id="dvdiscPerformanceDetails" class="container_mid" style="display: none">
+                <div class="diskAnalHeader">
+                    <span><b>Disk Analysis Report</b></span></div>
+                <div class="diskAnalysis" style="height: 23.5vw; width: 100%;">
+                </div>
+                <div>
+                    <span class="diskBack">
+                        <input type="button" class="btndiskback orange_color align_but" value="Back" ng-click="hideDisperfomanceDetails();"><span>
+                </div>
+            </div>
+            <div id="dvpcOptimizatoinShowDetails" class="container_mid" style="display: none">
+                <div class="scan_table">
+                    <table class="pcoptimize_fix" cellpadding="0" cellspacing="0" border="1">
+                        <tbody>
+                            <tr>
+                                <th>
+                                   <!--  <input id="chkAllFiles" type="checkbox" onchange="chkAllJunkFiles()" /> -->
+                                </th>
+                                <th>
+                                    File Name
+                                </th>
+                                <th>
+                                    File Path
+                                </th>
+                                <th>
+                                    Size
+                                </th>
+                            </tr>
+                            <tr ng-repeat="junkDet in junkDetails" class="table-row table-row-group">
+                                <td>
+                                    <input type="checkbox" ng-model="junkDet.IsSelected" name="chkJunkData">
+                                </td>
+                                <td class="table-column table-column-group">
+                                    {{junkDet.FileName}}
+                                </td>
+                                <td class="table-column table-column-group">
+                                    {{junkDet.FilePath}}
+                                </td>
+                                <td class="table-column table-column-group">
+                                    {{junkDet.FileSize}}
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="bottom_button">
+                    <input type="button" value="Fix" id="btnFix" ng-click="deleteSelctedJunkFiles();"
+                        class="orange_color align_but">
+                    <input type="button" value="Cancel" id="btnCancel" ng-click="redirectToPCOptimization();"
+                        class="orange_color align_but">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

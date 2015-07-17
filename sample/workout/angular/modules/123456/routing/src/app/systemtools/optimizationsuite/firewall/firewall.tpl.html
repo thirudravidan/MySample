@@ -1,0 +1,188 @@
+<div class="right_bg_cont">
+    <div class="data_cont rightdivHeight">
+        <div class="rightdivnewTick">
+                <div class="cont_title">
+                    <span>Firewall</span>
+                </div>
+                 <div class="container_mid" id="dv1"> 
+                    <div class="container-sec">
+
+                    <div class="fixed_cont">
+                    <span class="anti_input"><input type="radio" name="rdbinOutBound" checked value="inBound"></span>
+                    <span class="anti_inputtext">Inbound Rule </span> 
+                    </div>
+                    
+                    <div class="fixed_cont">
+                    <span class="anti_input"><input type="radio" name="rdbinOutBound" value="outBound"></span>
+                    <span class="anti_inputtext"> Outbound Rule</span> 
+                    </div> 
+                    </div>
+                  <!--   <p class="rule_type">Rule Type </p><br /><p> Select the type of Firewall Rute to create</p> -->
+                   <div class="container_path" style="margin-top:2vw;">
+                    Rule Type
+                    </div>
+                     <div class="pgm_path">
+                     &nbsp;&nbsp;Select the type of Firewall Rute to create.
+                     </div>
+                    <div class="container-sec">
+                    <div class="fixed_cont">
+                    <span class="anti_input"><input type="radio" name="rdbappPort" checked value="application"></span>
+                    <span class="anti_inputtext">Application Rule that controls connections for a program </span> 
+                    </div>
+                    
+                    <div class="fixed_cont">
+                    <span class="anti_input"><input type="radio" name="rdbappPort" value="port"></span>
+                    <span class="anti_inputtext"> Port Rule that controls connections for a TCP or a UDP Port</span>
+                    </div> 
+                    </div>
+                
+                    <div class="foot-button"> 
+                    <button type="button" class="orange_color align_but" ng-click="redirecttoProgrampath('dv2');">Next</button>
+                    <button type="button" ng-click="cancelFirwallrule()" id="btncancel" class="orange_color align_but">Cancel</button>
+                    </div>
+                </div>
+
+
+                 <div class="container_mid" id="dv2"> 
+                    
+                    <div class="container_path">
+                      Program Path 
+                    </div>
+                     <div class="pgm_path">
+                     &nbsp;&nbsp;Specify the full program path and Executable name of the program that this rule matches.
+                     </div>
+                    <div class="pgm_path browse_firewall">
+                    <span>
+                       <input type="text" id="txtbro" class="txtBrowse" ng-model="filepath" readonly="true" ng-click="openBrowse();">
+                    </span>
+                   <span>
+                        <input type="button" class="orange_color login_but align_but" value=" Browse " ng-click="openBrowse();">
+                   </span>
+                    </div>
+                    <div class="foot-button">
+                    <button type="button" class="orange_color align_but" ng-click="redirecttoProgrampath('dv1');">Back</button>
+                    <button type="button" class="orange_color align_but" ng-click="redirecttoProgrampath('dv3');">Next</button>
+                    <button type="button" ng-click="cancelFirwallrule()" id="btnpgmpathcancel" class="orange_color align_but">Cancel</button>
+                    </div>
+                  </div> 
+
+
+                  <div class="container_mid" id="dv6"> 
+                    
+                    <div class="container_path">
+                      Remote Ports
+                    </div>
+                     <div class="pgm_path">
+                     &nbsp;&nbsp;Does this rule apply to TCP or UDP?
+                     </div>
+                    <div class="container-sec ">
+                        <div class="fixed_cont portborder">
+                        <span class="anti_input"><input type="radio" name="rdbPorts" checked value="TCP"></span>
+                        <span class="anti_inputtext">TCP </span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="portType"><input type="radio" name="rdbPorts" value="UDP"></span>
+                        <span class="anti_inputtext">&nbsp;&nbsp;UDP</span> 
+                        </div></br>
+                          <div class="remote_path">Specify remote ports</div>
+                         <div>
+                          <input type="text" id="portnumbers" class="txtBrowse" ng-model="portnumbers"></br>
+                          <p>Example : 80 , 443 , 5000 - 5010</p>
+                          </div>
+                    </div>
+                    <div class="foot-button">
+                    <button type="button" class="orange_color align_but" ng-click="redirecttoProgrampath('dv1');">Back</button>
+                    <button type="button" class="orange_color align_but" ng-click="redirecttoProgrampath('dv3');">Next</button>
+                    <button type="button" ng-click="cancelFirwallrule()" id="btnremotecancel" class="orange_color align_but">Cancel</button>
+                    </div>
+                  </div> 
+
+                 <div class="container_mid" id="dv3"> 
+
+                    <div class="container_path">
+                    Action Type
+                    </div>
+                     <div class="pgm_path">
+                     &nbsp;&nbsp;Specify the Action.
+                     </div>
+                    <div class="container-sec">
+                    <div class="fixed_cont">
+                    <span class="anti_input"><input type="radio" checked name="rdballwConct" value="allow"></span>
+                    <span class="anti_inputtext">Allow Connection </span> 
+                    </div>
+                    
+                    <div class="fixed_cont">
+                    <span class="anti_input"><input type="radio" name="rdballwConct" value="block"></span>
+                    <span class="anti_inputtext">Block Connection</span>
+                    </div> 
+                    </div>
+                    <div class="foot-button">
+                    <button type="button" class="orange_color align_but" ng-click="redirecttoProgrampath('dv2');">Back</button>
+                    <button type="button" class="orange_color align_but" ng-click="redirecttoProgrampath('dv4');">Next</button>
+                    <button type="button" ng-click="cancelFirwallrule()" id="btnaction" class="orange_color align_but">Cancel</button>
+                    </div>
+                </div>
+
+                <div class="container_mid" id="dv4">
+                    <div class="container_path">
+                    Profile Type
+                    </div>
+                     <div class="pgm_path">
+                     &nbsp;&nbsp;Specify the Profiles for which the rules applies.
+                     </div>
+                    <div class="container-sec">
+                    <div class="fixed_cont">
+                    <span class="anti_input"><input type="checkbox" id="chkDomain"   value="domain" checked></span>
+                    <span class="anti_inputtext">Domain </span></br>
+                    <p class="rule_profiles"> Applies when a computer is connected to its corporate domain</p> 
+                    </div>
+                    
+                    <div class="fixed_cont">
+                    <span class="anti_input"><input type="checkbox" id="chkPrivate"   value="private" checked></span>
+                    <span class="anti_inputtext"> Private</span></br>
+                    <p class="rule_profiles"> Applies when a computer is connected to a Private Network</p>
+                    </div>
+
+                    <div class="fixed_cont">
+                    <span class="anti_input"><input type="checkbox" id="chkPublic"   value="public" checked></span>
+                    <span class="anti_inputtext"> Public</span></br>
+                    <p class="rule_profiles">Applies when a computer is connected to a Public Network</p>
+                    </div> 
+                    </div>
+
+                    <div class="foot-button">
+                    <button type="button" class="orange_color align_but" ng-click="redirecttoProgrampath('dv3');">Back</button>
+                    <button type="button" class="orange_color align_but" ng-click="redirecttoProgrampath('dv5');">Next</button>
+                    <button type="button" ng-click="cancelFirwallrule()" id="btnprofile" class="orange_color align_but">Cancel</button>
+                    </div>
+                </div>
+
+                <div class="container_mid" id="dv5">
+                    <div class="container_path">
+                    Rule Detail
+                    </div>
+                     <div class="pgm_path">
+                     &nbsp;&nbsp;Specify the Name and Description of this rule.
+                     </div>
+                    <div class="container-sec">
+                     <div class="fixed_cont">
+                     <span class="anti_inputtext">Name</span>
+                    </div> 
+                    <div class="fixed_cont">
+                    <input type="text" ng-model="ruleName" id="ruleName" value="" class="input_tag_firewall">                    
+                    </div>
+                    <div class="fixed_cont description_top">
+                     <span class="anti_inputtext">Description(Optional):</span>
+                    </div>
+                    <div class="fixed_cont">
+                    <textarea type="text" ng-model="ruleDescription" id="ruleDescription" class="input_tag_firewall">  </textarea>
+                    </div> 
+                    </div>
+
+                    <div class="foot-button">
+                    <button type="button" class="orange_color align_but" ng-click="redirecttoProgrampath('dv4');">Back</button>
+                    <button type="button" class="orange_color align_but" ng-click="createFirwallrule()">Finish</button>
+                    <button type="button" id="btnrulecancel" class="orange_color align_but" ng-click="cancelFirwallrule()">Cancel</button>
+                    </div>
+                </div> 
+        </div>
+    </div>
+</div>

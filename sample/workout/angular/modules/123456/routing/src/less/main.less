@@ -1,0 +1,53 @@
+/**
+ * This is the main application stylesheet. It should include or import all
+ * stylesheets used throughout the application as this is the only stylesheet in
+ * the Grunt configuration that is automatically processed.
+ */
+
+
+/**
+ * First, we include the Twitter Bootstrap LESS files. Only the ones used in the
+ * project should be imported as the rest are just wasting space.
+ */
+
+
+
+/**
+ * This is our main variables file. We must include it last so we can overwrite any variable
+ * definitions in our imported stylesheets.
+ */
+
+@import 'variables.less';
+@import 'styles.less';
+@import 'fullcalendar.less';
+@import 'datepicker.less';
+@import 'bootstrapValidator.less';
+@import 'bootstrap.timepicker.min.less';
+@import 'zebra_dialog.less';
+@import 'ngDialog-theme-default.less';
+@import 'iconstyle.less';
+@import 'knowledgebase.less';
+@import 'myprofile.less'; 
+@import 'gearhead.less'; 
+/*  @import 'activei.less';  */
+@import 'nwMap.less';
+@import 'tooltip.less';
+@import 'star-rating.less';
+@import 'networkspeed.less';
+@import 'jquery.loader.min.less';
+@import 'progressbar.less';
+@import 'fullcalendar.less';
+@import 'nv.d3.less';
+@import 'popup.less';
+
+
+/**
+ * Now that all app-wide styles have been applied, we can load the styles for
+ * all the submodules and components we are using. 
+ *
+ * TODO: In a later version of this boilerplate, I'd like to automate this.
+ */
+
+
+
+

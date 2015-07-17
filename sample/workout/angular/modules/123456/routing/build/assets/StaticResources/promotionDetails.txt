@@ -1,0 +1,18 @@
+[ 
+      {
+          "promocode" : "30 Days support",
+          "promotionid" : "2"
+      },
+      {
+          "promocode" : "6 Months support",
+          "promotionid" : "3"
+      },
+       {
+          "promocode" : "12 Months support",
+          "promotionid" : "4"
+      },
+      {
+          "promocode" : "CES 2015 6 Months",
+          "promotionid" : "5"
+      }
+      ]

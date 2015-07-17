@@ -1,0 +1,39 @@
+<div class="right_bg_cont">
+    <div class="data_cont rightdivHeight" ng-init="loadDevices();">
+        <div class="rightdivnewTick">
+            <div class="cont_title">
+                <span>Network Map</span>
+            </div>
+            <div class="container_mid" id="dv1">
+                <div class="btnrenewal_position">
+                    <!--<input type="submit" class="netgearbtncolor login_but padd_new" ng-model="btnAddDev"
+                        ng-click="adddevicesList();" value="Add Devices" />-->
+                    <input type="submit" class="netgearbtncolor login_but padd_new" ng-model="btnRemDev"
+                        ng-click="removedevicesList();" value="Remove this Machine" />
+                </div>
+                <div class="networkmap">
+                    <fieldset>
+                        <legend>USB</legend>
+                        <ul class="usblist">
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>LAN Machine</legend>
+                        <ul class="lanlist">
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Printers & Fax</legend>
+                        <ul class="printerlist">
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Network Adapters</legend>
+                        <ul class="networklist">
+                        </ul>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

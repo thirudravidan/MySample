@@ -1,0 +1,45 @@
+<div class="heading_popup">
+    <h3> Browse Your Product </h3>
+    <a onclick="javascript:modelSearch();">How to find your model number?</a>
+    <span class="close_search"><img src="assets/Content/img/close.png" class="clz" ng-click="closeThisDialog('Cancel')"></span>
+</div>
+<div class="clearfiz"></div>
+<div id="Popup" class="choose_product" ng-init="initProLoad();">
+    <div class="pro_category">
+     <h2>1.Choose a Product Category </h2>
+        <select size="4" class="select_size" id="productCategory" ng-model="productCategory" ng-change="loadproductfamilyonchange();">
+         <option value="tcm:122-58378-1024">Access Points &amp; Wireless Extenders</option>
+            <option value="tcm:122-42208-1024">Adapters</option> 
+            <option value="tcm:122-42209-1024">Entertainment</option>
+            <option value="tcm:122-74268-1024">Mobile Broadband</option>
+            <option value="tcm:122-42210-1024">Phoneline</option>
+            <option value="tcm:122-42211-1024">Powerline &amp; Coax</option>
+            <option value="tcm:122-42212-1024">Print Servers</option>
+            <option selected="selected" value="tcm:122-42215-1024">Routers, Modems &amp; Gateways</option>
+            <option value="tcm:122-58380-1024">Storage</option>
+            <option value="tcm:122-58381-1024">Unmanaged Switches</option>
+            <option value="tcm:122-59529-1024">Video Monitoring</option>
+            <option value="tcm:122-42218-1024">VOIP,Skype</option>
+        </select>
+    </div>
+    <div class="pro_category">
+    <h2> 2. Choose a Product Family</h2>
+         <select size="4" id="profamily" class="select_size" ng-model="profamily" ng-change="loadproducttype();">
+       <!--  <option selected="selected"> Cable Modems </option> -->
+        </select>
+    </div>
+    
+    <div class="pro_category">
+     <h2> 3.Choose a Product Type </h2>
+
+ <select id="productType" name="proCategory" size="4" class="select_size" ng-model="proCategory" ng-change="showproducttypedetails();" required>
+<!--  <option selected="selected" value="">Select</option> -->
+            </select> 
+    </div>
+    <div class="pro_category" id="proDetailsshow" ng-show="proDetailsshow">
+        <img src=""  id="productImage" class="prod_img">
+        <span id="proId" style="color:#FFF;"></span>
+        <button class="login_but" ng-click="confirm('Save')">Select</button>
+    </div>
+
+</div>

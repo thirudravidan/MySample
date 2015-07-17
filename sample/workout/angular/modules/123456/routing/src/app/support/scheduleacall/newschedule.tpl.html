@@ -1,0 +1,187 @@
+<form name="NewScheduleForm"> 
+<div class="right_bg_cont" ng-init="dateTimeControls();loadProduct();getallTimeZoneDetails();">
+<div class="data_cont">
+<div class="cont_title"> <span>New Schedule</span> </div>
+ <div class="container_mid">
+<div class="">
+ <p>
+    <span class="mandtry pull-right"><em>
+            * </em>Mandatory Fields</span>
+    </p>
+        <p class="clearfix">
+    </p>
+      
+    <div class="">
+        <label class="col-sm-3 control-label">
+            <em>*</em> CallBack Number
+        </label>
+        <div class="col-sm-9">
+            <div class="controls">
+                <input tabindex="1" type="text" maxlength="10" id="txtPhoneNumber" ng-model="callBackNumber" placeholder="Please enter CallBack Number"
+                    name="callBackNumber" class="form-control input_tag" required onkeypress="javascript:return isNumber(event)" onpaste="return false;" onselect="return false;" oncontextmenu="return false;"  />
+                <p class="help-block">
+                </p>
+            </div>
+        </div>
+    </div>
+   <div class="">
+        <label class="col-sm-3 control-label">
+            <em>*</em> Date
+        </label>
+        <div class="col-sm-9">
+            <div class="controls">
+                <input type="text" id="txtDate" tabindex="2" name="Date" class="form-control validate[required] text-input input_tag" onKeyDown="preventBackspace();"
+                  readonly="true"/>
+                <p class="help-block">
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="">
+        <label class="col-sm-3 control-label">
+            <em>*</em> Time
+        </label>
+        <div class="col-sm-9">
+            <div class="control-group">
+                <div class="controls">
+                    <input type="text" tabindex="3" type="text" id="txtTime" name="Time" class="form-control validate[required] text-input input_tag txttimepicker" onKeyDown="preventBackspace();"
+                         readonly="true"/>
+                    <p class="help-block">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="">
+        <label class="col-sm-3 control-label">
+            <em>*</em> Time Zone
+        </label>
+        <div class="col-sm-9">
+            <div class="controls">
+                <select tabindex="4" name="scheduleTimeZone" ng-model="scheduleTimeZone" id="DropDownTimezone" class="form-control select_tag" ng-options="timezonedet.TimeZone for timezonedet in TimeZoneDetails" required>
+                    <option value="">Select</option>
+                    <!-- <option value="(GMT -8:00) Pacific Time (US &amp; Canada)">(GMT -8:00) Pacific Time
+                        (US &amp; Canada) </option>
+                    <option value="(GMT -7:00) Mountain Time (US &amp; Canada)">(GMT -7:00) Mountain Time
+                        (US &amp; Canada) </option>
+                    <option value="(GMT -6:00) Central Time (US &amp; Canada), Mexico City">(GMT -6:00)
+                        Central Time (US &amp; Canada), Mexico City </option>
+                    <option value="(GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima">(GMT -5:00)
+                        Eastern Time (US &amp; Canada), Bogota, Lima </option>
+                    <option value="(GMT +00:00) Western Europe Time, London, Lisbon, Casablanca">(GMT +00:00)
+                        Western Europe Time, London, Lisbon, Casablanca </option>
+                    <option value="(GMT +07:00 Christmas Island Time ">(GMT +07:00) Christmas Island Time
+                    </option>
+                    <option value="(GMT +08:00 Australian Western Standard Time ">(GMT +08:00) Australian
+                        Western Standard Time </option>
+                    <option value="(GMT +08:45 Australian Central Western Standard Time">(GMT +08:45) Australian
+                        Central Western Standard Time </option>
+                    <option value="(GMT +09:00 Australian Western Daylight Time ">(GMT +09:00) Australian
+                        Western Daylight Time </option>
+                    <option value="(GMT +09:30 Australian Central Standard Time">(GMT +09:30) Australian
+                        Central Standard Time </option>
+                    <option value="(GMT +10:00 Australian Eastern Standard Time">(GMT +10:00) Australian
+                        Eastern Standard Time </option>
+                    <option value="(GMT +10:30 Australian Central Daylight Time">(GMT +10:30) Australian
+                        Central Daylight Time </option>
+                    <option value="(GMT +10:30 Lord Howe Standard Time ">(GMT +10:30) Lord Howe Standard
+                        Time </option>
+                    <option value="(GMT +11:00 Australian Eastern Daylight Time">(GMT +11:00) Australian
+                        Eastern Daylight Time </option>
+                    <option value="(GMT +11:00 Lord Howe Daylight Time ">(GMT +11:00) Lord Howe Daylight
+                        Time </option>
+                    <option value="(GMT +11:30 Norfolk Time  ">(GMT +11:30) Norfolk Time </option>
+                    <option value="(UTC  +05:00 Mawson Station Time Zone  ">(UTC  +05:00) Mawson Station Time
+                        Zone </option>
+                    <option value="(UTC  +05:00 Heard and McDonald Islands Time Zone ">(UTC  +05:00) Heard and
+                        McDonald Islands Time Zone </option>
+                    <option value="(UTC  +06:30 Cocos Islands Time Zone ">(UTC  +06:30) Cocos Islands Time Zone
+                    </option>
+                    <option value="(UTC  +07:00 Davis Time Zone ">(UTC  +07:00) Davis Time Zone </option>
+                    <option value="(UTC  +08:00 Casey Time Zone ">(UTC  +08:00) Casey Time Zone </option> -->
+
+                    <!-- <option value="(GMT -8:00) Pacific Time (US &amp; Canada)">(GMT -8:00) Pacific Time
+                        (US &amp; Canada) </option>
+                    <option value="(GMT -7:00) Mountain Time (US &amp; Canada)">(GMT -7:00) Mountain Time
+                        (US &amp; Canada) </option>
+                    <option value="(GMT -6:00) Central Time (US &amp; Canada), Mexico City">(GMT -6:00)
+                        Central Time (US &amp; Canada), Mexico City </option>
+                    <option value="(GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima">(GMT -5:00)
+                        Eastern Time (US &amp; Canada), Bogota, Lima </option> -->
+                    
+                </select>
+                <p class="help-block">
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+ 
+    <div class="">
+        <label class="col-sm-3 control-label">
+            <em>*</em> Problem Title
+        </label>
+        <div class="col-sm-9">
+            <div class="controls">
+                <input tabindex="5" type="text" id="txt_Problem" ng-model="scheduleProblemTitle" placeholder="Please enter Problem Title" maxlength="200" name="scheduleProblemTitle"
+                    class="form-control input_tag" required />
+                <p class="help-block">
+                </p>
+            </div>
+        </div>
+    </div>
+    <p class="clearfix">
+    </p>
+    <div class="">
+        <label class="col-sm-3 control-label">
+            <em>*</em> Product
+        </label>
+        <div class="col-sm-9">
+            <!--<span id="spanProduct" class="form-control"></span>-->
+            <select tabindex="6" id="ddlProduct" name="selectedproduct" class="form-control select_tag" ng-model="selectedproduct" ng-options="procuctdetail.ProductName for procuctdetail in procuctdetails" required>
+            <option value="">Select</option>
+            </select>            
+        </div>
+    </div>
+   <p class="clearfix">
+    </p>
+    <div class="">
+        <label class="col-sm-3 control-label">
+            <em>*</em> Problem Description
+        </label>
+        <div class="col-sm-9">
+            <div class="controls">
+                <textarea tabindex="7" rows="5" id="txt_ProblemNotes" ng-model="scheduleProblemDescription" class="form-control input_tag" required
+                    name="scheduleProblemDescription" placeholder="Please enter Problem Description"></textarea>
+            </div>
+        </div>
+    </div>     
+    <div class="btnrenewal_position">
+     
+        <input type="submit" tabindex="8" class="btn btn-primary login_but padd_new" id="btnAddSched" ng-click="saveNewSchedule(NewScheduleForm.$valid);" value="Submit" />
+    </div>
+   
+   </div>
+</div>
+</div>
+</form>
+
+<script type="text/javascript"> 
+$(document).ready(function(){
+    // $("#txt_Problem").keyup(removeextra).blur(removeextra);
+    // $("#txt_ProblemNotes").keyup(removeextra).blur(removeextra);
+});
+function removeextra() {
+    var initVal = $('#txt_Problem').val();
+    outputVal = initVal.replace(/[^0-9a-zA-Z&,!' ']/g,"");       
+    if (initVal != outputVal) {
+        $(this).val(outputVal);
+    }
+    var initdesc = $('#txt_ProblemNotes').val();
+    outputValdesc = initdesc.replace(/[^0-9a-zA-Z&,!' ']/g,"");       
+    if (initdesc != outputValdesc) {
+        $(this).val(outputValdesc);
+    }
+};
+</script>

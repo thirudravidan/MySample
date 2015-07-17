@@ -1,0 +1,22 @@
+<div class="right_bg_cont" ng-init="initializeGuage();">
+    <div class="data_cont rightdivHeight">
+        <div class="rightdivnewTick">
+              <div class="cont_title">
+                  <span>dBm Graph</span>
+              </div>
+               <div class="container_mid" id="dv1">
+                 <div id="dbmdisplay">
+                   <div class="dbmgraph" id="connwifiname">
+                       <p><span>Connected To : </span><span id="wifiname"></span></p></br>
+                        <P><span>Signal Quality :</span> <span id="signalquality"></span></P>
+                   </div>
+                   <div class="dbmgraph" id="dbmgraph" >
+                      <span id="networkGaugeContainer">
+                      </span>
+                   </div>
+                </div>
+                <span id="dbmhide" style="display:none;">No Wi-Fi access points found.</span>
+              </div>        
+        </div>
+    </div>
+</div>

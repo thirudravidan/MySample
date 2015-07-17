@@ -1,0 +1,218 @@
+{
+    "menus": [
+        {
+            "id": "1",
+            "leftPositionID": "2",
+            "name": "Contact Support",
+            "statename": "contactsupport",
+            "classname":"contsupport_icon icon-contactsupport",
+            "parent_id": "0",
+            "submenu": [
+                {
+                    "id": "11",
+                    "leftPositionID": "1",
+                    "rightPositionID": "8",
+                    "name": "Schedule a Call",
+                    "statename": "scheduleacall",
+                    "classname":"contsupport_icon icon-scheduleacall",
+                    "parent_id": "1"
+
+                },
+                {
+                    "id": "12",
+                    "leftPositionID": "7",
+                    "rightPositionID": "9",
+                    "name": "Web Ticket",
+                    "statename": "webticket",
+                    "classname":"contsupport_icon icon-webticket",
+                    "parent_id": "1"
+                },
+                {
+                    "id": "13",
+                    "leftPositionID": "5",
+                    "rightPositionID": "11",
+                    "name": "Remote Support",
+                    "statename": "remotesupport",
+                    "classname":"contsupport_icon icon-remotesupport",
+                    "parent_id": "1"
+                },
+                {
+                    "id": "14",
+                    "leftPositionID": "6",
+                    "rightPositionID": "10",
+                    "name": "Chat",
+                    "statename": "chat",
+                    "classname":"contsupport_icon icon-chat",                    
+                    "parent_id": "1"
+                },
+                {
+                    "id": "15",
+                    "leftPositionID": "2",
+                    "rightPositionID": "12",
+                    "name": "Knowledge Base",
+                    "statename": "knowledgebase",
+                    "classname":"contsupport_icon icon-knowledgebase",                    
+                    "parent_id": "1"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "leftPositionID": "6",
+            "name": "Manage Account",
+            "statename": "manageaccount",            
+            "classname":"contsupport_icon icon-manageaccount",
+            "parent_id": "0",
+            "submenu": [
+                {
+                    "id": "21",
+                    "leftPositionID": "1",
+                    "rightPositionID": "8",
+                    "name": "Profile",
+                    "statename": "myprofile",
+                    "classname":"contsupport_icon icon-profile",                    
+                    "parent_id": "2"
+                },
+                {
+                    "id": "22",
+                    "leftPositionID": "2",
+                    "rightPositionID": "9",
+                    "name": "Contract Upgrade/Renew",
+                    "statename": "contractupgrade",
+                    "classname":"contsupport_icon icon-registry",                    
+                    "parent_id": "2"
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "leftPositionID": "1",
+            "name": "System Tools",
+            "statename": "systemtools",            
+            "classname":"contsupport_icon icon-systemtools",
+            "parent_id": "0",
+            "submenu": [
+                {
+                    "id": "31",
+                    "leftPositionID": "1",
+                    "rightPositionID": "8",
+                    "name": "Optimization Suite",
+                    "statename": "pcoptimizationsuite",
+                    "classname":"contsupport_icon icon-optimizationsuite",
+                    "parent_id": "3",
+                    "submenu": [
+                                {
+                                    "id": "311",
+                                    "leftPositionID": "1",
+                                    "rightPositionID": "1",
+                                    "name": "Defragmentation",
+                                    "statename": "defragmentation",
+                                    "classname":"contsupport_icon icon-defragmentation",
+                                    "parent_id": "31"
+                                },
+                                {
+                                    "id": "312",
+                                    "leftPositionID": "2",
+                                    "rightPositionID": "2",
+                                    "name": "PC Optimization",
+                                    "statename": "pcoptimization",
+                                    "classname":"contsupport_icon icon-pcoptimization",
+                                    "parent_id": "31"
+                                },
+                                {
+                                    "id": "313",
+                                    "leftPositionID": "3",
+                                    "rightPositionID": "3",
+                                    "name": "Firewall",
+                                    "statename": "firewall",
+                                    "classname":"contsupport_icon icon-firewall",
+                                    "parent_id": "31"
+                                },
+                                {
+                                    "id": "314",
+                                    "leftPositionID": "4",
+                                    "rightPositionID": "4",
+                                    "name": "Data Backup",
+                                    "statename": "databackup",
+                                    "classname":"contsupport_icon icon-databackup",                    
+                                    "parent_id": "31"
+                                },
+                                {
+                                    "id": "315",
+                                    "leftPositionID": "5",
+                                    "rightPositionID": "5",
+                                    "name": "Parental Control",
+                                    "statename": "parentalcontrol",
+                                    "classname":"contsupport_icon icon-parentalcontrol",                    
+                                    "parent_id": "31"
+                                },
+                                {
+                                    "id": "316",
+                                    "leftPositionID": "6",
+                                    "rightPositionID": "6",
+                                    "name": "Registry Cleaner",
+                                    "statename": "registrycleaner",
+                                    "classname":"contsupport_icon icon-registrycleaner",                    
+                                    "parent_id": "31"
+                                }
+                            ]
+               },               
+                {
+                    "id": "33",
+                    "leftPositionID": "5",
+                    "rightPositionID": "10",
+                    "name": "Network Tools",
+                    "statename": "networktools",
+                    "classname":"contsupport_icon icon-network",
+                    "parent_id": "3",
+                    "submenu": [
+                                {
+                                    "id": "331",
+                                    "leftPositionID": "1",
+                                    "rightPositionID": "8",
+                                    "name": "Network Usage",
+                                    "statename": "networkusage",
+                                    "classname":"contsupport_icon icon-backup",
+                                    "parent_id": "33"
+                                },
+                                {
+                                    "id": "332",
+                                    "leftPositionID": "3",
+                                    "rightPositionID": "9",
+                                    "name": "Network Map",
+                                    "statename": "networkmap",
+                                    "classname":"contsupport_icon icon-dbmgraph",
+                                    "parent_id": "33"
+                                },
+                                {
+                                    "id": "333",
+                                    "leftPositionID": "7",
+                                    "rightPositionID": "10",
+                                    "name": "Network Speed",
+                                    "statename": "networkspeed",
+                                    "classname":"contsupport_icon icon-timer",
+                                    "parent_id": "33"
+                                }
+                                ]
+                },
+                {
+                    "id": "34",
+                    "leftPositionID": "6",
+                    "rightPositionID": "9",
+                    "name": "Schedule Activities",
+                    "statename": "scheduledactivities",
+                    "classname":"contsupport_icon icon-scheduleactivities",                    
+                    "parent_id": "3"
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "leftPositionID": "5",
+            "name": "Message Center",
+            "statename": "messagecenter",            
+            "classname":"contsupport_icon icon-messagecenter",
+            "parent_id": "0"
+        }
+    ]
+}

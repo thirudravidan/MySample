@@ -1,0 +1,70 @@
+<div class="right_bg_cont" ng-init="bindblockDetails();">
+    <div class="data_cont rightdivHeight">
+        <div class="rightdivnewTick">
+                <div class="cont_title">
+                    <span>Parental Control</span>
+                </div>
+               
+                <div class="container_mid">
+                 <form name="frmparentalcontrol">
+                <div class="container-parental">
+					              <div class="dv_url" >
+                        <label>Enter URL To Block</label>
+                        </div>
+                        <div class="dv_parent" >
+                         <span class="blockUrl"><input type="text" id="txturl" class="form-control input_tag_parent" ng-model="frmdata.txturl" name="url"></span>
+                         <span><input type="submit" class="orange_color btnBlock" ng-click="blockWebsite();" value="Block Site" /></span>
+                        
+                         <span class="exmParent">Eg:www.example.com</span> 
+                        </div>
+                        <div>
+                        
+                        </div> 
+				        </div>
+                        </form>
+                <!-- <div style="clear:both"> -->
+                <form name="frmunblockparentalcontrol">
+                      <div class="parental_display" style="display:none">
+                      <div class="table-responsive" style="height:27vw;">
+                                <table id="blockedTable" cellspacing="0" cellpadding="0" border="1" class="pcoptimize_fix" style="width:96%;margin-left:2%;margin-top:2%;">
+                                 <thead>
+                                                <tr>
+                                                    <th>
+                                                        Blocked Site
+                                                    </th>
+                                                    <th>
+                                                        Blocked Type
+                                                    </th>
+                                                    <th>
+                                                        Blocked Date
+                                                    </th>
+                                                    <th>
+                                                        Unblock
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                <tbody > 
+                                  <tr ng-repeat="productDet in productDetailsNew"> 
+                                    <td>{{productDet.Blocked}}</td>
+                                      <td>{{productDet.Type}}</td> 
+                                    <td>{{convertDate(productDet.BlockedOn)}}</td>
+                                  <td>
+                                  <input type="checkbox" id="chksno" name="chksno" ng-model="frmdata.Slno[$index]" class="chkparentalurl"  ng-true-value="{{productDet.Slno}}" ng-false-value="false" /></td>
+                                  </tr> 
+                                  <tr align="center" ng-if="productDetailsNew.length == 0"> 
+                                    <td align="center" colspan="4">No Records Found</td>
+                                  </td>
+                                  </tr>
+                                </tbody>
+                                </table> 
+                                </div>
+                        <div id="blockedTableFoot" class="foot-button"> 
+                        <input type="submit" value="Unblock" ng-click="UnblockWebsite();" id="btnCN" class="btnUnblock">
+                        </div>
+                </div>
+                </form>
+                </div>
+                
+        </div>
+    </div>
+</div>

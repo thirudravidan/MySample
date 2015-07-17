@@ -1,0 +1,173 @@
+<form class="form-horizontal" name="NewUpgradeForm">
+    <div class="right_bg_cont" ng-init="bindproductDetails();accordionFunc('subProDet');accordionFunc('subscrDet');">
+        <div class="data_cont rightupgradedivHeight">
+            <div class="rightdivnewTick">
+                <div class="cont_scroll">
+                    <div class="cont_title" >
+                        <span>Upgrade Subscription</span>
+                    </div>
+                     <div class="container_mid">
+                     <div class="contHeader" style="margin-top: 0.5vw;">
+                        <span>Subscribed Product Details</span><a class="seemore" ng-show="!showsubProDet"  ng-click="accordionFunc('subProDet');">See more&nbsp;&nbsp;</a>
+                    </div>
+                            <div class="table-upgrade_responsive" ng-show="showsubProDet">
+                                <table class="protable table-striped table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                Serial No
+                                            </th>
+                                            <th>
+                                                Product Name
+                                            </th>
+                                            <th>
+                                                Purchase Date
+                                            </th>
+                                            <th>
+                                                Product Expired
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr ng-repeat="productDet in productDetailsNew" class="table-row table-row-group">
+                                            <td class="table-column table-column-group">
+                                                {{productDet.SerialNo}}
+                                            </td>
+                                            <td class="table-column table-column-group">
+                                                {{productDet.ProductName}}
+                                            </td>
+                                            <td class="table-column table-column-group">
+                                                {{productDet.PurchaseDate}}
+                                            </td>
+                                            <td class="table-column table-column-group">
+                                                {{productDet.ProductExpired}}
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                        </div> 
+
+                    <div class="contHeader">
+                        <span>Subscription Details</span><a class="seemore" ng-show="!showSubscription" ng-click="accordionFunc('subscrDet');">See more&nbsp;&nbsp;</a>
+                    </div>
+                    <div class="promo_content" ng-show="showSubscription">
+                        <div class="row marg">
+                            <label class="col-sm-3">
+                                <em>*</em> Promotion
+                            </label>
+                            <div class="col-sm-9">
+                                <select id="ddlPromotion" name="selectedpromotion" class="form-control select_tag"
+                                    ng-change="chgPromotion(selectedpromotion)" ng-model="selectedpromotion" ng-options="promotiondetail.promocode for promotiondetail in promotiondetails"
+                                    required>
+                                    <option value="">Select</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row marg">
+                            <label class="col-sm-3">
+                                <em>*</em> Product
+                            </label>
+                            <div class="col-sm-9">
+                                <select id="ddlProduct" name="selectedproduct" class="form-control select_tag" ng-change="loadProductPrice(selectedproduct)"
+                                    ng-model="selectedproduct" ng-options="procuctdetail.prodname for procuctdetail in productDetails"
+                                    required>
+                                    <option value="">Select</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row marg">
+                            <label class="col-sm-3">
+                                <em>*</em> Card Number
+                            </label>
+                            <div class="col-sm-9">
+                                <div class="controls">
+                                    <input type="text" id="txt_Cardnumber" maxlength="16" ng-model="cardnumber" placeholder="Please enter Card Number"
+                                        name="cardnumber" class="form-control input_tag" required onkeypress="javascript:return isNumber(event)" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row marg">
+                            <label class="col-sm-3">
+                                <em>*</em> Card Name
+                            </label>
+                            <div class="col-sm-9">
+                                <div class="controls">
+                                    <input type="text" maxlength="50" id="txt_Cardname" ng-model="cardname" placeholder="Please enter Card Name" onKeyPress="return ValidateAlpha(event);"
+                                        name="cardname" class="form-control input_tag" required />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row marg">
+                            <label class="col-sm-3">
+                                <em>*</em> Amount
+                            </label>
+                            <div class="col-sm-9">
+                                <div class="controls">
+                                    <input type="text" value="0" id="txt_Amount" ng-model="amount" placeholder="Please enter Amount"
+                                        name="amount" class="form-control input_tag" required onKeyDown="preventBackspace();" readonly="true" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row marg">
+                            <label class="col-sm-3">
+                                <em>*</em> Card Type
+                            </label>
+                            <div class="col-sm-9">
+                                <select id="ddlProduct" name="selectedcardtype" class="form-control select_tag" ng-model="cardtype"
+                                    ng-options="cardType.DrpText for cardType in cardtypes" required>
+                                    <option value="">Select</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row marg">
+                            <label class="col-sm-3">
+                                <em>*</em> Card Expiry
+                            </label>
+                         <div class="col-sm-9">
+
+                                <div style="float:left;"> 
+                                     <select id="ddlmonth" name="ddlmonth" class="form-control select_taginput"> 
+                                                            <option value="01">01</option>
+                                                            <option value="02">02</option>
+                                                            <option value="03">03</option>
+                                                            <option value="04">04</option>
+                                                            <option value="05">05</option>
+                                                            <option value="06">06</option>
+                                                            <option value="07">07</option>
+                                                            <option value="08">08</option>
+                                                            <option value="09">09</option>
+                                                            <option value="10">10</option>
+                                                            <option value="11">11</option>
+                                                            <option value="12">12</option>
+                                                        </select>
+                                 </div> 
+                                <div style="float:left;padding-left:8px;"> 
+                                      <select id="ddlyear" class="form-control select_taginput" name="ddlyear" ng-model="ddlyear" required>
+                                                            <option ng-repeat="year in expyear" value="{{year}}">{{year}}</option>
+                                      </select>
+                                </div>
+
+                                </div>
+                        </div>
+                        <div class="row marg">
+                            <label class="col-sm-3">
+                                <em>*</em> CVV
+                            </label>
+                            <div class="col-sm-9">
+                                <div class="controls">
+                                    <input type="password" id="txt_Cvv" maxlength="3" ng-model="cvv" placeholder="Please enter CVV" name="cvv"
+                                        class="form-control input_tag" required onkeypress="javascript:return isNumber(event)" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btnpanel-gray-style upgrade_positoin">
+                            <input type="submit" id="btnnewugrade" class="netgearbtncolor login_but" ng-click="saveUpgrade(NewUpgradeForm.$valid);"
+                                value="Submit" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</form>

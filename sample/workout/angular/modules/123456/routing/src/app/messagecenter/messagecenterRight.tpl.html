@@ -1,0 +1,56 @@
+<div class="right_bg_cont_msgcenter" ng-init="getMessageDetails();" >
+
+	<div class="message_alert" ng-repeat="msg in Messagelist">
+		<h1>		 
+			<a style="cursor:pointer" ng-click="redirecttoMessageDescription(msg.MessageID,1);">{{ msg.MessageTitle }}</a>
+		</h1>
+		<p>{{ msg.ShortDescription }}</p>
+	</div>
+   <div class="social" ng-show="socialshow">
+<img src="assets/Content/img/fb.png" class="popup_window" data-popup-target="#example-popup" />
+<br>
+<img class="popup_window" data-popup-target="#example-popup2" src="assets/Content/img/twi.png" /> 
+</div>
+<br>
+
+<div id="example-popup" class="popup">
+    <div class="popup-body">
+        <span class="popup-exit"></span>
+        <div class="popup-content">
+            <h2 class="popup-title">Facebook</h2>
+            <iframe id="dvfb" src="https://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FNetgear&amp;width=590&amp;height=480&amp;colorscheme=light&amp;show_faces=false&amp;header=false&amp;stream=true&amp;show_border=false&amp;appId=474003719367144"
+            scrolling="no" frameborder="0" style="background: white !important; border-radius: 5px !important;
+            border: none; overflow: hidden; width: 590px; height: 480px;"
+            allowtransparency="true" class="fb-like-box"></iframe>
+        </div>
+    </div>
+</div>
+<div id="example-popup2" class="popup">
+    <div class="popup-body"><span class="popup-exit"></span>
+        <div class="popup-content">
+           <h2 class="popup-title">Twitter</h2>
+           <div id="hreftwitter" style="padding: 0; margin: 0; overflow: hidden;" >
+            <iframe id="twitter" src="http://twitframe.com/show?url=https%3A%2F%2Ftwitter.com%2Fcsscorp"
+            scrolling="no" frameborder="0" style="background: white !important; border-radius: 5px !important;
+            border: none; overflow: hidden; width: 590px; height: 480px;"
+            allowtransparency="true" ></iframe>
+               
+           </div>
+        </div>
+    </div>
+</div>
+<!-- <div id="example-popup3" class="popup">
+    <div class="popup-body"><span class="popup-exit"></span>
+        <div class="popup-content">
+            <h2 class="popup-title">Google+</h2>
+            <div id="hrefgplus" >
+                <iframe id="Iframe1" src="https://plus.google.com/107087502395383715305/"
+            scrolling="no" frameborder="0" style="background: white !important; border-radius: 5px !important;
+            border: none; overflow: hidden; width: 590px; height: 480px;"
+            allowtransparency="true" ></iframe>
+            </div>
+        </div>
+    </div>
+</div> -->
+<div class="popup-overlay"></div>
+</div>

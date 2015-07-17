@@ -1,0 +1,70 @@
+<div class="right_bg_cont" ng-init="startDefragment();">
+    <div class="data_cont rightdivHeight">
+        <div class="rightdivnewTick">
+                <div class="cont_title">
+                    <span>Defragmentation</span>
+                </div>
+                <div id="dvDefragmentOptions" class="container_mid" style="display: none">
+                <div class="defrag-sec">
+					 
+                     <div class="defrag_cont">
+                        <span class="defrag_toptext">Select the drive that you wish to defragment :</span>
+                       
+                        <div class="defragment_table">
+                    <table class="pcoptimize_fix" cellpadding="0" cellspacing="0" border="1">
+                        <tbody>
+                            <tr>
+                                <th>
+                                    Drive Name
+                                </th>
+                                <th>
+                                    Drive Label
+                                </th>
+                                
+                            </tr>
+                            <tr ng-repeat="driveDetails in driversListDetails" class="table-row table-row-group">
+                               
+                                <td class="table-column table-column-group">
+                                <input type="checkbox" ng-model="driveDetails.IsSelected">
+                                    <i class="icon-drawer2"></i> {{driveDetails.DriveName}}
+                                </td>
+                                <td class="table-column table-column-group">
+                                    {{driveDetails.DriveLabel}}
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                        <div class="blankpage">
+                            <center><img src="assets/Content/img/progressbar.gif" style="width: 11vw;" ng-model="loaderdisplay" ng-show="loaderdisplay"></center>
+                        </div>
+                         <span class="stripline"></span>
+                        <div class="cdrive">
+                        <span class="cdrive_radio"><input type="radio" name="rdbdefraganalyse" value="0" checked onclick="setForceDefragControl();"></span> <span class="cdrive_text">Analyze Only </span>
+                        <span class="cdrive_radio"><input type="radio" value="1" name="rdbdefraganalyse" onclick="setForceDefragControl();"></span> <span class="cdrive_text">Defragmentation</span>
+                        </div>
+                         <div class="cdrive"><span class="cdrive_radio"><input id="chkForceDefragment" type="checkbox" name="chkForceDefragment" ></span> <span class="cdrive_text">Force defragmentation even if free space is low </span> </div> 
+                    </div>
+   
+                </div> 
+                <div class="foot-button">
+                        <button type="button" id="btnStart" class="btn btn-primary login_but new-ticket pull-right padd_new" ng-click="initDefragmentation();">Start</button> 
+                            <button type="button" id="btnStop" class="btn btn-primary login_but new-ticket pull-right padd_new" ng-click="stopProcess();" style="display:none">Stop</button>
+                         <button type="button" id="btnViewReport" class="orange_color align_but" ng-click="showReport();" style="display:none">View Report</button>
+                        </div>
+				</div> 
+                 <div id="dvDefragmentationDetails" class="container_mid" style="display: none">
+                <div class="diskAnalHeader">
+                    <span id="spnanalyse"><b>Disk Analysis Report</b></span>
+                    <span id="spndefragment"><b>Disk Defragmentation Report</b></span></div>
+                <div class="diskAnalysis" style="height: 23.5vw; width: 100%;">
+                </div>
+                <div>
+                    <span class="diskBack">
+                        <input type="button" class="btn btn-primary login_but new-ticket pull-right padd_new" value="Finish" ng-click="closeAnalysisDetails();"><span>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
