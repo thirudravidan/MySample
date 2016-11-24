@@ -1,0 +1,3 @@
+D:\exe\networkmonitor\networkmonitor\bin\Debug\networkmonitor.exe
+D:\exe\networkmonitor\networkmonitor\obj\x86\Debug\networkmonitor.exe
+D:\exe\networkmonitor\networkmonitor\obj\x86\Debug\networkmonitor.pdb

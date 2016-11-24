@@ -1,0 +1,20 @@
+<VSBootstrapperManifest>
+  <ProjectProperties ProjectName="GearHeadConnect" BuildLocation="SpecifiedDir" BuildDirectory="C:\Users\sl051760\Desktop\Bootstraper\Netgear_2.0" DefaultLanguage="en" />
+  <UIPackage ProductCode="EULA.Bootstrap.Component">
+    <UIChecks />
+    <Relationships>
+      <Relationship Type="DependsOn" Code=".NETFramework,Version=v4.0,Profile=Client" />
+      <Relationship Type="DependsOn" Code="Microsoft.Windows.Installer.3.1" />
+    </Relationships>
+    <CustomSchedules />
+  </UIPackage>
+  <UIInstallFile FileName="D:\WORKSPACE.SL051760\CIOG\DOT_NET\Netgear\NetgearTool_2.1\NetgearBootstrap\bin\Debug\NetgearGearHeadBootstrap.exe" DisplayName="License Agreement Please review the license terms before installing GearHead Connect" Arguments="" Reboot="" LicenseAgreement="D:\WORKSPACE.SL051760\CIOG\DOT_NET\Netgear\NetgearTool_2.0\NetgearBootstrap\Eula\en\eula.txt" PublicKey="3082010A0282010100B7860194ABB24C34671E7D8AC3DC396BCBB9A0D591EBF0738612F2487B2BB7149C6A29A044A7E8D47F4FA3C395154BBB1BB8488D673504D86B01BE46602ACEDDE07725D1D7CF34C6CFEB3EE27A6BC0174FC13169F9EE52619FAF98C603BAA70F1CBA3D286AB2F0A93C496E70D20C8669F6AFED62A6ED9B80E3E00B0F647957D4F226FB097D5A2C32CD805D3ADDC6BB0F441D07229989D12FABCD52348F21388BFF21388ACDDDF5694AE438FD108852D244D00E1E56BE2ECB9BC0B9D626643CA7F5F99AF94A8A3126DB1514CAD435BDDEEA49C3214ACE7F5933769AAB339C6BCF1AA8E6F8EBE2EB4BA2E95A1D3600E4D3FE82CA12ED959D93F68A9BB4DF9F2E9F0203010001" IncludePublicKey="True" FileHash="F923A3C4AFF3FED5E3726803C4E22978BF1C7BF2" Locale="en">
+    <UIChecks />
+    <UIInstallConditions />
+    <UIExitCodes>
+      <UIExitCode ExitCode="0" Result="Success" Message="" />
+      <DefaultExitCode Result="Fail" FormatMessageFromSystem="True" Message="An unexpected exit code was returned from the installer. The installation failed." />
+    </UIExitCodes>
+    <LooseFiles />
+  </UIInstallFile>
+</VSBootstrapperManifest>

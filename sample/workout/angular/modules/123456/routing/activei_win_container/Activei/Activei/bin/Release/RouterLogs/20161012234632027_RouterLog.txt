@@ -1,0 +1,4 @@
+[WLAN access rejected: incorrect security] from MAC address 34:36:3b:93:1a:3a, Wednesday, October 12, 2016 10:16:29
+[WLAN access rejected: incorrect security] from MAC address 34:36:3b:93:1a:3a, Wednesday, October 12, 2016 10:16:26
+[DHCP IP: 192.168.1.5] to MAC address 5c:95:ae:a4:15:15, Wednesday, October 12, 2016 10:16:20
+[Log Cleared] Wednesday, October 12, 2016 10:15:37

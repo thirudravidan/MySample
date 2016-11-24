@@ -1,0 +1,65 @@
+[DHCP IP: 192.168.1.5] to MAC address 5c:95:ae:a4:15:15, Wednesday, October 12, 2016 09:01:29
+[admin login] from source 192.168.1.2, Wednesday, October 12, 2016 09:00:24
+[admin login] from source 192.168.1.2, Wednesday, October 12, 2016 09:00:11
+[DHCP IP: 192.168.1.5] to MAC address 5c:95:ae:a4:15:15, Wednesday, October 12, 2016 08:58:26
+[DHCP IP: 192.168.1.5] to MAC address 5c:95:ae:a4:15:15, Wednesday, October 12, 2016 08:58:24
+[DHCP IP: 192.168.1.6] to MAC address 7c:7a:91:5d:9f:1c, Wednesday, October 12, 2016 08:49:01
+[DHCP IP: 192.168.1.6] to MAC address 7c:7a:91:5d:9f:1c, Wednesday, October 12, 2016 07:52:27
+[DHCP IP: 192.168.1.3] to MAC address 7c:7a:91:59:90:20, Wednesday, October 12, 2016 07:30:44
+[DoS Attack: ACK Scan] from source: 10.9.17.18, port 22, Wednesday, October 12, 2016 07:24:17
+[DHCP IP: 192.168.1.6] to MAC address 7c:7a:91:5d:9f:1c, Wednesday, October 12, 2016 07:24:03
+[DoS Attack: ACK Scan] from source: 10.9.17.18, port 22, Wednesday, October 12, 2016 07:14:17
+[DHCP IP: 192.168.1.4] to MAC address 1c:65:9d:a9:f6:fc, Wednesday, October 12, 2016 07:06:57
+[DHCP IP: 192.168.1.4] to MAC address 1c:65:9d:a9:f6:fc, Wednesday, October 12, 2016 07:06:22
+[DHCP IP: 192.168.1.3] to MAC address 7c:7a:91:59:90:20, Wednesday, October 12, 2016 07:06:09
+[DoS Attack: ACK Scan] from source: 10.9.17.18, port 22, Wednesday, October 12, 2016 06:13:48
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Wednesday, October 12, 2016 04:50:45
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Wednesday, October 12, 2016 04:50:25
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Wednesday, October 12, 2016 04:50:19
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Wednesday, October 12, 2016 04:50:08
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Wednesday, October 12, 2016 04:49:30
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Wednesday, October 12, 2016 04:49:10
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Wednesday, October 12, 2016 04:49:04
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Wednesday, October 12, 2016 04:48:53
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Wednesday, October 12, 2016 04:48:15
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Wednesday, October 12, 2016 04:47:55
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Wednesday, October 12, 2016 04:47:49
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Wednesday, October 12, 2016 04:47:38
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Wednesday, October 12, 2016 04:47:00
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Wednesday, October 12, 2016 04:46:40
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Wednesday, October 12, 2016 04:46:34
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Wednesday, October 12, 2016 04:46:23
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Wednesday, October 12, 2016 04:45:45
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Wednesday, October 12, 2016 04:45:25
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Wednesday, October 12, 2016 04:45:19
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Wednesday, October 12, 2016 04:45:08
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Wednesday, October 12, 2016 04:44:30
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Wednesday, October 12, 2016 04:44:10
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Wednesday, October 12, 2016 04:44:04
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Wednesday, October 12, 2016 04:43:25
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Wednesday, October 12, 2016 04:43:15
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Wednesday, October 12, 2016 04:42:55
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Wednesday, October 12, 2016 04:42:45
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Wednesday, October 12, 2016 04:42:10
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Wednesday, October 12, 2016 04:42:00
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Wednesday, October 12, 2016 04:41:40
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Wednesday, October 12, 2016 04:41:30
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Wednesday, October 12, 2016 04:40:55
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Wednesday, October 12, 2016 04:40:45
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Wednesday, October 12, 2016 04:40:25
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Wednesday, October 12, 2016 04:40:15
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Wednesday, October 12, 2016 04:39:40
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Wednesday, October 12, 2016 04:39:34
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Wednesday, October 12, 2016 04:39:23
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Wednesday, October 12, 2016 04:39:00
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Wednesday, October 12, 2016 04:38:25
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Wednesday, October 12, 2016 04:38:19
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Wednesday, October 12, 2016 04:38:08
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Wednesday, October 12, 2016 04:37:45
+[Time synchronized with NTP server] Wednesday, October 12, 2016 04:37:14
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Wednesday, October 12, 2016 04:37:12
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Wednesday, October 12, 2016 04:37:10
+[Internet connected] IP address: 10.9.67.22, Wednesday, October 12, 2016 04:37:09
+[Initialized, firmware version: V1.0.2.4] Wednesday, October 12, 2016 04:37:05
+[DHCP IP: 192.168.1.2] to MAC address c8:1f:66:43:31:52, Wednesday, October 12, 2016 04:36:58
+[DHCP IP: 192.168.1.2] to MAC address c8:1f:66:43:31:52, Wednesday, October 12, 2016 04:36:48

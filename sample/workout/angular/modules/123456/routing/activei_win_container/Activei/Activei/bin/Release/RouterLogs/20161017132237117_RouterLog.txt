@@ -1,0 +1,9 @@
+[WLAN access rejected: incorrect security] from MAC address 34:36:3b:93:1a:3a, Sunday, October 16, 2016 23:51:56
+[WLAN access rejected: incorrect security] from MAC address 34:36:3b:93:1a:3a, Sunday, October 16, 2016 23:51:39
+[WLAN access rejected: incorrect security] from MAC address 34:36:3b:93:1a:3a, Sunday, October 16, 2016 23:51:18
+[WLAN access rejected: incorrect security] from MAC address 34:36:3b:93:1a:3a, Sunday, October 16, 2016 23:51:15
+[admin login] from source 192.168.1.2, Sunday, October 16, 2016 23:50:57
+[Time synchronized with NTP server] Sunday, October 16, 2016 23:34:35
+[Internet connected] IP address: 10.9.67.22, Sunday, October 16, 2016 23:34:30
+[Initialized, firmware version: V1.0.2.4] Sunday, October 16, 2016 23:34:27
+[DHCP IP: 192.168.1.2] to MAC address c8:1f:66:43:31:52, Sunday, October 16, 2016 23:34:22

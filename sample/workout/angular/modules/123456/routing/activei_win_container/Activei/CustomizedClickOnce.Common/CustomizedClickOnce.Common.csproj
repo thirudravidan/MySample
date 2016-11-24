@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ApplicationIcon>Activei.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Activei.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BC299433-48CC-4282-A7F4-3948E054B6AC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CustomizedClickOnce.Common</RootNamespace>
+    <AssemblyName>CustomizedClickOnce.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClickOnceHelper.cs" />
+    <Compile Include="GearHeadMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GearHeadMessageBox.designer.cs">
+      <DependentUpon>GearHeadMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RouterMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RouterMessageBox.designer.cs">
+      <DependentUpon>RouterMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cryption.cs" />
+    <Compile Include="Globals.cs" />
+    <Compile Include="Keys.cs" />
+    <Compile Include="NGPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WirelessRouter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WirelessRouter.designer.cs">
+      <DependentUpon>WirelessRouter.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Activei.ico" />
+    <Content Include="msvcp100.dll" />
+    <Content Include="msvcr100.dll" />
+    <Content Include="NG_Icon.ico" />
+    <Content Include="Resources\close.png" />
+    <Content Include="Resources\container.png" />
+    <Content Include="Resources\error.png" />
+    <Content Include="Resources\Exclamation.png" />
+    <Content Include="Resources\exit.png" />
+    <Content Include="Resources\header.png" />
+    <Content Include="Resources\information.png" />
+    <None Include="Resources\netgear-500.png" />
+    <Content Include="Resources\question.png" />
+    <Content Include="Resources\RemoteSupport.png" />
+    <Content Include="Resources\RouterConfigBackup.png" />
+    <None Include="Resources\try2.png" />
+    <Content Include="Resources\wireless.png" />
+    <None Include="Resources\wireless2.png" />
+    <None Include="Resources\wireless1.png" />
+    <None Include="Resources\wanport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GearHeadMessageBox.resx">
+      <DependentUpon>GearHeadMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RouterMessageBox.resx">
+      <DependentUpon>RouterMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WirelessRouter.resx">
+      <DependentUpon>WirelessRouter.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Activei.snk" />
+    <None Include="Netgear.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

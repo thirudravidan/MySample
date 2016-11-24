@@ -1,0 +1,93 @@
+<div class="right_bg_cont noselect" ng-init="bindrecContentDetails();indexSet();">
+    <div class="data_cont">
+        <div class="cont_title">
+            Knowledge Base
+        </div>
+        <div class="container_mid">
+        <div class=" kbform">
+            <div class="">
+                <span class="">
+                    <input type="text" class=" txtinput" style="height:115%;font-size:1.5vw;" id="txtSearch" ng-model="txtSearch" />
+                    <button class="netgearbtncolor searchbtn login_but" id="btnSearch" ng-click="searchContent();">
+                        Go</button>
+                </span>
+            </div>
+        </div>
+        <!-- - `rn-carousel-index` two way binding integer to control the carousel position (0-indexed)
+ - `rn-carousel-buffered` add this attribute to enable the carousel buffering, good to minimize the DOM (5 slides)
+ - `rn-carousel-controls` add this attribute to enable builtin prev/next buttons (you can override by CSS)
+ - `rn-carousel-auto-slide` add this attribute to make the carousel slide automatically after given seconds (default=3)
+ - `rn-carousel-transition` : transition type, can be one of `slide, zoom, hexagon, fadeAndSlide, none`. (default=slide)
+ - `rn-carousel-locked`: two way binding boolean that lock/unlock the carousel
+ - `rn-carousel-deep-watch`: Deep watch the collection which enable to dynamically add slides at beginning without corrupting position -->
+      
+        <div class="imageRow">
+            <div class="photo-container" data-carousel data-carousel-class="photo-carousel" data-on-page-upcoming="loadPage(page, tmplCb)"
+                data-give-carousel-to="onCarouselAvailable(carousel)">
+                <div class="photo-grid span12">
+                    <span data-ng-repeat="photo in photos" class="productImg">
+                        <img class="kb_carosel" ng-src="{{getPhotoUrl(photo)}}" data-ng-click="productPopup(getSearchPro(photo));">
+                         <span class="carouseltext"><strong>{{getProText(photo)}}</strong></span>
+                    </span>
+                </div>
+            </div>
+            <a class="previous_kb icon-prev" data-ng-show="hasPrevious()" data-ng-click="previous()">
+                </a> <span class="previous_kb icon-prev" data-ng-hide="hasPrevious()"></span>
+            <a class="next_kb icon-next" data-ng-show="hasNext()" data-ng-click="next()"> </a>
+            <span class="next_kb icon-next" data-ng-hide="hasNext()"> </span>
+        </div>
+        <div class="contHeader" ng-show="showRecomend">
+            <span>{{rec_content}}</span><a class="seemore" ng-click="accordionFun('recommend');">See more&nbsp;&nbsp;</a></div>
+        <div class="recommend_cont" ng-show="showRecomendCont">
+            <div ng-repeat="contDet in recomContent" class="">
+                <a style="cursor:pointer" ng-click="redirectToKBContentView(contDet.ID,contDet.ContentOriginID,contDet.ContentOriginName)">
+                    <h5>{{contDet.Title}}</h5>
+                </a>
+            </div>
+        </div>
+         <div class="norecords" ng-show="norecordsShowRecomnd">
+                <span class="noRecSpan">No Records Found</span>
+            </div>
+
+        <div class="contHeader" ng-show="showPopular">
+            <span>{{ pop_content}}</span><a class="seemore" ng-click="accordionFun('popular');">See more&nbsp;&nbsp;</a></div>
+        <div class="popular_cont" ng-show="showPopularCont">
+            <div ng-repeat="contDets in popularContent" class="">
+                <a style="cursor:pointer" ng-click="redirectToKBContentView(contDets.ID,contDets.ContentOriginID,contDets.ContentOriginName);">
+                    <h5>
+                        {{contDets.Title}}</h5>
+                </a>
+            </div>
+        </div>
+        <div class="contHeader" ng-show="showsearch">
+                <span>{{searc_content}}</span><a class="seemore"  ng-click="accordionFun('search');">See more&nbsp;&nbsp;</a>
+        </div>
+            <div class="sea_cont" ng-show="showSearchCont">
+                <div ng-repeat="seaDet in seaContent" class="">
+                    <a style="cursor:pointer"  ng-click="redirectToKBContentView(seaDet.ID,seaDet.ContentOriginID,seaDet.ContentOriginName);">
+                        <h5>{{seaDet.Title}}</h5>
+                    </a>  
+                </div>
+            </div>
+            <div class="norecords" ng-show="norecordsShow">
+                <span class="noRecSpan">No Records Found</span>
+            </div>
+            <div class="nextPrev" ng-show="nextPrevShow"> 
+                 <a class="previousPage disableText"  ng-click="showPreviousContent();">&lt;&lt;Prev&nbsp;&nbsp;</a>
+                 <a class="nextPage"  ng-click="showNextContent();">Next &gt;&gt;&nbsp;&nbsp;</a>
+            </div>
+        </div>
+        <script type="text/ng-template" id="searchDialog">
+            <div ng-include="'support/knowledgebase/productSearch.tpl.html'"></div>
+        </script>
+</div>
+</div>
+
+<script type="text/javascript">
+    $(document).keypress(function(event){
+    var keycode = (event.keyCode ? event.keyCode : event.which);
+    if(keycode == '13'){ 
+        angular.element(document.getElementById("rightCont")).scope().searchContent();
+    }
+});
+</script>

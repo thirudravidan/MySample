@@ -1,0 +1,41 @@
+<div class="right_bg_cont">
+    <div class="data_cont rightdivHeight">
+        <div class="rightdivnewTick">
+                <div class="cont_title">
+                    <span>DataBack up</span>
+                </div>
+                 <div class="container_mid">
+                 
+                <div class="container-sec">
+					<p> <strong>Files to Backup:</strong>
+                    <input type="file" class="browse" name="file" id="file"  multiple onchange="bindFileList()"/>&nbsp;<input type="button" id="btnbrowse" class="orange_color login_but align_but" value=" Browse " onclick="opendatabackup();">
+					</p> 
+				</div> 
+                </div>
+                <br />
+                <div class="clsdatabkup">
+                    <div class="fileListTable">
+                        <table class="diskBackupTable" border="1" cellspacing="0" cellpadding="1">
+                            <tbody class="diskbkpBody">
+                                <tr class="filesHeader">
+                                    <td>File Name</td>
+                                    <td>File Size</td>
+                                    <td>Sync Status</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>    
+                </div>
+                <div class="uploadbtndiv">
+                    <div id="szlider" style="width:23vw;" >
+                        <div id="szliderbar">
+                        </div>
+                        <div id="szazalek">
+                        </div>
+                    </div>
+                    <span class="btnupload"><input id="btnfileUpload" type="button" class="btn btn-primary login_but" ng-model="btnupload" value="Upload" ng-click="uploadstart()" /></span>
+                </div>
+
+        </div>
+    </div>
+</div>

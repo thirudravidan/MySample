@@ -1,0 +1,10 @@
+[DHCP IP: 192.168.1.3] to MAC address 7c:7a:91:59:90:20, Monday, October 17, 2016 01:28:28
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Monday, October 17, 2016 00:20:10
+[admin login] from source 192.168.1.2, Monday, October 17, 2016 00:20:00
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Monday, October 17, 2016 00:12:40
+[admin login] from source 192.168.1.2, Monday, October 17, 2016 00:12:22
+[DoS Attack: ACK Scan] from source: 10.9.15.58, port 445, Monday, October 17, 2016 00:12:03
+[Time synchronized with NTP server] Monday, October 17, 2016 00:11:37
+[Internet connected] IP address: 10.9.67.22, Monday, October 17, 2016 00:11:32
+[Initialized, firmware version: V1.0.2.4] Monday, October 17, 2016 00:11:29
+[DHCP IP: 192.168.1.2] to MAC address c8:1f:66:43:31:52, Monday, October 17, 2016 00:11:20

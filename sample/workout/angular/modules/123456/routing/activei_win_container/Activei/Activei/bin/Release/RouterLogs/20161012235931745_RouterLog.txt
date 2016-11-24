@@ -1,0 +1,10 @@
+[WLAN access rejected: incorrect security] from MAC address 8c:3a:e3:83:22:34, Wednesday, October 12, 2016 10:29:20
+[WLAN access rejected: incorrect security] from MAC address 8c:3a:e3:83:22:34, Wednesday, October 12, 2016 10:29:05
+[WLAN access rejected: incorrect security] from MAC address 8c:3a:e3:83:22:34, Wednesday, October 12, 2016 10:28:54
+[WLAN access rejected: incorrect security] from MAC address 8c:3a:e3:83:22:34, Wednesday, October 12, 2016 10:28:44
+[WLAN access rejected: incorrect security] from MAC address 8c:3a:e3:83:22:34, Wednesday, October 12, 2016 10:28:41
+[DoS Attack: ACK Scan] from source: 10.9.17.18, port 22, Wednesday, October 12, 2016 10:25:21
+[DoS Attack: RST Scan] from source: 54.231.229.1, port 443, Wednesday, October 12, 2016 10:24:51
+[DHCP IP: 192.168.1.8] to MAC address 34:36:3b:93:1a:3a, Wednesday, October 12, 2016 10:24:11
+[DHCP IP: 192.168.1.8] to MAC address 34:36:3b:93:1a:3a, Wednesday, October 12, 2016 10:24:11
+[Log Cleared] Wednesday, October 12, 2016 10:23:44

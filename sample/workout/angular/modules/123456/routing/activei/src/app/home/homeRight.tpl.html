@@ -1,0 +1,167 @@
+<div class="right_bg_index" ng-init="getMessageCount();">
+<div>
+    <div id="dvSupportMain" class="polygon contsupport sicon icon-polygon" ng-click="redirectmenu('contactsupport',1);"
+        ng-model='isSupportMenuDescription' ng-mouseover="showMenuDescription('ContactSupport',true);"
+        ng-mouseleave="showMenuDescription('ContactSupport',false);">
+        <span class="contsupport_icon icon-contactsupport" ng-click="redirectmenu('contactsupport',1);">
+            </span> <span class="contsupport_text">Contact
+                <br>
+                Support</span>
+    </div>
+    <div class="polygon systemtools icon-polygon" ng-model='isSystemToolsMenuDescription' ng-mouseover="showMenuDescription('SystemTools',true);"
+        ng-mouseleave="showMenuDescription('SystemTools',false);" ng-click="redirectmenu('systemtools',3);">
+        <!--ng-mouseover="supportMouseHover();" ng-mouseleave="supportMouseLeave();"-->
+        <span class="contsupport_icon icon-systemtools" ng-click="redirectmenu('systemtools',3);">
+            </span> <span class="contsupport_text">System
+                <br>
+                Tools</span>
+    </div>
+    <div class="polygon manageaccount icon-polygon" ng-model='isManageAccountMenuDescription' ng-mouseover="showMenuDescription('ManageAccounts',true);"
+        ng-mouseleave="showMenuDescription('ManageAccounts',false);" ng-click="redirectmenu('manageaccount',2);">
+        <span class="contsupport_icon icon-manageaccount"  ng-click="redirectmenu('manageaccount',2);">
+            </span> <span class="contsupport_text">Manage
+                <br>
+                Account</span>
+    </div>
+    <div class="polygon messagecenter icon-polygon" ng-model='isMessageCenterMenuDescription' ng-mouseover="showMenuDescription('MessageCenter',true);"
+        ng-mouseleave="showMenuDescription('MessageCenter',false);" ng-click="redirectmenu('messagecenter',4);">
+        <span class="contsupport_icon icon-messagecenter" ng-click="redirectmenu('messagecenter',4);">
+            </span> 
+        <span class="contsupport_text">Message
+            <br>
+            Center</span>
+            <span class="messagespan home-note" ng-show="isMessagecount" >
+                <span class="icon-webticket messagebox"></span>
+                <span class="messagescount badge home-note">{{MesageCount}}</span>
+            </span>
+    </div>
+    <div id="dvSupportText" ng-show="isSupportMenuDescription" class="show_menu">
+        <table class="text_container" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+                            <td>
+                                <b>Knowledge Base</b>
+                            </td>
+                            <td>
+                                Look up our Knowledge Base to get answers for commonly occurring <br />support questions
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Schedule a Call</b>
+                            </td>
+                            <td>
+                                Schedule a support call at a time of your convenience
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Web Ticket</b>
+                            </td>
+                            <td>
+                                Get Support Online. Raise a Web Ticket and one of our experts will reply back to you
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Chat</b>
+                            </td>
+                            <td>
+                               Chat with our Support Specialists and let them walk you through resolving your issue
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Remote Support</b>
+                            </td>
+                            <td>
+                                Get the convenience of Remote Support, sit back and watch the Tech Support Specialists work on your PC
+                            </td>
+                        </tr>
+        </table>
+    </div>
+    <div id="dvSystemToolText" ng-show="isSystemToolsMenuDescription" class="show_menu">
+        <table class="text_container">
+            <tr>
+                            <td>
+                                <b>Optimization Suite</b>
+                            </td>
+                            <td>
+                               Optimize your PC performance by using our state-of-the-art tools
+                            </td>
+                        </tr>
+                        <!-- <tr>
+                            <td>
+                                <b>Router Config</b>
+                            </td>
+                            <td>
+                               Access your routers configuration settings from here
+                            </td>
+                        </tr> -->
+                        <tr>
+                            <td>
+                                <b>Wi-Fi Tools</b>
+                            </td>
+                            <td>
+                               Access our suite of Wi-Fi Analytical Tools
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Network Tools</b>
+                            </td>
+                            <td>
+                               Access our Network Tools to Monitor Network Usage, Speed and see a map of your Network
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Schedule Activities</b>
+                            </td>
+                            <td>
+                               Task can be Scheduled from here
+                            </td>
+                        </tr>
+        </table>
+    </div>
+    <div id="dvManageAccount" ng-show="isManageAccountMenuDescription" class="show_menu">
+        <table class="text_container">
+            <tr>
+                <td>
+                    <b>Profile</b>
+                </td>
+                <td>
+                    Access your Profile Settings and Change your Password
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Contract Status</b>
+                </td>
+                <td>
+                    Details of your Current Contract and Status
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="dvMessageCenterText" ng-show="isMessageCenterMenuDescription" class="show_menu">
+        <table class="text_container">
+            <tr>
+                <td>
+                    <b>Message Center</b>
+                </td>
+                <td>
+                    Receive the latest Updates and Previews from us and connect with us through our Social feeds.
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="strip icon-contactsupport-strip">
+        </div>
+    <div class="strip2 icon-systemtools-strip">
+        </div>
+    <div class="strip3  icon-manageaccount-strip">
+        </div>
+    <div class="strip4 icon-messagecenter-strip">
+        </div>
+</div>
+</div>

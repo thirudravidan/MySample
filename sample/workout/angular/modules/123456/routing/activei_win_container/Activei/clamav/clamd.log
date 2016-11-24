@@ -1,0 +1,61 @@
++++ Started at Mon Sep 08 14:25:35 2014
+clamd daemon 0.98 (OS: win32, ARCH: i386, CPU: i386)
+Log file size limited to 1048576 bytes.
+Reading databases from e:\clamav\db
+Not loading PUA signatures.
+Bytecode: Security mode set to "TrustSigned".
+Loaded 3517559 signatures.
+TCP: Bound to port 3310
+TCP: Setting connection queue length to 200
+Limits: Global size limit set to 104857600 bytes.
+Limits: File size limit set to 26214400 bytes.
+Limits: Recursion level limit set to 16.
+Limits: Files limit set to 10000.
+Limits: MaxEmbeddedPE limit set to 10485760 bytes.
+Limits: MaxHTMLNormalize limit set to 10485760 bytes.
+Limits: MaxHTMLNoTags limit set to 2097152 bytes.
+Limits: MaxScriptNormalize limit set to 5242880 bytes.
+Limits: MaxZipTypeRcg limit set to 1048576 bytes.
+Archive support enabled.
+Algorithmic detection enabled.
+Portable Executable support enabled.
+ELF support enabled.
+Mail files support enabled.
+OLE2 support enabled.
+PDF support enabled.
+SWF support enabled.
+HTML support enabled.
+Self checking every 600 seconds.
+No stats for Database check - forcing reload
+Reading databases from e:\clamav\db
+Database correctly reloaded (3517559 signatures)
+SelfCheck: Database status OK.
+SelfCheck: Database status OK.
+SelfCheck: Database status OK.
+SelfCheck: Database status OK.
+SelfCheck: Database status OK.
+SelfCheck: Database status OK.
+SelfCheck: Database status OK.
+SelfCheck: Database status OK.
+SelfCheck: Database status OK.
+SelfCheck: Database status OK.
+SelfCheck: Database status OK.
+SelfCheck: Database status OK.
+SelfCheck: Database status OK.
+SelfCheck: Database status OK.
+SelfCheck: Database status OK.
+SelfCheck: Database status OK.
+SelfCheck: Database status OK.
+SelfCheck: Database status OK.
+SelfCheck: Database status OK.
+SelfCheck: Database status OK.
+SelfCheck: Database status OK.
+SelfCheck: Database status OK.
+WARNING: Error condition on fd 1708
+SelfCheck: Database status OK.
+SelfCheck: Database status OK.
+SelfCheck: Database status OK.
+SelfCheck: Database status OK.
+SelfCheck: Database status OK.
+SelfCheck: Database status OK.
+SelfCheck: Database status OK.

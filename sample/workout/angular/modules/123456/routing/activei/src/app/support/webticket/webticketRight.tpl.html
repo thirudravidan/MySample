@@ -1,0 +1,33 @@
+
+<div class="right_bg_cont" ng-init="bindCaseDetails();">
+    <div class="data_cont rightdivHeight">
+        <div class="cont_title"> Web Ticket </div>
+        <div class="container_mid">
+                 <div class="table-responsive" style="height:27vw;">
+                     <table class="table-striped table-bordered " style="width:100%;font-family:Calibri !important;font-size:1vw !important;">
+                         <thead>
+                             <tr style="height:2vw;">
+                             <th>Case Id</th>
+                             <th>Case Summary</th>
+                             <th>Case Status</th>
+                             </tr>
+                         </thead>
+                         <tbody>
+                             <tr ng-repeat="caseDet in caseDetails" class="table-row table-row-group ">
+                                 <td class="table-column table-column-group" style="padding:1%;width:15%;">{{caseDet.CaseId}}</td>
+                                 <td class="table-column table-column-group breakword" style="padding:1%;">
+                                 {{encodeSummary(caseDet.CaseSummary)}}
+                                  </td>
+                                 <td class="table-column table-column-group" style="padding:1%;width:15%;">{{caseDet.CaseStatus}}</td>
+                             </tr>
+                         </tbody>
+                     </table>
+                 </div>
+         <div class=" orange" >
+              
+                <input type="button" class="btn btn-primary login_but new-ticket pull-right padd_new"  ng-click="refreshwebticket();" id="btnRefresh" value="Refresh"/>
+                  <input type="button" class="btn btn-primary login_but new-ticket pull-right  "  ng-click="redirectToNewTicket();" id="btnCN" value="New Ticket"/> 
+            </div>
+    </div>
+    </div>
+</div>

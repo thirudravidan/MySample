@@ -1,0 +1,91 @@
+<form name="frmNewCase">
+    <div class="right_bg_cont" ng-init="getProductDet()">
+        <div class="data_cont rightdivHeight">
+            <div class="rightdivnewTick">
+                <div class="cont_title">
+                    <span>New Ticket</span>
+                </div>
+                <div class="container_mid">
+                <div class="">
+                    <span class="mandtry pull-right"><em>* </em>Mandatory Fields</span>
+                    <p class="clearfix">
+                    </p>
+                    <div class="">
+                        <label class="col-sm-3 control-label">
+                            <em>*</em>Product
+                        </label>
+                        <div class="col-sm-9">
+                            <div class="controls">
+                                <select id="ddlProduct" name="selectedproductdet" class="form-control select_tag" ng-model="selectedproductdet"
+                                    ng-options="productdet.ProductName for productdet in productdetail" required>
+                                    <option value="">Select</option>
+                                </select>
+                                <p class="help-block">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <label class="col-sm-3 control-label">
+                            <em>*</em>Problem Title
+                        </label>
+                        <div class="col-sm-9">
+                            <div class="controls">
+                                <input type="text" maxlength="200" id="txtSummary" name="Summary" class="form-control input_tag"
+                                    required />
+                                <p class="help-block">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <label class="col-sm-3 control-label">
+                            <em>*</em>Problem Description
+                        </label>
+                        <div class="col-sm-9">
+                            <div class="controls">
+                                <textarea rows="10" id="txtProblem" ng-model="newticketProblemDescription" class="form-control input_tag"
+                                    name="Problem" placeholder="Describe your question / issue you are having in detail"
+                                    required></textarea>
+                                <p class="help-block">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="col-sm-9" style="display: none;">
+                        <div class="controls">
+                            <div id="divRegistrationId" style="display: none">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="btnrenewal_position"> 
+                        <input type="submit" class="btn btn-primary login_but padd_new"  ng-click="createNewTicket(frmNewCase.$valid);" id="btnnewTicket" value="Submit"/> 
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<script type="text/javascript"> 
+$(document).ready(function(){
+    // $("#txtSummary").keyup(removeextra).blur(removeextra);
+    // $("#txtProblem").keyup(removeextra).blur(removeextra);
+});
+function removeextra() {
+    var initVal = $('#txtSummary').val();
+    outputVal = initVal.replace(/[^0-9a-zA-Z&,!' ']/g,"");
+    if (initVal != outputVal) {
+        $(this).val(outputVal);
+    }
+    var initdesc = $('#txtProblem').val();
+    outputValdesc = initdesc.replace(/[^0-9a-zA-Z&,!' ']/g,"");
+    if (initdesc != outputValdesc) {
+        $(this).val(outputValdesc);
+    }
+};
+</script>

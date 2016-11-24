@@ -1,0 +1,7 @@
+D:\exe\networkmonitor\networkmonitor\bin\Release\networkmonitor.exe
+D:\exe\networkmonitor\networkmonitor\bin\Release\networkmonitor.pdb
+D:\exe\networkmonitor\networkmonitor\obj\x86\Release\networkmonitor.exe
+D:\exe\networkmonitor\networkmonitor\obj\x86\Release\networkmonitor.pdb
+D:\exe\networkmonitor\networkmonitor\obj\x86\Release\networkmonitor.csprojResolveAssemblyReference.cache
+C:\Users\sl091469\Desktop\networkmonitor\networkmonitor\obj\x86\Release\networkmonitor.exe
+C:\Users\sl091469\Desktop\networkmonitor\networkmonitor\obj\x86\Release\networkmonitor.pdb

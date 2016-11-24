@@ -1,0 +1,13 @@
+E:\CIOG\DOT_NET\CSSConnect\CSSConnectBandwidthMonitor\bin\Debug\BandwidthMonitor.exe
+E:\CIOG\DOT_NET\CSSConnect\CSSConnectBandwidthMonitor\bin\Debug\BandwidthMonitor.pdb
+E:\CIOG\DOT_NET\CSSConnect\CSSConnectBandwidthMonitor\obj\x86\Debug\BandwidthMonitor.exe
+E:\CIOG\DOT_NET\CSSConnect\CSSConnectBandwidthMonitor\obj\x86\Debug\BandwidthMonitor.pdb
+D:\Nalini\workspace\CIOG\DOT_NET\CSSConnect\CSSConnectBandwidthMonitor\bin\Debug\BandwidthMonitor.exe
+D:\Nalini\workspace\CIOG\DOT_NET\CSSConnect\CSSConnectBandwidthMonitor\bin\Debug\BandwidthMonitor.pdb
+D:\Nalini\workspace\CIOG\DOT_NET\CSSConnect\CSSConnectBandwidthMonitor\obj\x86\Debug\BandwidthMonitor.exe
+D:\Nalini\workspace\CIOG\DOT_NET\CSSConnect\CSSConnectBandwidthMonitor\obj\x86\Debug\BandwidthMonitor.pdb
+D:\CVSWorkingSource\CIOG\DOT_NET\CSSConnect\CSSConnectBandwidthMonitor\bin\Debug\BandwidthMonitor.exe
+D:\CVSWorkingSource\CIOG\DOT_NET\CSSConnect\CSSConnectBandwidthMonitor\bin\Debug\BandwidthMonitor.pdb
+D:\CVSWorkingSource\CIOG\DOT_NET\CSSConnect\CSSConnectBandwidthMonitor\obj\x86\Debug\BandwidthMonitor.exe
+D:\CVSWorkingSource\CIOG\DOT_NET\CSSConnect\CSSConnectBandwidthMonitor\obj\x86\Debug\BandwidthMonitor.pdb
+D:\CVSWorkingSource\CIOG\DOT_NET\CSSConnect\CSSConnectBandwidthMonitor\obj\x86\Debug\CSSConnectBandwidthMonitor.csprojResolveAssemblyReference.cache

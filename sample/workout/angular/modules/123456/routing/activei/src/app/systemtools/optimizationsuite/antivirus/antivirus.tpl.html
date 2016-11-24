@@ -1,0 +1,133 @@
+<div class="right_bg_cont">
+    <div class="data_cont rightdivHeight">
+        <div class="rightdivnewTick" ng-init="loadDriver();">
+                <div class="cont_title">
+                    <span>AntiVirus</span>
+                </div>
+                <div class="container_mid" id="dvantivirus" style="display: none">
+                <div class="container-sec"> 
+                     <div class="cdrive2 cdrive-border">
+                        <span class="cdrive_radio"><input type="radio" checked onclick="deepscan(1);" value="1" name="chkJunkFile"  id="chkJunkFile"></span> <span class="cdrive_text">Quick Scan </span>
+                        <span class="cdrive_radio"><input type="radio" value="2" name="chkJunkFile" id="chkJunkInternetOptimizer" onclick="deepscan(2);" ></span> <span class="cdrive_text">Deep Scan</span>
+                         <span class="cdrive_radio"><input type="radio" value="3" onclick="deepscan(3);" name="chkJunkFile" id="chkDiskPerformance" ></span> <span class="cdrive_text">Customize scan</span>
+                    </div>
+                </div> 
+
+
+                    <div class="pcoptimize_cont">
+                        <div class="tuner_cont2">
+                            <div id="junkimg" class="tuner_space junk_cont ">
+                                <i class="icon-junkfiles junk_icon"></i>
+                            </div>  
+                            <div class="junk_checkbox"></div>
+                        </div> 
+                    </div>   
+                </div> 
+
+
+                <div id="dv2" class="container_mid"  style="display: none">
+                <div class="defrag-sec">
+                     
+                     <div class="defrag_cont">
+                        <span class="defrag_toptext">Select the drive that you wish to Scan :</span>
+                       
+                        <div class="defragment_table">
+                    <table class="pcoptimize_fix" cellpadding="0" cellspacing="0" border="1">
+                        <tbody>
+                            <tr>
+                                <th>
+                                    Drive Name
+                                </th>
+                                <th>
+                                    Drive Label
+                                </th>
+                                
+                            </tr>
+                            <tr ng-repeat="driveDetails in driversListDetails" class="table-row table-row-group">
+                               
+                                <td class="table-column table-column-group">
+                                <input type="checkbox" ng-model="driveDetails.IsSelected">
+                                    {{driveDetails.DriveName}}
+                                </td>
+                                <td class="table-column table-column-group">
+                                    {{driveDetails.DriveLabel}}
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div> 
+                    </div> 
+                </div> 
+                 
+                </div>
+
+
+                <div id="dvScannnedDetails" class="container_mid" style="display:none;">
+                 <div class="scan_virus">
+                    <table class="pcoptimize_fix" cellpadding="0" cellspacing="0" border="1">
+                        <tbody>
+                            <tr>
+                                <th>
+                                                                    
+                                </th>
+                                <th>
+                                    Virus Status
+                                </th>
+                                <th>
+                                   Virus Name
+                                </th>
+                                <th>
+                                   File Path
+                                </th>
+                            </tr>
+                            <tr ng-repeat="scanfiles in scannedAntivirusFiles" class="table-row table-row-group">
+                               <td ng-switch="scanfiles.Virusstatus"> 
+
+                               <span ng-switch-when="Found">
+                                    <input type="checkbox" ng-model="scanfiles.Check" checked> 
+                                </span>
+                                <span ng-switch-when="Deleted"> 
+                                <span class="idle_bg chtlbl" style="cursor:Pointer;">Deleted</span> 
+                                </span>
+                                <span ng-switch-when="Warning"> 
+                                <span class="idle_bg chtlbl" style="cursor:Pointer;">Warning</span> 
+                                </span> 
+                                </td>
+                                <td class="table-column table-column-group">
+                                    {{scanfiles.IsVirus}}
+                                </td>
+                                <td class="table-column table-column-group">
+                                    {{scanfiles.VirusName}}
+                                </td>
+                                 <td class="table-column table-column-group">
+                                    {{scanfiles.Path}}
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+ 
+                <div class="pgm_path browse_antivirus" id="dv3" style="display: none">
+                    <span>
+                       <input type="text" id="txtbro" class="txtBrowse" ng-model="filepath" readonly="true" ng-click="openBrowse();">
+                    </span>
+                   <span>
+                        <input type="button" class="orange_color login_but align_but" value=" Browse " ng-click="openBrowse();">
+                   </span>
+                </div>
+
+                <div class="foot-button" id="dvfooter"> 
+                    <button type="button" class="orange_color align_but" ng-click="redirecttoantiviruspath();" id="btnscan">Scan Now</button>
+                    <button type="button" id="btnshowdetails" class="orange_color align_but" ng-click="showScandetails();" id="btnshowdetails">Show Details</button>
+                    <button type="button" class="orange_color align_but" ng-click="fixVirusClean();" id="btnfix">Fix</button>
+                </div> 
+
+                 <div style="clear:both;display:none;position:relative; top:15px;word-wrap:break-word;" id="dvshowresults">       
+                            <div id="dvshowwarning" class="alertwarning alert-warning_color fade in"> 
+                                <span id="scanresult"></span><br>
+                                <span id="scanresultcount"></span>  
+                            </div> 
+                </div>
+</div>

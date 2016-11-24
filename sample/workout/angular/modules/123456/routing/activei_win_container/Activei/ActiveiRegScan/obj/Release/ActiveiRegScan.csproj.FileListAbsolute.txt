@@ -1,0 +1,17 @@
+E:\git\activei_win_container\Activei\ActiveiRegScan\bin\Release\VTRegScan.dll
+E:\git\activei_win_container\Activei\ActiveiRegScan\bin\Release\VTRegScan.pdb
+E:\git\activei_win_container\Activei\ActiveiRegScan\obj\Release\VTRegScan.dll
+E:\git\activei_win_container\Activei\ActiveiRegScan\obj\Release\VTRegScan.pdb
+D:\Mohan\share\Thiru\25082015\activei_win_container\Activei\ActiveiRegScan\bin\Release\VTRegScan.dll
+D:\Mohan\share\Thiru\25082015\activei_win_container\Activei\ActiveiRegScan\bin\Release\VTRegScan.pdb
+D:\Mohan\share\Thiru\25082015\activei_win_container\Activei\ActiveiRegScan\obj\Release\VTRegScan.dll
+D:\Mohan\share\Thiru\25082015\activei_win_container\Activei\ActiveiRegScan\obj\Release\VTRegScan.pdb
+E:\Software\28082015\activei_win_container\Activei\ActiveiRegScan\bin\Release\VTRegScan.dll
+E:\Software\28082015\activei_win_container\Activei\ActiveiRegScan\bin\Release\VTRegScan.pdb
+E:\Software\28082015\activei_win_container\Activei\ActiveiRegScan\obj\Release\VTRegScan.dll
+E:\Software\28082015\activei_win_container\Activei\ActiveiRegScan\obj\Release\VTRegScan.pdb
+D:\Git\activei_win_container\Activei\ActiveiRegScan\bin\Release\VTRegScan.dll
+D:\Git\activei_win_container\Activei\ActiveiRegScan\bin\Release\VTRegScan.pdb
+D:\Git\activei_win_container\Activei\ActiveiRegScan\obj\Release\VTRegScan.dll
+D:\Git\activei_win_container\Activei\ActiveiRegScan\obj\Release\VTRegScan.pdb
+D:\Git\activei_win_container\Activei\ActiveiRegScan\obj\Release\ActiveiRegScan.csprojResolveAssemblyReference.cache

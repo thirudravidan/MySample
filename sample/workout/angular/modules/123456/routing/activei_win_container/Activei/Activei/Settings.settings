@@ -1,0 +1,171 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Activei" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DownloadedProgramFilesPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Windows\Downloaded Program Files</Value>
+    </Setting>
+    <Setting Name="JunkFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Windows\Minidump|C:\Windows\Temp|C:\Windows\Downloaded Program Files</Value>
+    </Setting>
+    <Setting Name="UserName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Password" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="rememberPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">false</Value>
+    </Setting>
+    <Setting Name="DiskAnalysisTemplate" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;table class="diskanalTable" border="1"  cellspacing="0" cellpadding="0"&gt;&lt;tbody&gt;{$driveinfo$}&lt;/tbody&gt;&lt;/table&gt;</Value>
+    </Setting>
+    <Setting Name="DriveTemplate" Type="System.String" Scope="User">
+      <Value Profile="(Default)">
+&lt;tr&gt;&lt;th colspan="2" style="text-align:left"&gt;{$drivename$}&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Volume size&lt;/td&gt;&lt;td&gt;{$volumesize$}&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Free space&lt;/td&gt;&lt;td&gt;{$freespace$}&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Total fragmented space&lt;/td&gt;&lt;td&gt;{$fragmentedspace$}&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Largest free space size&lt;/td&gt;&lt;td&gt;{$largestfreespacesize$}&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Status&lt;/td&gt;&lt;td&gt;{$status$}&lt;/td&gt;&lt;/tr&gt;</Value>
+    </Setting>
+    <Setting Name="DriveInfo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">{$driveinfo$}</Value>
+    </Setting>
+    <Setting Name="DriveName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">{$drivename$}</Value>
+    </Setting>
+    <Setting Name="VolumeSize" Type="System.String" Scope="User">
+      <Value Profile="(Default)">{$volumesize$}</Value>
+    </Setting>
+    <Setting Name="FreeSpace" Type="System.String" Scope="User">
+      <Value Profile="(Default)">{$freespace$}</Value>
+    </Setting>
+    <Setting Name="FragmentedSpace" Type="System.String" Scope="User">
+      <Value Profile="(Default)">{$fragmentedspace$}</Value>
+    </Setting>
+    <Setting Name="Status" Type="System.String" Scope="User">
+      <Value Profile="(Default)">{$status$}</Value>
+    </Setting>
+    <Setting Name="LargestFreeSpace" Type="System.String" Scope="User">
+      <Value Profile="(Default)">{$largestfreespacesize$}</Value>
+    </Setting>
+    <Setting Name="DefragTemplate" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;body bgcolor="#8e7b98" style="font-family:'Segoe UI',Trebuchet MS,Arial;"&gt;&lt;table border="1" cellspacing="0" cellpadding="0" style="transparent;border-collapse:collapse;width:100%;background-color:#eee;font-
+family:'Segoe UI',Trebuchet MS,Arial;font-size: 12px;"&gt;&lt;tr&gt;&lt;th colspan="3" style="background:#222433;color:#fff;"&gt;Defragmentation Report&lt;/th&gt;&lt;/tr&gt;{$driveinfo$}&lt;/table&gt;&lt;/body&gt;</Value>
+    </Setting>
+    <Setting Name="DefragDriveTemplate" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;tr&gt;&lt;th colspan="3" style="text-align:left; background:#222433;color:#fff;"&gt;{$drivename$}&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th style="background:#222433;color:#fff;"&gt;Before&lt;/th&gt;&lt;th style="background:#222433;color:#fff;"&gt;After&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Volume size&lt;/td&gt;&lt;td&gt;{$volumesize$}&lt;/td&gt;&lt;td&gt;{$aftervolumesize$}&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Cluster size&lt;/td&gt;&lt;td&gt;{$clustersize$}&lt;/td&gt;&lt;td&gt;{$afterclustersize$}&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Used space&lt;/td&gt;&lt;td&gt;{$usedspace$}&lt;/td&gt;&lt;td&gt;{$afterusedspace$}&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Free space&lt;/td&gt;&lt;td&gt;{$freespace$}&lt;/td&gt;&lt;td&gt;{$afterfreespace$}&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Total fragmented space&lt;/td&gt;&lt;td&gt;{$fragmentedspace$}&lt;/td&gt;&lt;td&gt;{$afterfragmentedspace$}&lt;/td&gt;&lt;/tr&gt;</Value>
+    </Setting>
+    <Setting Name="AfterVolumeSize" Type="System.String" Scope="User">
+      <Value Profile="(Default)">{$aftervolumesize$}</Value>
+    </Setting>
+    <Setting Name="AfterFreeSpace" Type="System.String" Scope="User">
+      <Value Profile="(Default)">{$afterfreespace$}</Value>
+    </Setting>
+    <Setting Name="UsedSpace" Type="System.String" Scope="User">
+      <Value Profile="(Default)">{$usedspace$}</Value>
+    </Setting>
+    <Setting Name="AfterUsedSpace" Type="System.String" Scope="User">
+      <Value Profile="(Default)">{$afterusedspace$}</Value>
+    </Setting>
+    <Setting Name="AfterFragmentedSpace" Type="System.String" Scope="User">
+      <Value Profile="(Default)">{$afterfragmentedspace$}</Value>
+    </Setting>
+    <Setting Name="ClusterSize" Type="System.String" Scope="User">
+      <Value Profile="(Default)">{$clustersize$}</Value>
+    </Setting>
+    <Setting Name="AfterClusterSize" Type="System.String" Scope="User">
+      <Value Profile="(Default)">{$afterclustersize$}</Value>
+    </Setting>
+    <Setting Name="DefragAnalysisTemplate" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;body bgcolor="#8e7b98" style="font-family:'Segoe UI',Trebuchet MS,Arial;"&gt;&lt;table border="1" cellspacing="0" cellpadding="0" style="transparent;border-collapse:collapse;width:100%;background-color:#eee;border-color:#fff;font-
+family:'Segoe UI',Trebuchet MS,Arial;font-size: 12px;Height:10vw"&gt;{$driveinfo$}&lt;/table&gt;&lt;/body&gt;</Value>
+    </Setting>
+    <Setting Name="DefragAnalysisDriveTemplate" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;tr&gt;&lt;th colspan="2" style="text-align:left; style="background-color:#d7d7d7;color:#fff;""&gt;{$drivename$}&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Volume size&lt;/td&gt;&lt;td&gt;{$volumesize$}&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Cluster size&lt;/td&gt;&lt;td&gt;{$clustersize$}&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Used space&lt;/td&gt;&lt;td&gt;{$usedspace$}&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Free space&lt;/td&gt;&lt;td&gt;{$freespace$}&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Total fragmented space&lt;/td&gt;&lt;td&gt;{$fragmentedspace$}&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Status&lt;/td&gt;&lt;td&gt;{$status$}&lt;/td&gt;</Value>
+    </Setting>
+    <Setting Name="wifidetails" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;tr style="color:#000;"&gt;&lt;td&gt;{$name$}&lt;/td&gt;&lt;td&gt;{$strength$}&lt;/td&gt;&lt;td&gt;{$status$}&lt;/td&gt;&lt;td width="70%"&gt;{$MacId$}&lt;/td&gt;&lt;td&gt;{$Rssid$}&lt;/td&gt;&lt;td&gt;{$BSSType$}&lt;/td&gt;&lt;td&gt;{$AuthAlgorithm$}&lt;/td&gt;&lt;td&gt;{$CipherAlgorithm$}&lt;/td&gt;&lt;/tr&gt;</Value>
+    </Setting>
+    <Setting Name="wifidetailsKey" Type="System.String" Scope="User">
+      <Value Profile="(Default)">{$wifidetails$}</Value>
+    </Setting>
+    <Setting Name="wifiChannelDetails" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;body style="background-color:'grey';color:#000;font-family:'Segoe UI',Trebuchet MS,Arial;"&gt;&lt;div class="row"&gt;&lt;label for="currentChannel" class="col-sm-4 control-label"&gt;Current Channel:&lt;/label&gt;&lt;label for="channelRate" class="col-sm-2 control-label"&gt;{$channelRate}&lt;/label&gt;&lt;/div&gt;&lt;div class="row"&gt;&lt;label for="noofNetwork" class="col-sm-4 control-label"&gt;No of Networks connected:&lt;/label&gt;{$networkConnected}&lt;/div&gt;&lt;div class="row"&gt;&lt;label for="signalQuality" class="col-sm-4 control-label"&gt;Signal Quality:&lt;/label&gt;{$networkQuality}&lt;/div&gt;&lt;/body&gt;</Value>
+    </Setting>
+    <Setting Name="wifiChannelDetailsKey" Type="System.String" Scope="User">
+      <Value Profile="(Default)">{$wifiChannelDetails$}</Value>
+    </Setting>
+    <Setting Name="wifiChannelListKey" Type="System.String" Scope="User">
+      <Value Profile="(Default)">{$wifiChannelLst$}</Value>
+    </Setting>
+    <Setting Name="wifiChannelTable" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;tr&gt;&lt;td&gt;{$channelNumber$}&lt;/td&gt;&lt;td&gt;{$numberofNetworks$}&lt;/td&gt;&lt;td&gt;{$channelQuality$}&lt;/td&gt;&lt;/tr&gt;</Value>
+    </Setting>
+    <Setting Name="wifitemplate" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;body style="background-color:'grey';color:#000;font-family:'Segoe UI',Trebuchet MS,Arial;"&gt;&lt;div id="wifiDetailsTbl"&gt;&lt;table class="table table-bordered" style="transparent;border-collapse:collapse;width:100%;font-
+family:'Segoe UI',Trebuchet MS,Arial; "&gt;&lt;thead style="color:#000;"&gt;&lt;tr&gt;&lt;th style="font-weight:bold !important;"&gt;Name&lt;/th&gt;&lt;th style="font-weight:bold !important;"&gt;Strength&lt;/th&gt;&lt;th style="font-weight:bold !important;"&gt;Status&lt;/th&gt;&lt;th style="font-weight:bold !important;"&gt;MAC Address&lt;/th&gt;&lt;th style="font-weight:bold !important;"&gt;RSSID&lt;/th&gt;&lt;th style="font-weight:bold !important;"&gt;BSS Type&lt;/th&gt;&lt;th style="font-weight:bold !important;"&gt;Default Algorithm&lt;/th&gt;&lt;th style="font-weight:bold !important;"&gt;Cipher Algorithm&lt;/th&gt;&lt;/thead&gt;&lt;tbody style="color:#fff;"&gt;{$wifidetails$}&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/body&gt;</Value>
+    </Setting>
+    <Setting Name="wifiChannel" Type="System.String" Scope="User">
+      <Value Profile="(Default)">{$wifiChannelDetails$}&lt;body  style="background-color:'grey';font-family:'Segoe UI',Trebuchet MS,Arial;"&gt;&lt;div id="wifiChannelTbl"&gt;&lt;table class="table table-bordered" style="transparent;border-collapse:collapse;width:100%;font-
+family:'Segoe UI',Trebuchet MS,Arial; font-size: 12px; "&gt;&lt;thead style="color:#000;"&gt;&lt;tr&gt;&lt;th style="font-weight:bold !important;"&gt;Channel&lt;/th&gt;&lt;th style="font-weight:bold !important;"&gt;Number of Networks&lt;/th&gt;&lt;th style="font-weight:bold !important;"&gt;Quality&lt;/th&gt;&lt;/thead&gt;&lt;tbody&gt;{$wifiChannelLst$}&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/body&gt;</Value>
+    </Setting>
+    <Setting Name="defragerrortemplate" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;body bgcolor="#8e7b98" style="font-family:'Segoe UI',Trebuchet MS,Arial;"&gt;&lt;table border="1" cellspacing="0" cellpadding="0" style="transparent;border-collapse:collapse;width:100%;background-color:#eee;font-
+family:'Segoe UI',Trebuchet MS,Arial;font-size: 12px;"&gt;&lt;tr&gt;&lt;th colspan="2" style="background:#222433;color:#fff;"&gt;Disk Analysis/Defrag Report&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th colspan="2" style="background:#222433;color:#fff;"&gt;{$error$}&lt;/th&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;</Value>
+    </Setting>
+    <Setting Name="HttpUnauthorizedStatusCode" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Unauthorized</Value>
+    </Setting>
+    <Setting Name="HttpNameResolutionFailure" Type="System.String" Scope="User">
+      <Value Profile="(Default)">NameResolutionFailure	</Value>
+    </Setting>
+    <Setting Name="networkUsage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">
+&lt;table  class="table table-bordered wifiDetailsTable" style="transparent;border-collapse:collapse;height:10vw;width:100%;font-family:'Segoe UI',Trebuchet MS,Arial; "&gt;
+&lt;thead style="color: #000; background-color: #d7d7d7;"&gt;
+&lt;th style="font-weight:bold !important;"&gt;Adapter&lt;/th&gt;
+&lt;th style="font-weight:bold !important;"&gt;MAC Address&lt;/th&gt;
+&lt;th style="font-weight:bold !important;"&gt;Data Used(Mb)&lt;/th&gt;
+&lt;th style="font-weight:bold !important;"&gt;Date&lt;/th&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+{$usageDetails$}
+&lt;/tbody&gt;
+&lt;/table&gt;
+</Value>
+    </Setting>
+    <Setting Name="networkUsageKey" Type="System.String" Scope="User">
+      <Value Profile="(Default)">{$usageDetails$}</Value>
+    </Setting>
+    <Setting Name="networkUsageTable" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;tr&gt;&lt;td&gt;{$adapterName$}&lt;/td&gt;&lt;td&gt;{$macAddress$}&lt;/td&gt;&lt;td&gt;{$usage$}&lt;/td&gt;&lt;td&gt;{$usageDate$}&lt;/td&gt;&lt;/tr&gt;</Value>
+    </Setting>
+    <Setting Name="userlogout" Type="System.String" Scope="User">
+      <Value Profile="(Default)">true</Value>
+    </Setting>
+    <Setting Name="FirstName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="RemainingDays" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="IsNetwork" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ContractAvailability" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="IsNetworkChanged" Type="System.String" Scope="User">
+      <Value Profile="(Default)">false</Value>
+    </Setting>
+    <Setting Name="VersionInfo" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="RouterUserName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="RouterPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="RouterSoapUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://routerlogin.com/soap/server_sa/</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

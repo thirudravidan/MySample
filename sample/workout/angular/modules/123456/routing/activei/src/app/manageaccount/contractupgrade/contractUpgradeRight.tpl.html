@@ -1,0 +1,42 @@
+
+<div class="right_bg_cont"> 
+<div class="data_cont_profile" ng-init="getcontractUpgrade();">
+    <div class="cont_title">Contract Upgrade/Renew </div> 
+     <div class="container_mid"> 
+    <div class="center-block" >
+        <table class="table" >
+            <tbody>
+                <tr>
+                    <td class="tdlabel" ng-model="contractavailable" ng-show="contractavailable" style="border:0;" id="Contractavailable">
+                        Remaining Days :
+                         <label id="lblremainingdays"  class="contract-label" ng-bind="remainingdays">
+                        </label>
+                    </td>
+
+                    <td class="tdlabel" ng-model="NoContractavailable" ng-show="NoContractavailable" style="border:0;" id="NoContractavailable"> 
+                         <label id="lblnocontracts"  class="contract-label" ng-bind="Nocontrats">
+                        </label>
+                    </td>
+
+                </tr> 
+            </tbody>
+        </table>  
+	    <p>&nbsp;&nbsp;<a class="btn btn-primary btn-sm login_but" ng-click="redirectToUpgrade();">Upgrade</a> &nbsp;
+		<a class="btn btn-primary btn-sm login_but" ng-click="redirectToRenew();">Renew</a></p> 
+	</div>
+
+
+	<div class="panel panel-warning">
+      <div class="panel-heading">
+        <h3 class="panel-title" ng-bind="productname"></h3>
+      </div>
+      <div class="panel-body" id="dvdate" style="display:none;">
+        <p style="color: #000; text-decoration: none"><b>Purchase Date :</b> <span ng-bind="purchasedate"></span></p>
+ 	    <p style="color: #000; text-decoration: none"><b>Expiry Date :</b> <span ng-bind="expirydate"></span></p>
+      </div>
+    </div>
+
+
+</div>
+</div>
+</div>

@@ -1,0 +1,5 @@
+D:\Git\activei_win_container\Activei\ActiveiBandwidthMonitor\bin\Debug\BandwidthMonitor.exe.config
+D:\Git\activei_win_container\Activei\ActiveiBandwidthMonitor\bin\Debug\BandwidthMonitor.exe
+D:\Git\activei_win_container\Activei\ActiveiBandwidthMonitor\bin\Debug\BandwidthMonitor.pdb
+D:\Git\activei_win_container\Activei\ActiveiBandwidthMonitor\obj\x86\Debug\BandwidthMonitor.exe
+D:\Git\activei_win_container\Activei\ActiveiBandwidthMonitor\obj\x86\Debug\BandwidthMonitor.pdb

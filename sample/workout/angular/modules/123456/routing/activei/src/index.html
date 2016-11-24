@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html id="mainCont" ng-app="activei" ng-controller="AppCtrl">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE; IE=9; IE=8; IE=7" />
+    <title>{{pageTitle}}</title>
+    <script type="text/ng-template" id="confirmdialog">
+              <div class="ngdialog-message">  
+              <span class="icon-question invalid"></span>                  
+            <p id="altmsg">{{msgDescription}}</p>
+        </div>
+        <div class="ngdialog-buttons">
+            <button type="button" class="ngdialog-button ngdialog-button-secondary" ng-click="closeThisDialog('Cancel')">{{confirmCancel}}</button>
+            <button type="button" class="ngdialog-button ngdialog-button-primary" ng-click="confirm('Save')">{{confirmOk}}</button>
+        </div>
+    </script>
+    <script type="text/ng-template" id="successdialog">
+              <div class="ngdialog-message">  
+              <span class="icon-info invalid"></span>                  
+            <p id="altmsg">{{msgDescription}}</p>
+        </div>
+        <div class="ngdialog-buttons"> 
+            <button type="button" class="ngdialog-button ngdialog-button-primary" ng-click="confirm('Save')">Ok</button>
+        </div>
+    </script>
+    <script type="text/ng-template" id="remotesupportdialog">
+              <div class="ngdialog-message">  
+              <span class="icon-info invalid"></span>                  
+            <p id="altmsg">{{msgDescription}}</p>
+        </div>
+        <div class="ngdialog-buttons">           
+            <button type="button" class="ngdialog-button ngdialog-button-primary" ng-click="confirm('Save')">Ok</button>
+        </div>
+    </script>
+    
+     <script type="text/ng-template" id="infoDialog">
+              <div class="ngdialog-message">  
+              <span id="spnmessageDialog" class="{{dialogclass}}"></span>                    
+            <p id="altmsg">{{infomsgDescription}}</p>
+        </div>
+        <div class="ngdialog-buttons"><button type="button" id="ngDialogbtnWarningOkButton" autofocus class="ngdialog-button ngdialog-button-primary" ng-click="closeThisDialog(1)">{{okButton}}</button></div>
+    </script>
+   
+    <!-- font awesome from BootstrapCDN -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- compiled CSS --><% styles.forEach( function ( file ) { %>
+    <link rel="stylesheet" type="text/css" href="<%= file %>" /><% }); %>
+
+    <!-- compiled JavaScript --><% scripts.forEach( function ( file ) { %>
+    <script type="text/javascript" src="<%= file %>"></script><% }); %>
+
+    <!-- it's stupid to have to load it here, but this is for the +1 button -->
+    <script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+      { "parsetags": "explicit" }
+    </script>
+    
+    <!-- Angular -->
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.min.js"></script>
+
+  <!-- UI-Router -->
+  <script src="//angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>  
+  <!-- App Script -->  
+    
+</head>
+
+<body oncontextmenu="return false;" ng-init="loadWanip();">
+<div class="">
+  <label ng-show="iswelcomeTextShow" class="user_name">Welcome {{userFirstName}}</label><br>
+  <label ng-show="iswelcomeTextShow" class="user_name">{{loadWanip}}</label>
+    <div class="gear_online" id="netId"><i id="networkstatus" class="icon-netconnect network_init"></i></div>
+ 
+    <span class="customer_care_support" ng-model="tollfree" ng-show="istollFreeNumber" style="font-size:1.2vw;" ng-click="showRouterLogAlert();">
+    {{tollfreeno}}<br><span ng-model="contsupport" ng-show="isContactSupport" class="twentyfourbar" >24x7 Tech Support</span>
+    </span>
+    <span class="minimize"><img src="assets/Content/img/minimize.png" class="min" ng-click="activeiMinimize();"> </span>
+    <span class="close_but"><img src="assets/Content/img/close.png" class="clz" ng-click="activeiClose();"></span>
+   
+</div>
+      <div class="gearhead_bg">
+        <span id="background_logo" class="cont_bg_logo_home"></span>
+        <span class="cont_bgleft" ng-click="initiateWLANEmailTicket();"></span>        
+        <!-- <span class="cont_bgleft"></span>   -->
+        <span class="cont_bgright"></span>
+               <div>
+            <div class="left_bg slide" id="leftCont">
+
+
+        <div id="dvleftcontent" class="" style="display:none">
+            <div id="div1" class="leftpolygon icon1 icon-polygon" style="display:none">
+                    <span id="spnimg1"></span> 
+                    <span id="spn1" class="contsupport_text"></span>
+            </div>
+            <div id="div2" class="leftpolygon icon2 icon-polygon" style="display:none">
+                    <span id="spnimg2"></span> 
+                    <span id="spn2" class="contsupport_text"></span>
+            </div>
+            <div id="div3" class="leftpolygon icon3 icon-polygon" style="display:none">
+                    <span id="spnimg3"></span> 
+                    <span id="spn3" class="contsupport_text"></span>
+            </div>
+             <div id="div4" class="leftpolygon icon4 icon-polygon" style="display:none">
+                    <span id="spnimg4" ></span> 
+                    <span  id="spn4" class="contsupport_text"></span>
+            </div>       
+            <div id="div5"class="leftpolygon icon5 icon-polygon" style="display:none">
+                    <span id="spnimg5"></span> 
+                    <span id="spn5" class="contsupport_text"></span>
+            </div>     
+            <div id="div6" class="leftpolygon icon6 icon-polygon" style="display:none">
+                    <span id="spnimg6"></span> 
+                    <span id="spn6" class="contsupport_text"></span>
+            </div>
+            <div id="div7" class="leftpolygon icon7 icon-polygon" style="display:none">
+                    <span id="spnimg7"></span> 
+                    <span id="spn7" class="contsupport_text"</span>
+            </div>
+            
+</div>
+
+            </div>
+            <div id="dvMiddleCont" ng-show="isMiddleCont">
+                <div class="send_home" id="dvgoback" back-button>
+                    <span class="back_tohome icon-back cursorr" back-button>
+                       </span>
+                </div>
+                <div class="homepage slide"  ui-sref="home">
+                    <span class="homepage_child icon-home cursorr" ui-sref="home">
+                       </span>
+                </div>
+            </div>
+
+            <!--<div>
+                <input id="Button1" type="button" value="Add Device" on />
+            </div>-->
+            <div class="home_content slide" id="rightCont"  ui-view="RightView">
+            </div>
+
+
+             <div class="home_content slide" id="dvrightcontent" style="display:none">
+             <div class="right_bg">
+            <div id="divright1" class="polygon icon1 icon-polygon" style="display:none">
+                    <span class="contsupport_icon" id="spnrgtimg1"></span> 
+                    <span id="spnright1" class="contsupport_text"></span>
+            </div>
+            <div id="divright2" class="polygon icon2 icon-polygon" style="display:none">
+                    <span class="contsupport_icon" id="spnrgtimg2"></span> 
+                    <span id="spnright2" class="contsupport_text"></span>
+            </div>
+            <div id="divright3" class="polygon icon3 icon-polygon" style="display:none">
+                    <span class="contsupport_icon" id="spnrgtimg3"></span> 
+                    <span id="spnright3" class="contsupport_text"></span>
+            </div>
+             <div id="divright4" class="polygon icon4 icon-polygon" style="display:none">
+                    <span class="contsupport_icon" id="spnrgtimg4"></span> 
+                    <span  id="spnright4" class="contsupport_text"></span>
+            </div>   
+            <div id="divright5"class="polygon icon5 icon-polygon" style="display:none">
+                    <span class="contsupport_icon" id="spnrgtimg5"></span> 
+                    <span id="spnright5" class="contsupport_text"></span>
+            </div>         
+            <div id="divright6" class="polygon icon6 icon-polygon" style="display:none">
+                    <span class="contsupport_icon" id="spnrgtimg6"></span> 
+                    <span id="spnright6" class="contsupport_text"></span>
+            </div>
+            <div id="divright7" class="polygon icon7 icon-polygon" style="display:none">
+                    <span class="contsupport_icon" id="spnrgtimg7"></span> 
+                    <span id="spnright7" class="contsupport_text"</span>
+            </div>
+            <div id="divright8"class="polygon icon8 icon-polygon" style="display:none">
+                    <span class="contsupport_icon" id="spnrgtimg8"></span> 
+                    <span id="spnright8" class="contsupport_text"></span>                               
+            </div>
+             <div id="divright9"class="polygon icon9 icon-polygon" style="display:none">
+                    <span class="contsupport_icon" id="spnrgtimg9"></span> 
+                    <span id="spnright9" class="contsupport_text"></span>            
+            </div>
+              <div id="divright10"class="polygon icon10 icon-polygon" style="display:none">
+                    <span class="contsupport_icon" id="spnrgtimg10"></span> 
+                    <span id="spnright10" class="contsupport_text"></span>            
+            </div>
+              <div id="divright11"class="polygon icon11 icon-polygon" style="display:none">
+                    <span class="contsupport_icon" id="spnrgtimg11"></span> 
+                    <span id="spnright11" class="contsupport_text"></span>            
+            </div>
+              <div id="divright12"class="polygon icon12 icon-polygon" style="display:none">
+                    <span class="contsupport_icon" id="spnrgtimg12"></span> 
+                    <span id="spnright12" class="contsupport_text"></span>            
+            </div>
+            </div>
+        </div>
+    </div> 
+
+    <div id="dvOptimizationsuite" class="show_systemtoolsmenu" style="display:none">
+        <table class="text_containersystemtools">
+                    <tr>
+                        <td>
+                            PC Optimization
+                        </td>
+                        <td>
+                            Optimize your PCs Performance by clearing your Junk Files
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Defragmentation
+                        </td>
+                        <td>
+                            Defragment the Drives
+                        </td>
+                    </tr>
+                    <tr ng-show="isShoeMenuDesc">
+                        <td>
+                            Registry Cleaner
+                        </td>
+                        <td>
+                            Clean your windows registry with a Registry Cleaner
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>
+                            Parental Control
+                        </td>
+                        <td>
+                           User can Block/Unblock the websites
+                        </td>
+                    </tr>
+                    <tr ng-show="isShoeMenuDesc">
+                        <td>
+                            Data BackUp
+                        </td>
+                        <td>
+                           User can have a Backup
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Firewall
+                        </td>
+                        <td>
+                           Safeguard your machine
+                        </td>
+                    </tr>
+                    <tr ng-show="isShoeMenuDesc">
+                        <td>
+                            Antivirus
+                        </td>
+                        <td>
+                           Virus Scan
+                        </td>
+                    </tr>
+                </table>
+    </div>
+
+    <div id="dvrouterConfig" class="show_systemtoolsmenu" style="display:none">
+        <table class="text_containersystemtools">
+                     <tr>
+                        <td>
+                            Internet
+                        </td>
+                        <td>
+                            Router Settings can be accessed from here
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Advanced
+                        </td>
+                        <td>
+                            Router settings can be accessed from here
+                        </td>
+                    </tr>
+                </table>
+    </div>
+
+    <div id="dvwifiTools" class="show_systemtoolsmenu" style="display:none">
+        <table class="text_containersystemtools">
+                     <!-- <tr>
+                        <td>
+                            Wi-Fi Tools
+                        </td>
+                        <td>
+                            Access our suite of Wi-Fi Analytical Tools
+                        </td>
+                    </tr> -->
+                    <tr>    
+                        <td>
+                            Network Details
+                        </td>
+                        <td>
+                            Check your Wi-Fi Network Inforamtion
+                        </td>
+                    </tr>  
+                    <tr>  
+                        <td>
+                            dbm Graph
+                        </td>
+                        <td>
+                            Know your Wi-Fi Speed
+                        </td>
+                     </tr>
+                     <tr>   
+                        <td>
+                            Signal Strength
+                        </td>
+                        <td>
+                             Check your Signal Strength
+                        </td>
+                     </tr>
+                     <tr ng-show="isShoeMenuDesc">   
+                        <td>
+                            Channel Interface
+                        </td>
+                        <td>
+                            Check your channel connected to <br/>Wi-Fi
+                        </td>
+                    </tr>
+                </table>
+    </div>
+    <div id="dvNetworkTools" class="show_systemtoolsmenu" style="display:none" >
+        <table class="text_containersystemtools">
+                     <!-- <tr>
+                        <td>
+                            Network Tools
+                        </td>
+                        <td>
+                            Access our network tools to monitor network usage, speed and see a map of <br /> your network
+                        </td>
+                     </tr> -->
+                     <tr>   
+                        <td>
+                            Network Usage
+                        </td>
+                        <td>
+                            Examine your Network Usage better
+                        </td>
+                     </tr>
+                     <tr>   
+                        <td>
+                            Network Speed
+                        </td>
+                        <td>
+                            Monitor your Network Speed
+                        </td>
+                    </tr> 
+                </table>
+    </div>
+
+    <div id="dvScheduleActivities" class="show_systemtoolsmenu" style="display:none" >
+        <table class="text_containersystemtools">
+                     <tr>
+                        <td>
+                            Scheduled Activities
+                        </td>
+                        <td>
+                            Schedule all activities including Disk Defrag, Antivirus Scan, pc Optimization
+                        </td>
+                    </tr> 
+                </table>
+    </div>
+    <div class="footer_activei">
+    <!--<img src="assets/Content/img/footer_bg.png" class="footerlogo">-->
+    <!-- data-target="#myModal" -->
+<div class="left_version">
+<a class="btn btn-default" id="btnFeedback" onclick="feedbackPopup();" ng-show="feedbackshow" style="line-height:0.4vw"> Feedback </a>
+    <label>Version <span>{{versionInfo}}</span></label> 
+  </div>
+<label class="status" ng-show="iscontractTextShow">Contract status: <span ng-class="statusclass" ng-click="redirectToUpgrade('contractupgrade',2);" >{{contractStatus}}</span></label>
+<label ng-show="isremainingdayTextShow" class="expire">Expires in <span>{{remainingDays}} </span>days</label>
+<div class="footer_logo footer_logoimage" onclick="csscorpRedirect();">
+</div>
+</div>  
+<div class="modal fade" id="myModal" ng-controller="FeedbackController" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="height: 350px;width: 630px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Feedback</h4> 
+                </div>
+                <div class="modal-body"> 
+                <form id="frmfeedback" name="frmfeedback" class="form-horizontal" role="form" method="post">
+                    <div class="clearfix "></div>  
+                    <div id="rating_panel" class="panel-body" style="height:400px;" align="center"> 
+                    <div class="form-group">
+                         <!-- <a onclick="clearValue()"><i class="glyphicon glyphicon-minus-sign"></i></a> -->
+                         <input id="input_rate" type="number" ng-model="frmData.ratings" class="rating" min=0 max=5 step=0.5 data-show-caption="true" data-size="md" ></div>
+                    <div class="form-group">
+                          <textarea  ng-model="frmData.message" class="feedback_textarea" placeholder="Message *" id="comments" name="comments" maxlength="200"></textarea></div><br/>
+                          <input type="button" id="btnfeedback" ng-model="btnfeedback" ng-click="saveFeedback();" value="Submit"  class="orange_color align_but" ></input>
+                    </div>
+                </form> 
+                    <div class="clearfix "></div> 
+                </div>
+                
+            </div>
+        </div>
+    </div> 
+</body> 
+</html>
+
+
+

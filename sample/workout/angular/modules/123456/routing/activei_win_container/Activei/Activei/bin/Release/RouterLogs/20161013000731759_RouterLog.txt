@@ -1,0 +1,42 @@
+[admin login] from source 192.168.1.2, Wednesday, October 12, 2016 10:36:49
+[DHCP IP: 192.168.1.5] to MAC address 5c:95:ae:a4:15:15, Wednesday, October 12, 2016 10:36:30
+[DHCP IP: 192.168.1.8] to MAC address 34:36:3b:93:1a:3a, Wednesday, October 12, 2016 10:36:26
+[DHCP IP: 192.168.1.8] to MAC address 34:36:3b:93:1a:3a, Wednesday, October 12, 2016 10:35:15
+[DHCP IP: 192.168.1.5] to MAC address 5c:95:ae:a4:15:15, Wednesday, October 12, 2016 10:35:10
+[DHCP IP: 192.168.1.9] to MAC address ac:5f:3e:7c:e1:04, Wednesday, October 12, 2016 10:35:02
+[DHCP IP: 192.168.1.8] to MAC address 34:36:3b:93:1a:3a, Wednesday, October 12, 2016 10:34:29
+[DHCP IP: 192.168.1.9] to MAC address ac:5f:3e:7c:e1:04, Wednesday, October 12, 2016 10:34:24
+[DHCP IP: 192.168.1.5] to MAC address 5c:95:ae:a4:15:15, Wednesday, October 12, 2016 10:34:08
+[WLAN access rejected: incorrect security] from MAC address ac:5f:3e:7c:e1:04, Wednesday, October 12, 2016 10:33:50
+[WLAN access rejected: incorrect security] from MAC address ac:5f:3e:7c:e1:04, Wednesday, October 12, 2016 10:33:46
+[WLAN access rejected: incorrect security] from MAC address ac:5f:3e:7c:e1:04, Wednesday, October 12, 2016 10:33:43
+[WLAN access rejected: incorrect security] from MAC address ac:5f:3e:7c:e1:04, Wednesday, October 12, 2016 10:33:42
+[DHCP IP: 192.168.1.8] to MAC address 34:36:3b:93:1a:3a, Wednesday, October 12, 2016 10:33:42
+[WLAN access rejected: incorrect security] from MAC address ac:5f:3e:7c:e1:04, Wednesday, October 12, 2016 10:33:38
+[WLAN access rejected: incorrect security] from MAC address ac:5f:3e:7c:e1:04, Wednesday, October 12, 2016 10:33:35
+[WLAN access rejected: incorrect security] from MAC address ac:5f:3e:7c:e1:04, Wednesday, October 12, 2016 10:33:34
+[DHCP IP: 192.168.1.5] to MAC address 5c:95:ae:a4:15:15, Wednesday, October 12, 2016 10:33:32
+[WLAN access rejected: incorrect security] from MAC address ac:5f:3e:7c:e1:04, Wednesday, October 12, 2016 10:33:31
+[WLAN access rejected: incorrect security] from MAC address ac:5f:3e:7c:e1:04, Wednesday, October 12, 2016 10:33:27
+[WLAN access rejected: incorrect security] from MAC address ac:5f:3e:7c:e1:04, Wednesday, October 12, 2016 10:33:23
+[WLAN access rejected: incorrect security] from MAC address ac:5f:3e:7c:e1:04, Wednesday, October 12, 2016 10:33:19
+[WLAN access rejected: incorrect security] from MAC address ac:5f:3e:7c:e1:04, Wednesday, October 12, 2016 10:33:14
+[DHCP IP: 192.168.1.8] to MAC address 34:36:3b:93:1a:3a, Wednesday, October 12, 2016 10:33:14
+[WLAN access rejected: incorrect security] from MAC address ac:5f:3e:7c:e1:04, Wednesday, October 12, 2016 10:33:11
+[WLAN access rejected: incorrect security] from MAC address ac:5f:3e:7c:e1:04, Wednesday, October 12, 2016 10:33:10
+[WLAN access rejected: incorrect security] from MAC address ac:5f:3e:7c:e1:04, Wednesday, October 12, 2016 10:33:07
+[WLAN access rejected: incorrect security] from MAC address ac:5f:3e:7c:e1:04, Wednesday, October 12, 2016 10:33:04
+[WLAN access rejected: incorrect security] from MAC address ac:5f:3e:7c:e1:04, Wednesday, October 12, 2016 10:33:00
+[WLAN access rejected: incorrect security] from MAC address ac:5f:3e:7c:e1:04, Wednesday, October 12, 2016 10:32:55
+[WLAN access rejected: incorrect security] from MAC address ac:5f:3e:7c:e1:04, Wednesday, October 12, 2016 10:32:52
+[DHCP IP: 192.168.1.5] to MAC address 5c:95:ae:a4:15:15, Wednesday, October 12, 2016 10:32:52
+[WLAN access rejected: incorrect security] from MAC address ac:5f:3e:7c:e1:04, Wednesday, October 12, 2016 10:32:49
+[DHCP IP: 192.168.1.8] to MAC address 34:36:3b:93:1a:3a, Wednesday, October 12, 2016 10:32:47
+[DHCP IP: 192.168.1.8] to MAC address 34:36:3b:93:1a:3a, Wednesday, October 12, 2016 10:32:47
+[DHCP IP: 192.168.1.8] to MAC address 34:36:3b:93:1a:3a, Wednesday, October 12, 2016 10:32:10
+[WLAN access rejected: incorrect security] from MAC address 54:27:58:8c:10:a6, Wednesday, October 12, 2016 10:31:52
+[WLAN access rejected: incorrect security] from MAC address 54:27:58:8c:10:a6, Wednesday, October 12, 2016 10:31:49
+[DHCP IP: 192.168.1.8] to MAC address 34:36:3b:93:1a:3a, Wednesday, October 12, 2016 10:31:42
+[DHCP IP: 192.168.1.8] to MAC address 34:36:3b:93:1a:3a, Wednesday, October 12, 2016 10:31:18
+[WLAN access rejected: incorrect security] from MAC address 54:27:58:8c:10:a6, Wednesday, October 12, 2016 10:30:48
+[Log Cleared] Wednesday, October 12, 2016 10:30:46

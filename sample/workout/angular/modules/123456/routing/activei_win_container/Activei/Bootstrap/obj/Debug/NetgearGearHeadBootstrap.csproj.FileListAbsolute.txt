@@ -1,0 +1,11 @@
+D:\WORKSPACE.SL051760\CIOG\DOT_NET\Netgear\NetgearTool_2.0\NetgearBootstrap\bin\Debug\NetgearGearHeadBootstrap.exe.manifest
+D:\WORKSPACE.SL051760\CIOG\DOT_NET\Netgear\NetgearTool_2.0\NetgearBootstrap\bin\Debug\NetgearGearHeadBootstrap.application
+D:\WORKSPACE.SL051760\CIOG\DOT_NET\Netgear\NetgearTool_2.0\NetgearBootstrap\bin\Debug\NetgearGearHeadBootstrap.exe
+D:\WORKSPACE.SL051760\CIOG\DOT_NET\Netgear\NetgearTool_2.0\NetgearBootstrap\bin\Debug\NetgearGearHeadBootstrap.pdb
+D:\WORKSPACE.SL051760\CIOG\DOT_NET\Netgear\NetgearTool_2.0\NetgearBootstrap\obj\Debug\NetgearGearHeadBootstrap.Bootstrap.resources
+D:\WORKSPACE.SL051760\CIOG\DOT_NET\Netgear\NetgearTool_2.0\NetgearBootstrap\obj\Debug\NetgearGearHeadBootstrap.Properties.Resources.resources
+D:\WORKSPACE.SL051760\CIOG\DOT_NET\Netgear\NetgearTool_2.0\NetgearBootstrap\obj\Debug\NetgearGearHeadBootstrap.csproj.GenerateResource.Cache
+D:\WORKSPACE.SL051760\CIOG\DOT_NET\Netgear\NetgearTool_2.0\NetgearBootstrap\obj\Debug\NetgearGearHeadBootstrap.exe.manifest
+D:\WORKSPACE.SL051760\CIOG\DOT_NET\Netgear\NetgearTool_2.0\NetgearBootstrap\obj\Debug\NetgearGearHeadBootstrap.application
+D:\WORKSPACE.SL051760\CIOG\DOT_NET\Netgear\NetgearTool_2.0\NetgearBootstrap\obj\Debug\NetgearGearHeadBootstrap.exe
+D:\WORKSPACE.SL051760\CIOG\DOT_NET\Netgear\NetgearTool_2.0\NetgearBootstrap\obj\Debug\NetgearGearHeadBootstrap.pdb

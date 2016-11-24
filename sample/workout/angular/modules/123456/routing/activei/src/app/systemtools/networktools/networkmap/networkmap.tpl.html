@@ -1,0 +1,472 @@
+<div class="right_bg_cont">
+    <div class="data_cont rightdivHeight" ng-init="loadDevices();">
+        <div class="rightdivnewTick">
+            <div class="cont_title">
+                <span>Network Map</span>
+            </div>
+            <div class="container_mid" id="dv1">
+                <ul id="actions" class="pagination">
+                    <li class="active"><a id="btnLAN" ng-click="loadNetMap(0,'btnLAN',true,true);">LAN</a></li>
+                    <li><a id="btnUSB" ng-click="loadNetMap(1,'btnUSB',true,true);">USB</a> </li>
+                    <li><a id="btnPrinter" ng-click="loadNetMap(2,'btnPrinter',true,true);">Printer</a></li>
+                    <li><a id="btnNetworkAdapter" ng-click="loadNetMap(3,'btnNetworkAdapter',true,true);">
+                        NetworkAdapter</a></li>
+                        <!--<li><textarea cols="10" rows="3">{{test}}</textarea></li>-->
+                </ul>
+               
+                <ul id="paging" dynamic="html" class="pagination pull-right">
+                </ul>
+                <div class="popover" role="tooltip">
+                    <div class="arrow">
+                    </div>
+                    <h3 class="popover-title">
+                        <span class="title"></span>
+                        <input id="alliastitle" type="text" />
+                        <button type="button" title="click to close" style="margin-top: -4px;" class="close pull-right">
+                            <i class="icon-close" style="font-size: 20pt;"></i>
+                        </button>
+                        <i class="icon-pencil pull-right edit" title="click to edit" style="font-size: 13pt;
+                            cursor: pointer;"></i>
+                    </h3>
+                    <div id="tooltip" class="popover-content">
+                    </div>
+                </div>
+                <div id="container">
+                    <div id="graph-container">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function loadNetworkmap(wch, lnk, ispaging, isload, scope, rootscope, http) {
+        sigma.utils.pkg('sigma.canvas.nodes');
+        sigma.canvas.nodes.image = (function () {
+            var _cache = {},
+              _loading = {},
+              _callbacks = {};
+
+            // Return the renderer itself:
+            var renderer = function (node, context, settings) {
+                var args = arguments, prefix = settings('prefix') || '', size = node[prefix + 'size'],
+                color = node.color || settings('defaultNodeColor'), url = node.url;
+
+                if (_cache[url]) {
+                    context.save();
+
+                    // Draw the clipping disc:
+                    context.beginPath();
+                    context.arc(node[prefix + 'x'], node[prefix + 'y'], node[prefix + 'size'], 0, Math.PI * 2, true);
+                    context.closePath();
+                    context.clip();
+
+                    // Draw the image
+                    context.drawImage(_cache[url], node[prefix + 'x'] - size, node[prefix + 'y'] - size, 2 * size, 2 * size);
+
+                    // Quit the "clipping mode":
+                    context.restore();
+
+                    // Draw the border:
+                    context.beginPath();
+                    context.arc(node[prefix + 'x'], node[prefix + 'y'], node[prefix + 'size'], 0, Math.PI * 2, true);
+                    //context.lineWidth = size / 5;
+                    context.lineWidth = 0;
+                    context.strokeStyle = node.color || settings('defaultNodeColor');
+                    context.stroke();
+                }
+                else {
+                    sigma.canvas.nodes.image.cache(url);
+                    sigma.canvas.nodes.def.apply(sigma.canvas.nodes, args);
+                }
+            };
+
+            // Let's add a public method to cache images, to make it possible to
+            // preload images before the initial rendering:
+            renderer.cache = function (url, callback) {
+                if (callback)
+                    _callbacks[url] = callback;
+
+                if (_loading[url])
+                    return;
+
+                var img = new Image();
+
+                img.onload = function () {
+                    _loading[url] = false;
+                    _cache[url] = img;
+
+                    if (_callbacks[url]) {
+                        _callbacks[url].call(this, img);
+                        delete _callbacks[url];
+                    }
+                };
+
+                _loading[url] = true;
+                img.src = url;
+            };
+            return renderer;
+        })();
+
+        var i,
+        s,
+        img,
+        N = 100,
+        E = 500,
+        g = {
+            nodes: [],
+            edges: []
+        },
+       urls = [
+          'assets/Content/img/networkmap/' + rootscope.getglobaldata.Client + '/router.png',
+          'assets/Content/img/networkmap/' + rootscope.getglobaldata.Client + '/monitor.png',
+          'assets/Content/img/networkmap/' + rootscope.getglobaldata.Client + '/usb.png',
+          'assets/Content/img/networkmap/' + rootscope.getglobaldata.Client + '/printer.png',
+          'assets/Content/img/networkmap/' + rootscope.getglobaldata.Client + '/network-adapter.png',
+          'assets/Content/img/networkmap/' + rootscope.getglobaldata.Client + '/internet.png',
+          'assets/Content/img/networkmap/' + rootscope.getglobaldata.Client + '/genie.png'
+        ],
+        loaded = 0,
+        colors = [
+          '#617db4',
+          '#668f3c',
+          '#c6583e',
+          '#b956af'
+        ],
+        // pos = [{ x: -3, y: 0 }, { x: -2, y: -1 }, { x: -2, y: 1 }, { x: -1, y: 2 }, { x: -1, y: -2 }];
+        pos = [{ x: -3, y: 0 }, { x: -2, y: -2 }, { x: -2, y: 2 }, { x: 0, y: -3 }, { x: 0, y: 3 }, { x: 2, y: 2}];
+        //pos = [{ x: -3, y: 0 }, { x: -2, y: -2 }, { x: -2, y: 2 }, { x: 0, y: -3 }];
+
+        $('#graph-container').html('');
+
+        var netdata = networkdata;
+
+        var genie = netdata.DeviceList.Genie;
+        var rtobj = { IPAddress: netdata.IPAddress, MACAddress: netdata.MACAddress, Status: netdata.Status };
+
+        g.nodes.push({ id: "n_internet", devtype: -2, label: '', type: 'image', url: urls[5], x: 3, y: 0, size: 25, color: "#fff" });
+        g.edges.push({ id: "e_internet", source: "r1", target: "n_internet", size: Math.random(), color: "#9FF781" });
+
+        var title = (genie.AlliasName ? genie.AlliasName : genie.MachineName);
+        g.nodes.push({ id: "n_genie", devtype: 0, label: title, data: genie, type: 'image', url: urls[6], x: 2, y: -2, size: 25, color: "#fff" });
+        g.edges.push({ id: "e_genie", source: "r1", target: "n_genie", size: Math.random(), color: "#9FF781" });
+
+        g.nodes.push({ id: "r1", devtype: -1, label: '', data: rtobj, type: 'image', url: urls[0], x: 0, y: 0, size: 25, color: "#fff" });
+        var netlst = netdata.DeviceList;
+
+        var lwr = 0;
+        // var upr = 6;
+        var upr = 4;
+        if (isload) {
+            $('#' + lnk).closest('.pagination').find('li').removeClass('active');
+            $('#' + lnk).closest('li').addClass('active');
+        }
+        else {
+            lnk = lnk.toElement;
+            var range = $(lnk).data('range');
+            lwr = parseInt($(lnk).data('range').split('-')[0]);
+            upr = parseInt($(lnk).data('range').split('-')[1]);
+        }
+
+        switch (wch) {
+            case 1: // USB
+                if (ispaging) {
+                    scope.html = bindPaging(netlst.USBList, wch,upr);
+                }
+                else {
+                    $(lnk).closest('.pagination').find('li').removeClass('active');
+                    $(lnk).closest('li').addClass('active');
+                }
+                $.each(netlst.USBList, function (ind, usb) {
+                    if (usb.Show) {
+                        $.each(usb.DeviceList, function (indd, usbdevlst) {
+                            var devName = (usbdevlst.FriendlyName ? usbdevlst.FriendlyName : usbdevlst.DeviceDescription);
+                            var title = (usbdevlst.AlliasName ? usbdevlst.AlliasName : devName);
+
+                            g.nodes.push({ VendorId: usb.VendorId, ProductID: usb.ProductID, data: usbdevlst, devtype: 1, id: "n_" + usb.DeviceId + '_' + (indd + 1), label: title, type: 'image', url: urls[2], x: pos[ind].x, y: pos[ind].y, size: 25, color: "#fff" });
+                            g.edges.push({ id: "e_" + usb.DeviceId + '_' + (indd + 1), source: "r1", target: "n_" + usb.DeviceId + '_' + (indd + 1), size: Math.random(), color: "#ccc" });
+                        });
+                    }
+                });
+                break;
+            case 2: // Printer
+                if (ispaging) {
+                    scope.html = bindPaging(netlst.PrinterList, wch,upr);
+                }
+                else {
+                    $(lnk).closest('.pagination').find('li').removeClass('active');
+                    $(lnk).closest('li').addClass('active');
+                }
+                $.each(netlst.PrinterList, function (ind, printer) {
+                    if (printer.Show) {
+                        var title = (printer.AlliasName ? printer.AlliasName : printer.Name);
+                        g.nodes.push({ data: printer, devtype: 2, id: 'n_' + printer.DeviceID, label: title, type: 'image', url: urls[3], x: pos[ind].x, y: pos[ind].y, size: 25, color: "#fff" });
+                        g.edges.push({ id: "e_" + printer.DeviceID, source: "r1", target: 'n_' + printer.DeviceID, size: Math.random(), color: "#ccc" });
+                    }
+                });
+                break;
+            case 3: // Network Adapter
+                if (ispaging) {
+                    scope.html = bindPaging(netlst.NetworkAdapterList, wch,upr);
+                }
+                else {
+                    $(lnk).closest('.pagination').find('li').removeClass('active');
+                    $(lnk).closest('li').addClass('active');
+                }
+                $.each(netlst.NetworkAdapterList, function (ind, adp) {
+                    if (adp.Show) {
+                        var title = (adp.AlliasName ? adp.AlliasName : adp.Name);
+                        g.nodes.push({ data: adp, devtype: 3, id: 'n_' + adp.Id, label: title, type: 'image', url: urls[4], x: pos[ind].x, y: pos[ind].y, size: 25, color: "#fff" });
+                        g.edges.push({ id: "e_" + adp.Id, source: "r1", target: 'n_' + adp.Id, size: Math.random(), color: "#ccc" });
+                    }
+                });
+                break
+            default: // LAN
+                if (ispaging) {
+                    scope.html = bindPaging(netlst.LANList, wch,upr);
+                }
+                else {
+                    $(lnk).closest('.pagination').find('li').removeClass('active');
+                    $(lnk).closest('li').addClass('active');
+                }
+                for (var l = lwr, ind = 0; l < upr; l++, ind++) {
+                    var lan = netlst.LANList[l];
+                    if (lan.Show) {
+                        var title = (lan.AlliasName ? lan.AlliasName : lan.MachineName);
+                        g.nodes.push({ data: lan, devtype: 0, id: 'n_' + lan.MACAddress, label: title, type: 'image', url: urls[1], x: pos[ind].x, y: pos[ind].y, size: 25, color: "#fff" });
+                        g.edges.push({ id: "e_" + lan.MACAddress, source: "r1", target: 'n_' + lan.MACAddress, size: 10, color: "#ccc" });
+                    }
+                }
+                break;
+        }
+
+        // Then, wait for all images to be loaded before instanciating sigma:
+        urls.forEach(function (url) {
+            sigma.canvas.nodes.image.cache(url,
+            function () {
+
+                if (++loaded === urls.length)
+                // Instantiate sigma:
+                    s = new sigma({
+                        graph: g,
+                        renderer: {
+                            // IMPORTANT:
+                            // This works only with the canvas renderer, so the
+                            // renderer type set as "canvas" is necessary here.
+                            container: document.getElementById('graph-container'),
+                            type: 'canvas'
+                        },
+                        settings: {
+                            minNodeSize: 8,
+                            maxNodeSize: 35,
+                            doubleClickEnabled: false,
+                            drawEdges: true,
+                            minEdgeSize: 1,
+                            maxEdgeSize: 1,
+                            defaultNodeType: 'mySillyType',
+                            sideMargin: 2,
+                            defaultEdgeColor: '#333',
+                            defaultNodeColor: '#000',
+                            edgeColor: 'default',
+                            animationsTime: 1000,
+                            defaultLabelSize: 12,
+                            zoomMin: .1,
+                            zoomMax: 1
+                        }
+                    });
+
+                s.bind('clickNode', function (e) {
+                    if (e.data.node.devtype == -2)
+                        return;
+                    $('.popover').css({ "top": (e.data.captor.clientY - 160) + "px", "left": (e.data.captor.clientX - 850) + "px" });
+                    $('.popover').slideUp('slow', function () {
+                        $('#tooltip').html('');
+                        var htmcnt = '<table>';
+                        var details = e.data.node.data;
+
+                        switch (e.data.node.devtype) {
+                            case -1:
+                                var title = (details.AlliasName ? details.AlliasName : details.IPAddress);
+                                $('.popover #alliastitle').val(title);
+                                $('.popover .popover-title .title').text(title);
+                                htmcnt += '<tr><td>IPAddress</td><td>&nbsp<b>:</b> ' + details.IPAddress + '</td></tr>';
+                                htmcnt += '<tr><td>MACAddress</td><td>&nbsp<b>:</b> ' + details.MACAddress + '</td></tr>';
+                                htmcnt += '<tr><td>Status</td><td>&nbsp<b>:</b> ' + details.Status + '</td></tr>';
+                                break;
+                            case 0:
+                                var title = (details.AlliasName ? details.AlliasName : details.MachineName);
+                                $('.popover #alliastitle').val(title);
+                                $('.popover .popover-title .title').text(title);
+                                htmcnt += '<tr><td>MachineName</td><td>&nbsp<b>:</b> ' + details.MachineName + '</td></tr>';
+                                htmcnt += '<tr><td>IPAddress</td><td>&nbsp<b>:</b> ' + details.IPAddress + '</td></tr>';
+                                htmcnt += '<tr><td>MACAddress</td><td>&nbsp<b>:</b> ' + details.MACAddress + '</td></tr>';
+                                htmcnt += '<tr><td>HostName</td><td>&nbsp<b>:</b> ' + details.HostName + '</td></tr>';
+                                htmcnt += '<tr><td>Status</td><td>&nbsp<b>:</b> ' + details.Status + '</td></tr>';
+                                break;
+                            case 1:
+                                var vendorId = e.data.node.VendorId;
+                                var productId = e.data.node.ProductID;
+                                var devName = (details.FriendlyName ? details.FriendlyName : details.DeviceDescription);
+                                var title = (details.AlliasName ? details.AlliasName : devName);
+
+                                $('.popover #alliastitle').val(title);
+                                $('.popover .popover-title .title').text(title);
+
+                                htmcnt += '<tr><td>FriendlyName</td><td>&nbsp<b>:</b> ' + details.FriendlyName + '</td></tr>';
+                                htmcnt += '<tr><td>VendorId</td><td>&nbsp<b>:</b> ' + vendorId + '</td></tr>';
+                                htmcnt += '<tr><td>ProductID</td><td>&nbsp<b>:</b> ' + productId + '</td></tr>';
+                                htmcnt += '<tr><td>DeviceDescription</td><td>&nbsp<b>:</b> ' + details.DeviceDescription + '</td></tr>';
+                                htmcnt += '<tr><td>DeviceManufacturer</td><td>&nbsp<b>:</b> ' + details.DeviceManufacturer + '</td></tr>';
+                                break;
+                            case 2:
+                                var title = (details.AlliasName ? details.AlliasName : details.Name);
+
+                                $('.popover #alliastitle').val(title);
+                                $('.popover .popover-title .title').text(title);
+
+                                htmcnt += '<tr><td>Name</td><td>&nbsp<b>:</b> ' + details.Name + '</td></tr>';
+                                htmcnt += '<tr><td>IPAddress</td><td>&nbsp<b>:</b> ' + details.IPAddress + '</td></tr>';
+                                htmcnt += '<tr><td>isNetworkPrinter</td><td>&nbsp<b>:</b> ' + (details.isNetworkPrinter ? 'Yes' : 'No') + '</td></tr>';
+                                htmcnt += '<tr><td>IsDefault</td><td>&nbsp<b>:</b> ' + (details.IsDefault ? 'Yes' : 'No') + '</td></tr>';
+                                htmcnt += '<tr><td>Status</td><td>&nbsp<b>:</b> ' + details.Status + '</td></tr>';
+                                break;
+                            case 3:
+                                var title = (details.AlliasName ? details.AlliasName : details.Name);
+
+                                $('.popover #alliastitle').val(title);
+                                $('.popover .popover-title .title').text(title);
+
+                                htmcnt += '<tr><td>Name</td><td>&nbsp<b>:</b> ' + details.Name + '</td></tr>';
+                                htmcnt += '<tr><td>NetworkInterfaceType</td><td>&nbsp<b>:</b> ' + details.NetworkInterfaceType + '</td></tr>';
+                                htmcnt += '<tr><td>Description</td><td>&nbsp<b>:</b> ' + details.Description + '</td></tr>';
+                                htmcnt += '<tr><td>OperationalStatus</td><td>&nbsp<b>:</b> ' + details.OperationalStatus + '</td></tr>';
+                                htmcnt += '<tr><td>Speed</td><td>&nbsp<b>:</b> ' + details.Speed + '</td></tr>';
+                                htmcnt += '<tr><td>SupportsMultiCast</td><td>&nbsp<b>:</b> ' + details.SupportsMultiCast + '</td></tr>';
+                                break;
+                        }
+                        htmcnt += '</table>';
+                        $('#tooltip').html(htmcnt);
+                    });
+
+                    $('.popover').slideDown('slow');
+                    $('.popover .close').off('click').on('click', function () {
+                        $('.popover').slideUp('slow');
+                        if ($('.popover .edit').hasClass('on')) {
+                            $('.popover .edit').removeClass('icon-floppy-disk').addClass('icon-pencil');
+                            $('.popover .edit').removeClass('on').addClass('off');
+                            $('.popover #alliastitle').hide();
+                            $('.popover .title').show();
+                        }
+                    });
+                    $('.popover #alliastitle').hide();
+                    $('.popover .edit').off('click').on('click', function () {
+                        if ($(this).hasClass('on')) {
+                            $(this).removeClass('icon-floppy-disk').addClass('icon-pencil');
+                            $(this).removeClass('on').addClass('off');
+                            $('.popover #alliastitle').hide();
+                            $('.popover .title').show();
+                            var nodeinfo = e.data.node.data;
+                            var devtype = e.data.node.devtype;
+                            nodeinfo.AlliasName = $('.popover #alliastitle').val();
+                            $('.popover .title').text(nodeinfo.AlliasName);
+                            editnetworkmap(wch, lnk, ispaging, isload, nodeinfo, devtype, scope, rootscope, http);
+                        }
+                        else {
+                            $(this).removeClass('off').addClass('on');
+                            $(this).removeClass('icon-pencil').addClass('icon-floppy-disk');
+                            $('.popover #alliastitle').show();
+                            $('.popover .title').hide();
+                        }
+                    });
+                    s.refresh();
+                });
+                // Initialize the dragNodes plugin:
+                //sigma.plugins.dragNodes(s, s.renderers[0]);
+            }
+          );
+        });
+    }
+
+    function editnetworkmap(wch, lnk, ispaging, isload, data, devtype, scope, rootscope, http) {
+        switch (devtype) {
+            case 0:
+                //networkdata.DeviceList.LANList
+                if (networkdata.DeviceList.Genie.MACAddress == data.MACAddress) {
+                    networkdata.DeviceList.Genie = data;
+                    break;
+                }
+
+                for (var i = 0; i < networkdata.DeviceList.LANList.length; i++) {
+                    if (networkdata.DeviceList.LANList[i].MACAddress == data.MACAddress) {
+                        networkdata.DeviceList.LANList[i] = data;
+                    }
+                }
+                break;
+            case 1:
+                //networkdata.DeviceList.USBList
+                for (var i = 0; i < networkdata.DeviceList.USBList.length; i++) {
+                    if (networkdata.DeviceList.USBList[i].VendorId == data.VendorId && networkdata.DeviceList.USBList[i].ProductID == data.ProductID) {
+                        networkdata.DeviceList.USBList[i] = data;
+                    }
+                }
+                break;
+            case 2:
+                //networkdata.DeviceList.PrinterList
+                for (var i = 0; i < networkdata.DeviceList.PrinterList.length; i++) {
+                    if (networkdata.DeviceList.PrinterList[i].Name == data.Name) {
+                        networkdata.DeviceList.PrinterList[i] = data;
+                    }
+                }
+                break;
+            case 3:
+                //networkdata.DeviceList.NetworkAdapterList
+                for (var i = 0; i < networkdata.DeviceList.NetworkAdapterList.length; i++) {
+                    if (networkdata.DeviceList.NetworkAdapterList[i].Name == data.Name) {
+                        networkdata.DeviceList.NetworkAdapterList[i] = data;
+                    }
+                }
+                break;
+        }
+//        var networkParam = { ipAddress: "C81F664331F1", networkMapDetails: JSON.stringify(networkdata) };
+//        http.post("http://devis.csscorp.com/CSSConnect/CSSConnectClientService/CSSNetgearService/NetgearClientService.asmx/SaveNetWorkMapDetails", networkParam).success(function (result, status, headers, config) {
+         
+         var networkParam = { ipAddress: rootscope.myinfo.MACAddress, networkMapDetails: JSON.stringify(networkdata) };
+        http.post(rootscope.getglobaldata.getGlobalServiceUrl + "SaveNetWorkMapDetails", networkParam).success(function (netresult, status, headers, config) {
+            loadNetworkmap(wch, lnk, ispaging, isload, scope, rootscope, http);
+        }).error(function (e) {
+            alert('Error');
+        });
+    }
+
+    function bindPaging(obj, wch,nodecnt) {
+        var n = 0;
+        $.each(obj, function (i, rec) {
+            if (rec.Show) {
+                n += 1;
+            }
+        });
+
+        var quo = Math.floor((n / nodecnt));
+        var mod = (n % nodecnt);
+        if (mod > 0) quo += 1;
+        $('#paging').html('');
+
+        if (quo > 1) {
+            var pagecnt = '';
+            for (var p = 0; p < quo; p++) {
+                if ((p + 1) == quo) {
+                    //$event.currentTarget
+                    var id = "#paging li #page" + (p + 1);
+                    pagecnt += '<li ' + (p == 0 ? ' class="active"' : '') + '><a id="page' + (p + 1) + '" data-range="' + (n - mod) + '-' + n + '" ng-click="loadNetMap(' + wch + ',$event,false,false);">' + (p + 1) + '</a></li>';
+                }
+                else {
+                    var id = "#paging li #page" + (p + 1);
+                    pagecnt += "<li  " + (p == 0 ? "class='active'" : "") + "><a id='page" + (p + 1) + "' data-range='" + (((p + 1) * nodecnt) - nodecnt) + "-" + (p + 1) * nodecnt + "'  ng-click='loadNetMap(" + wch + ",$event,false,false);'>" + (p + 1) + "</a></li>";
+                }
+            }
+            // $('#paging').html(pagecnt);
+        }
+
+        return pagecnt;
+    }
+</script>

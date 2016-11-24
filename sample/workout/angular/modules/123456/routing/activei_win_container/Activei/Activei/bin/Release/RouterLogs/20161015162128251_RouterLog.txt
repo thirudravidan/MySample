@@ -1,0 +1,119 @@
+[DHCP IP: 192.168.1.3] to MAC address 74:04:2b:b4:c1:e9, Saturday, October 15, 2016 02:45:56
+[Internet connected] IP address: 10.9.67.22, Saturday, October 15, 2016 02:45:34
+[admin login] from source 192.168.1.2, Saturday, October 15, 2016 02:45:25
+[DHCP IP: 192.168.1.2] to MAC address c8:1f:66:43:31:52, Saturday, October 15, 2016 02:45:25
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Saturday, October 15, 2016 01:17:36
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:17:33
+[DoS Attack: ACK Scan] from source: 10.9.17.150, port 27017, Saturday, October 15, 2016 01:17:30
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:17:26
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Saturday, October 15, 2016 01:17:20
+[DoS Attack: ACK Scan] from source: 10.9.17.150, port 27017, Saturday, October 15, 2016 01:17:15
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Saturday, October 15, 2016 01:16:44
+[DoS Attack: ACK Scan] from source: 10.9.17.150, port 27017, Saturday, October 15, 2016 01:16:41
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Saturday, October 15, 2016 01:16:21
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:16:18
+[DoS Attack: ACK Scan] from source: 10.9.17.150, port 27017, Saturday, October 15, 2016 01:16:15
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:16:11
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Saturday, October 15, 2016 01:16:05
+[DoS Attack: ACK Scan] from source: 10.9.17.150, port 27017, Saturday, October 15, 2016 01:16:00
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Saturday, October 15, 2016 01:15:29
+[DoS Attack: ACK Scan] from source: 10.9.17.150, port 27017, Saturday, October 15, 2016 01:15:26
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Saturday, October 15, 2016 01:15:06
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:15:03
+[DoS Attack: ACK Scan] from source: 10.9.17.150, port 27017, Saturday, October 15, 2016 01:15:00
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:14:56
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Saturday, October 15, 2016 01:14:50
+[DoS Attack: ACK Scan] from source: 10.9.17.150, port 27017, Saturday, October 15, 2016 01:14:45
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Saturday, October 15, 2016 01:14:41
+[DHCP IP: 192.168.1.3] to MAC address 74:04:2b:b4:c1:e9, Saturday, October 15, 2016 01:14:33
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Saturday, October 15, 2016 01:14:32
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Saturday, October 15, 2016 01:14:14
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:14:12
+[DoS Attack: ACK Scan] from source: 10.9.17.150, port 27017, Saturday, October 15, 2016 01:14:11
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:14:11
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Saturday, October 15, 2016 01:14:08
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:14:00
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Saturday, October 15, 2016 01:13:51
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:13:48
+[DoS Attack: ACK Scan] from source: 10.9.17.150, port 27017, Saturday, October 15, 2016 01:13:45
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:13:41
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Saturday, October 15, 2016 01:13:35
+[DoS Attack: ACK Scan] from source: 10.9.17.150, port 27017, Saturday, October 15, 2016 01:13:30
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Saturday, October 15, 2016 01:12:59
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:12:57
+[DoS Attack: ACK Scan] from source: 10.9.17.150, port 27017, Saturday, October 15, 2016 01:12:56
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:12:56
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Saturday, October 15, 2016 01:12:53
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:12:45
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Saturday, October 15, 2016 01:12:36
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:12:33
+[DoS Attack: ACK Scan] from source: 10.9.17.150, port 27017, Saturday, October 15, 2016 01:12:30
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:12:26
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Saturday, October 15, 2016 01:12:20
+[DoS Attack: ACK Scan] from source: 10.9.17.150, port 27017, Saturday, October 15, 2016 01:12:15
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Saturday, October 15, 2016 01:12:11
+[admin login] from source 192.168.1.2, Saturday, October 15, 2016 01:12:08
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Saturday, October 15, 2016 01:11:44
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:11:42
+[DoS Attack: ACK Scan] from source: 10.9.17.150, port 27017, Saturday, October 15, 2016 01:11:41
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:11:41
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Saturday, October 15, 2016 01:11:38
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:11:30
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Saturday, October 15, 2016 01:11:21
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:11:18
+[DoS Attack: ACK Scan] from source: 10.9.17.150, port 27017, Saturday, October 15, 2016 01:11:15
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:11:11
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Saturday, October 15, 2016 01:11:05
+[DoS Attack: ACK Scan] from source: 10.9.17.150, port 27017, Saturday, October 15, 2016 01:11:00
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Saturday, October 15, 2016 01:10:29
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:10:27
+[DoS Attack: ACK Scan] from source: 10.9.17.150, port 27017, Saturday, October 15, 2016 01:10:26
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:10:26
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Saturday, October 15, 2016 01:10:23
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:10:15
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Saturday, October 15, 2016 01:10:06
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:10:03
+[DoS Attack: ACK Scan] from source: 10.9.17.150, port 27017, Saturday, October 15, 2016 01:10:00
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:09:56
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Saturday, October 15, 2016 01:09:50
+[DoS Attack: ACK Scan] from source: 10.9.17.150, port 27017, Saturday, October 15, 2016 01:09:45
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Saturday, October 15, 2016 01:09:14
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:09:12
+[DoS Attack: ACK Scan] from source: 10.9.17.150, port 27017, Saturday, October 15, 2016 01:09:11
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:09:11
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Saturday, October 15, 2016 01:09:08
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:09:00
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Saturday, October 15, 2016 01:08:51
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:08:48
+[DoS Attack: ACK Scan] from source: 10.9.17.150, port 27017, Saturday, October 15, 2016 01:08:45
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:08:41
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Saturday, October 15, 2016 01:08:35
+[DoS Attack: ACK Scan] from source: 10.9.17.150, port 27017, Saturday, October 15, 2016 01:08:30
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Saturday, October 15, 2016 01:08:17
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Saturday, October 15, 2016 01:07:59
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:07:57
+[DoS Attack: ACK Scan] from source: 10.9.17.150, port 27017, Saturday, October 15, 2016 01:07:56
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:07:56
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Saturday, October 15, 2016 01:07:53
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:07:45
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Saturday, October 15, 2016 01:07:36
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:07:33
+[DoS Attack: ACK Scan] from source: 10.9.17.150, port 27017, Saturday, October 15, 2016 01:07:30
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:07:26
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Saturday, October 15, 2016 01:07:20
+[DoS Attack: ACK Scan] from source: 10.9.17.150, port 27017, Saturday, October 15, 2016 01:07:15
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Saturday, October 15, 2016 01:06:44
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:06:42
+[DoS Attack: ACK Scan] from source: 10.9.17.150, port 27017, Saturday, October 15, 2016 01:06:41
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:06:41
+[DoS Attack: ACK Scan] from source: 10.9.15.149, port 27017, Saturday, October 15, 2016 01:06:38
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:05:15
+[DHCP IP: 192.168.1.3] to MAC address 74:04:2b:b4:c1:e9, Saturday, October 15, 2016 01:04:24
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:04:12
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:04:11
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:04:06
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Saturday, October 15, 2016 01:04:00
+[Time synchronized with NTP server] Saturday, October 15, 2016 01:04:00
+[Internet connected] IP address: 10.9.67.22, Saturday, October 15, 2016 01:03:55
+[Initialized, firmware version: V1.0.2.4] Saturday, October 15, 2016 01:03:52
+[DHCP IP: 192.168.1.2] to MAC address c8:1f:66:43:31:52, Saturday, October 15, 2016 01:03:44

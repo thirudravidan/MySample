@@ -1,0 +1,177 @@
+<style type="text/css">
+  
+  .marg_bottom {
+    margin-bottom: 10px;
+  }
+  .padd_none{
+    padding: 0;
+}
+  .login-route {
+
+      margin-left: 37%;
+    margin-top: 32%;
+    width: 100%;
+
+  } 
+  #dvLogin input{
+    height: 30px;
+  } 
+  .dvlogdet{
+    margin-left:2%;
+    margin-top:8%; 
+    width: 580px;
+    height: 395px;
+    overflow: scroll;
+    border:1px solid #ccc;
+    overflow-x:hidden;
+    /*padding-right:5px;*/
+  }
+
+  .dvlogdet2 {
+    overflow: hidden !important;
+     height: 200px ! important;
+  }
+  .table-routerlog label{
+    margin-left:3px;
+  }
+  .trbrememeb{
+    margin-left:2%;
+  }
+ .regcleanscanDet th{
+    padding: 7px;
+    background-color: #4E4E4E;
+    color: #fff;
+  }
+   .regcleanscanDet td{
+    text-align: center; 
+  }
+  .routerr_textarea{
+    border: 1px solid #dedede;
+    margin-top: 1%;
+    padding: 0.3%;
+    width: 99%;
+  }
+  .routerr_textarea h2{
+    background: none repeat scroll 0 0 #4e4e4e;
+    color: #ffffff;
+    float: left;
+    font-size: 1vw;
+    margin: 0;
+    padding: 1%;
+    width: 100%;
+  }
+  .routerr_textarea textarea{
+    width: 100%;
+    height: 11vw;
+  }
+  .fix_width{
+    width: 100px;
+  }
+  .margin_fix{
+    padding-top: 1vw;
+    padding-right: 0.5vw
+  }
+</style>
+<!-- <form class="form-horizontal" name="manageForm"> -->
+<!-- ng-init="checkAuthentication();" -->
+<div class="right_bg_cont" ng-init="checkAuthentication();">
+    <div class="data_cont">
+            <div class="cont_title">
+                <!-- <span>{{header}}</span> -->
+                <span>Manage Router</span>
+            </div>
+        <div class="login-route" ng-show="isLoginshow">
+        <div id="dvLogin">
+            <div class="input-group col-md-3 marg_bottom">
+          <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-user"></i></span>
+          <input type="text" ng-disabled="isuserNameDisabled" ng-model="txtUserName" name="txtUserName" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group col-md-3 marg_bottom">
+          <span class="input-group-addon" ng-disabled="isPasswordEnabled" id="basic-addon1"><i class="glyphicon glyphicon-lock"></i></span>
+          <input type="password" ng-model="txtPassword" ng-disabled="isPasswordDisabled"  name="txtPassword" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+        </div>
+      <div class="btn-group col-md-3 padd_none">
+              <!-- <button type="button" >Submit</button> -->
+              <input type="submit" class="btn btn-primary login_but pull-right" value="Login" ng-disabled="isLoginDisabled" ng-click="checkAuthentication();"/>
+        </div>
+    </div>
+    
+  </div>
+  <div id="dvLog" ng-show="isDevDetails">
+    <div class="dvlogdet dvlogdet2" ng-show="!isNetworkAvailable">    
+        <div class="widget table-routerlog">            
+                    <table  id="scanDet" class="regcleanscanDet" border="1px">
+                         <tbody>
+                        <tr>
+                        <th colspan="2">Router Information</th>
+                        </tr>  
+                        <tr>
+                          <td>Hardware Version</td>
+                          <td>{{DeviceDet.Model}}</td>
+                        </tr>
+                         <tr>
+                          <td>Firmware Version</td>
+                          <td>{{DeviceDet.Version}}</td>
+                        </tr>
+                         <tr>
+                          <td>Serial Number</td>
+                          <td>{{DeviceDet.SerialNumber}}</td>
+                        </tr>
+                        <tr>
+                        <th colspan="2">LAN Port</th>
+                        </tr>  
+                        <tr>
+                          <td>MAC Address</td>
+                          <td>{{DeviceDet.MacAddress}}</td>
+                        </tr>
+                         <tr>
+                          <td>IP Address</td>
+                          <td>{{DeviceDet.IpAddress}}</td>
+                        </tr>  
+                        </tbody>
+                </table>  
+               <!--  <table  id="scanDet" class="regcleanscanDet" border="1px">
+                         <tbody>
+                                               
+                        </tbody>
+                </table>   --> 
+         </div>
+      </div>
+     <div class="trbrememeb" ng-show="!isNetworkAvailable">
+    <!--  <span class="rememberme">
+          <input type="checkbox" ng-model="chkisBackground" ng-checked="enableBackgroundProcess();"  tabindex="3"/>&nbsp;Automatically identify and fix problems with my router
+      </span> -->
+     <!--  <div class="routerr_textarea pull-left" ng-show="isstepsShow">
+      <h2>TrobleShoot Steps</h2>
+       <textarea  class="feedback_textarea pull-left" ng-model="troubleshootsteps"  id="comments" name="comments"></textarea>
+      </div> -->
+      <span class="margin_fix pull-left" style="font-weight:bold;">
+        Internet Status
+        <div ng-class="NetworkIcon">
+          <div class="Toggle">
+          </div>
+          <span class="title">{{NetworkTitle}}</span>
+        </div>
+      </span>
+      <span class="margin_fix pull-right">
+        
+       <!--  <input type="submit" class="btn btn-primary login_but fix_width " value="Fix" ng-show="isNetworkAvailable" ng-click="enableBackgroundProcess();"/> -->
+        </span>        
+      </div>
+    </div>
+  <!-- <div id="dvLog" ng-show="!isLoginshow">
+    <div class="dvlogdet">    
+        <div class="table-routerlog" ng-repeat="log in logData">            
+                <label style="color:red"><span>{{log.LogDetail}} </span></label>      
+             </div>
+      </div>
+     <div class="trbrememeb">
+     <span class="rememberme">
+          <input type="checkbox" ng-model="chkisBackground" ng-checked="enableBackgroundProcess();"  tabindex="3"/>&nbsp;Enable Automatic Troubleshoot
+      </span>
+      </div>
+    </div> -->
+      </div>
+    </div>
+  </div>
+<!-- </form> -->

@@ -1,0 +1,32 @@
+Analysis by our Connect Tool:
+-----------------------------
+
+LAN IP Information:
+**************
+Computer IP Address : 192.168.1.2
+Router Address      : 192.168.1.1
+Ping Router Address : Success (4 Replies from 192.168.1.1 )
+
+Router Information:
+**************
+Logging into the Router : Success
+Checking for log....
+Checking for Router Logs : Available
+Last time when the Internet was Disconnected : [Internet disconnected] Sunday, July 24, 2016 23:33:18
+Pinging the Gateway IP 192.168.1.1
+Checking ..GetPingSuccessCount.
+Pinging the Gateway IP 192.168.1.1 Success
+Checking for log....
+BackUp Restoration started...
+BackUp Restoration Completed...
+Checking ..GetPingSuccessCount.
+Checking ..GetPingSuccessCount.
+Checking ..GetPingSuccessCount.
+Checking ..GetPingSuccessCount.
+Power cycle your network
+Pinging the Gateway IP 192.168.1.1
+Checking ..GetPingSuccessCount.
+Pinging the Gateway IP 192.168.1.1 Success
+Checking for log....
+Ping Website: Success (Ping www.google.com, got 4 Replies from 216.58.197.78)
+Current Status: Connected to Internet Successfully!!!

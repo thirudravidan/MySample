@@ -1,0 +1,8 @@
+D:\Git\activei_win_container\Activei\ActiveiRegScan\bin\Debug\VTRegScan.dll
+D:\Git\activei_win_container\Activei\ActiveiRegScan\bin\Debug\VTRegScan.pdb
+D:\Git\activei_win_container\Activei\ActiveiRegScan\obj\Debug\VTRegScan.dll
+D:\Git\activei_win_container\Activei\ActiveiRegScan\obj\Debug\VTRegScan.pdb
+E:\git\activei_win_container\Activei\ActiveiRegScan\bin\Debug\VTRegScan.dll
+E:\git\activei_win_container\Activei\ActiveiRegScan\bin\Debug\VTRegScan.pdb
+E:\git\activei_win_container\Activei\ActiveiRegScan\obj\Debug\VTRegScan.dll
+E:\git\activei_win_container\Activei\ActiveiRegScan\obj\Debug\VTRegScan.pdb

@@ -1,0 +1,4 @@
+E:\CIOG\DOT_NET\Netgear\NetgearTool_2.0\NetgearRegScan\bin\Release\VTRegScan.dll
+E:\CIOG\DOT_NET\Netgear\NetgearTool_2.0\NetgearRegScan\bin\Release\VTRegScan.pdb
+E:\CIOG\DOT_NET\Netgear\NetgearTool_2.0\NetgearRegScan\obj\Release\VTRegScan.dll
+E:\CIOG\DOT_NET\Netgear\NetgearTool_2.0\NetgearRegScan\obj\Release\VTRegScan.pdb

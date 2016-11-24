@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishUrlHistory>D:\Published Folder\Activei_Live\17102016\tool\|D:\Published Folder\Activei_Live\14102016\tool\|D:\Published Folder\Activei_Live\13102016\tool\|D:\Published Folder\Activei_Live\06102016\tools\|D:\Published Folder\Activei_Live\New_SSL_Sha1_23092016\tool\</PublishUrlHistory>
+    <InstallUrlHistory>https://activei.csscorp.com/|http://devis.csscorp.com/activeu/|http://activei.csscorp.com/|https://ghstaging.csscorp.com/|http://gc/</InstallUrlHistory>
+    <SupportUrlHistory />
+    <UpdateUrlHistory>https://activei.csscorp.com/|http://devis.csscorp.com/activeu/|https://ghstaging.csscorp.com/|http://ghstaging.csscorp.com/|http://is-dev.csscorp.com/activei/tool/</UpdateUrlHistory>
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory />
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+    <ProjectView>ShowAllFiles</ProjectView>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableSecurityDebugging>false</EnableSecurityDebugging>
+  </PropertyGroup>
+</Project>

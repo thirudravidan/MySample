@@ -1,0 +1,78 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'soap' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 warn package.json http@0.0.0 http is also the name of a node core module.
+6 warn package.json http@0.0.0 No description
+7 warn package.json http@0.0.0 No repository field.
+8 warn package.json util@0.10.3 util is also the name of a node core module.
+9 warn package.json node-soap@1.0.0 No repository field.
+10 verbose readDependencies using package.json deps
+11 verbose cache add [ 'soap', null ]
+12 verbose cache add name=undefined spec="soap" args=["soap",null]
+13 verbose parsed url { protocol: null,
+13 verbose parsed url   slashes: null,
+13 verbose parsed url   auth: null,
+13 verbose parsed url   host: null,
+13 verbose parsed url   port: null,
+13 verbose parsed url   hostname: null,
+13 verbose parsed url   hash: null,
+13 verbose parsed url   search: null,
+13 verbose parsed url   query: null,
+13 verbose parsed url   pathname: 'soap',
+13 verbose parsed url   path: 'soap',
+13 verbose parsed url   href: 'soap' }
+14 silly lockFile f6c1ab81-soap soap
+15 verbose lock soap C:\Users\slv104520\AppData\Roaming\npm-cache\f6c1ab81-soap.lock
+16 silly lockFile f6c1ab81-soap soap
+17 silly lockFile f6c1ab81-soap soap
+18 verbose addNamed [ 'soap', '' ]
+19 verbose addNamed [ null, '*' ]
+20 silly lockFile 31b8ab81-soap soap@
+21 verbose lock soap@ C:\Users\slv104520\AppData\Roaming\npm-cache\31b8ab81-soap.lock
+22 silly addNameRange { name: 'soap', range: '*', hasData: false }
+23 verbose request where is /soap
+24 verbose request registry https://registry.npmjs.org/
+25 verbose request id 0d0b7b7e9c8f24b0
+26 verbose url raw /soap
+27 verbose url resolving [ 'https://registry.npmjs.org/', './soap' ]
+28 verbose url resolved https://registry.npmjs.org/soap
+29 verbose request where is https://registry.npmjs.org/soap
+30 info trying registry request attempt 1 at 12:30:34
+31 http GET https://registry.npmjs.org/soap
+32 info retry will retry, error on last attempt: Error: 6868:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:openssl\ssl\s23_clnt.c:795:
+33 info trying registry request attempt 2 at 12:30:49
+34 http GET https://registry.npmjs.org/soap
+35 info retry will retry, error on last attempt: Error: 6868:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:openssl\ssl\s23_clnt.c:795:
+36 info trying registry request attempt 3 at 12:31:49
+37 http GET https://registry.npmjs.org/soap
+38 silly lockFile 31b8ab81-soap soap@
+39 silly lockFile 31b8ab81-soap soap@
+40 error Error: 6868:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:openssl\ssl\s23_clnt.c:795:
+40 error
+40 error     at SlabBuffer.use (tls.js:234:18)
+40 error     at CleartextStream.read [as _read] (tls.js:454:29)
+40 error     at CleartextStream.Readable.read (_stream_readable.js:340:10)
+40 error     at EncryptedStream.write [as _write] (tls.js:368:25)
+40 error     at doWrite (_stream_writable.js:225:10)
+40 error     at writeOrBuffer (_stream_writable.js:215:5)
+40 error     at EncryptedStream.Writable.write (_stream_writable.js:182:11)
+40 error     at write (_stream_readable.js:601:24)
+40 error     at flow (_stream_readable.js:610:7)
+40 error     at Socket.pipeOnReadable (_stream_readable.js:642:5)
+40 error     at Socket.emit (events.js:92:17)
+40 error     at emitReadable_ (_stream_readable.js:426:10)
+41 error If you need help, you may report this *entire* log,
+41 error including the npm and node versions, at:
+41 error     <http://github.com/npm/npm/issues>
+42 error System Windows_NT 6.2.9200
+43 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "--save" "soap"
+44 error cwd D:\projects\gearhead
+45 error node -v v0.10.33
+46 error npm -v 1.4.28
+47 verbose exit [ 1, true ]

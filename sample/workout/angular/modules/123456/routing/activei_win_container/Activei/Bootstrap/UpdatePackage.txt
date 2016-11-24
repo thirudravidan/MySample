@@ -1,0 +1,21 @@
+Update Package.xml
+==================
+
+ <Strings> 
+	<String Name="DisplayName">License Agreement Please review the license terms before installing GearHead Connect</String> 
+	<String Name="Culture">en</String> <String Name="CancelFailure">User Failed to Accept Companies End User License Agreement.</String> 
+	<String Name="GeneralFailure">A fatal error occurred during the installation of EULA Component Execution</String> 
+	<String Name="AdminRequired">You do not have the permissions required to install this application. Please contact your administrator.</String>
+  </Strings>
+
+
+Update Product.xml
+==================
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Product
+  xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"
+  ProductCode="EULA.Bootstrap.Component">
+  <!-- Defines list of files to be copied on build -->
+  
+</Product>

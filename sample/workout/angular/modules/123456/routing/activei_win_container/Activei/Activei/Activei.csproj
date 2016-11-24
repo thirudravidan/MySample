@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B5C177E5-B529-4DEC-BBFA-8FBCCD2B9A55}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Activei</RootNamespace>
+    <AssemblyName>Activei</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>D:\Published Folder\Activei_Live\17102016\tool\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>https://activei.csscorp.com/</InstallUrl>
+    <UpdateUrl>https://activei.csscorp.com/</UpdateUrl>
+    <ProductName>Activei</ProductName>
+    <PublisherName>Activei</PublisherName>
+    <MinimumRequiredVersion>1.0.0.4</MinimumRequiredVersion>
+    <WebPage>tool.html</WebPage>
+    <ApplicationRevision>11</ApplicationRevision>
+    <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Activei.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>EEE79269F71DCF1005A58FA493F174387DDABAD2</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Activeicertificate.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Activei.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Activei.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AWSSDK">
+      <HintPath>obj\x86\Release\AWSSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="CefSharp, Version=1.25.5.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\CefSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="CefSharp.WinForms, Version=1.25.5.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\CefSharp.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="EMS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0d0e74e862df6f64, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\CSS105062\Desktop\EMS_28072016\New folder (2)\EMS.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.NATUPNPLib">
+      <HintPath>C:\Users\css104602\Desktop\NW\Interop.NATUPNPLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.NetFwTypeLib">
+      <HintPath>C:\Users\css104602\Desktop\NW\Interop.NetFwTypeLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.Shell32, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>Libs\Interop.Shell32.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.WIA, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>..\..\..\..\Salamon\Workspace\CIOG\DOT_NET\CSSConnect\CSSConnect\obj\x86\Release\Interop.WIA.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.TaskScheduler">
+      <HintPath>..\..\..\..\CSSConnect\CSSConnect\References\Microsoft.Win32.TaskScheduler.dll</HintPath>
+    </Reference>
+    <Reference Include="nClam">
+      <HintPath>..\..\..\..\Libs\nClam.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.7\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VTRegScan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8371cb783a613c99, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ActiveiRegScan\bin\Release\VTRegScan.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArchieveManager.cs" />
+    <Compile Include="CheckSound.cs" />
+    <Compile Include="CommandObj.cs" />
+    <Compile Include="ConfigSettings.cs" />
+    <Compile Include="CSVFileIO.cs" />
+    <Compile Include="Defragmentation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DefragmentationConstants.cs" />
+    <Compile Include="Defragmentation\DefragDriveSpecifications.cs" />
+    <Compile Include="Defragmentation\DefragmentationConstants.cs" />
+    <Compile Include="Defragmentation\DefragmentationModel.cs" />
+    <Compile Include="Defragmentation\DefragmentationPresenter.cs" />
+    <Compile Include="Defragmentation\DefragmentationService.cs" />
+    <Compile Include="Defragmentation\IDefragmentation.cs" />
+    <Compile Include="Defragmentation\JunkFileSpecifications.cs" />
+    <Compile Include="Defragmentation\SystemToolsProxy.cs" />
+    <Compile Include="Defragmentation\TextFormatter.cs" />
+    <Compile Include="Defragmentation\WOW64RedirectionManipulator.cs" />
+    <Compile Include="dmbgraph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExtensionMethods.cs" />
+    <Compile Include="Firewall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="interop.cs" />
+    <Compile Include="JunkFileSpecifications.cs" />
+    <Compile Include="MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nativeWifi.cs" />
+    <Compile Include="networkAdapter.cs" />
+    <Compile Include="NetworkAlive.cs" />
+    <Compile Include="networkMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NetworkMonitor.cs" />
+    <Compile Include="networkspeed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PCOptimization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistryCleaner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Service References\NetgearClientService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceController.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SystemToolsProxy.cs" />
+    <Compile Include="Tracker.cs" />
+    <Compile Include="WOW64RedirectionManipulator.cs" />
+    <None Include="Activeicertificate_Expired.pfx" />
+    <None Include="Properties\DataSources\System.Xml.Linq.XElement.datasource" />
+    <None Include="Service References\NetgearClientService\Activei.NetgearClientService.ArrayOfProductprice.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NetgearClientService\Activei.NetgearClientService.CaseItems.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NetgearClientService\Activei.NetgearClientService.ContractInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NetgearClientService\Activei.NetgearClientService.CustomerContractItems.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NetgearClientService\Activei.NetgearClientService.CustomerItems.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NetgearClientService\Activei.NetgearClientService.DrpDetails.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NetgearClientService\Activei.NetgearClientService.KBSearchResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NetgearClientService\Activei.NetgearClientService.MessageFeedBackDetails.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NetgearClientService\Activei.NetgearClientService.Parental.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NetgearClientService\Activei.NetgearClientService.ProductItems.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NetgearClientService\Activei.NetgearClientService.Promotion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NetgearClientService\Activei.NetgearClientService.Promotiongroup.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NetgearClientService\Activei.NetgearClientService.PromProd.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NetgearClientService\Activei.NetgearClientService.PublishedMessage.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NetgearClientService\Activei.NetgearClientService.RenewDetails.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NetgearClientService\Activei.NetgearClientService.TimeZoneDetails.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NetgearClientService\Activei.NetgearClientService.UpgradeDetails.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NetgearClientService\NetgearClientService.disco" />
+    <None Include="Service References\NetgearClientService\configuration91.svcinfo" />
+    <None Include="Service References\NetgearClientService\configuration.svcinfo" />
+    <None Include="Service References\NetgearClientService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="telnetenable.exe" />
+    <Content Include="Upload.txt" />
+    <Content Include="uploadimg.png" />
+    <Content Include="vccorlib110.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Activei.snk" />
+    <None Include="Activeicertificate.pfx" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="BandwidthMonitor.exe.config" />
+    <Content Include="freshclam.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Netgear.snk" />
+    <None Include="NetgearCodeSignCert.pfx" />
+    <None Include="packages.config" />
+    <None Include="PCOptimizationConsole.exe.config" />
+    <None Include="Properties\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\DataSources\System.Xml.XmlNode.datasource" />
+    <None Include="Service References\NetgearClientService\NetgearClientService.wsdl" />
+    <None Include="Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="BandwidthMonitor.exe" />
+    <Content Include="CefSharp.dll" />
+    <Content Include="CefSharp.WinForms.dll" />
+    <Content Include="libcef.dll" />
+    <Content Include="Libs\Interop.Shell32.dll" />
+    <Content Include="Libs\Microsoft.Win32.TaskScheduler.dll" />
+    <Content Include="msvcp110.dll" />
+    <Content Include="msvcr110.dll" />
+    <Content Include="NG_Icon.ico" />
+    <Content Include="obj\x86\Release\Interop.WIA.dll" />
+    <None Include="Resources\uploadimg.jpg" />
+    <None Include="Resources\uploadimg.png" />
+    <None Include="Resources\loader.gif" />
+    <None Include="Resources\NG2.ico" />
+    <None Include="Resources\gearhead-loader.gif" />
+    <Content Include="PCOptimizationConsole.exe" />
+    <None Include="Resources\wifiConnect.png" />
+    <None Include="Resources\wifiDisconnect.png" />
+    <Content Include="uninstall.exe" />
+    <Content Include="UninstallString.bat" />
+    <Content Include="uninstall.exe.config" />
+    <Content Include="UnInstall.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="EULA.Bootstrap.Component">
+      <Visible>False</Visible>
+      <ProductName>License Agreement Please review the license terms before installing Activei</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NG.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NG_db.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NG1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Activei.ico" />
+    <Content Include="icudt.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\Interop.NATUPNPLib.dll" />
+    <Content Include="Libs\Interop.NetFwTypeLib.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ActiveiCertificate\" />
+    <Folder Include="bin\Release\RouterLogs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="CefSharp">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CefSharp.WinForms.dll">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ActiveiRegScan\ActiveiRegScan.csproj">
+      <Project>{FF431EF5-47E4-43A2-B7A9-FF0939C688E5}</Project>
+      <Name>ActiveiRegScan</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CustomizedClickOnce.Common\CustomizedClickOnce.Common.csproj">
+      <Project>{BC299433-48CC-4282-A7F4-3948E054B6AC}</Project>
+      <Name>CustomizedClickOnce.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Network Mapping\Network Mapping.csproj">
+      <Project>{7564C2CF-A290-4860-867B-3207AE9AAA61}</Project>
+      <Name>Network Mapping</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SystemVolume\SystemVolume.csproj">
+      <Project>{B8A1486B-67A8-457A-A099-86D513D843A2}</Project>
+      <Name>SystemVolume</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\NetgearClientService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="WUApiLib">
+      <Guid>{B596CC9F-56E5-419E-A622-E01BB457431E}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>"C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\signtool.exe" sign /f $(ProjectDir)Activeicertificate.pfx /p PASSWORD $(ProjectDir)obj\x86\$(ConfigurationName)\$(TargetFileName)"</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  <Exec Command="&quot;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\signtool.exe&quot; sign /f &quot;$(ProjectDir)Activeicertificate.pfx&quot; /p csscorp121 /v &quot;$(ProjectDir)obj\x86\$(ConfigurationName)\$(TargetFileName)&quot;" />
+  <Exec Command="&quot;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\signtool.exe&quot; sign /f &quot;$(ProjectDir)NetgearCodeSignCert.pfx&quot; /p N3tg3aR! /v &quot;$(ProjectDir)obj\x86\$(ConfigurationName)\$(TargetFileName)&quot;" />
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <!--<Target Name="BeforePublish">
+    <Exec Command="&quot;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\signtool.exe&quot; sign /f &quot;$(ProjectDir)Activeicertificate.pfx&quot; /p csscorp121 /v &quot;$(ProjectDir)obj\x86\$(ConfigurationName)\$(TargetFileName)&quot;" />
+  </Target>-->
+</Project>

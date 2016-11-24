@@ -1,0 +1,9 @@
+D:\Share\CSSConnect\CSSConnectOptimization\bin\Debug\PCOptimizationConsole.exe.config
+D:\Share\CSSConnect\CSSConnectOptimization\bin\Debug\PCOptimizationConsole.exe
+D:\Share\CSSConnect\CSSConnectOptimization\bin\Debug\PCOptimizationConsole.pdb
+D:\Share\CSSConnect\CSSConnectOptimization\bin\Debug\CustomizedClickOnce.Common.dll
+D:\Share\CSSConnect\CSSConnectOptimization\bin\Debug\nClam.dll
+D:\Share\CSSConnect\CSSConnectOptimization\bin\Debug\CustomizedClickOnce.Common.pdb
+D:\Share\CSSConnect\CSSConnectOptimization\obj\x86\Debug\CSSConnectOptimization.csprojResolveAssemblyReference.cache
+D:\Share\CSSConnect\CSSConnectOptimization\obj\x86\Debug\PCOptimizationConsole.exe
+D:\Share\CSSConnect\CSSConnectOptimization\obj\x86\Debug\PCOptimizationConsole.pdb

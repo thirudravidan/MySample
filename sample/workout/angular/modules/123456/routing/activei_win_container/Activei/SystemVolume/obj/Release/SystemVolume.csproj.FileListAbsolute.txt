@@ -1,0 +1,7 @@
+D:\Git\activei_win_container\Activei\SystemVolume\bin\Release\SystemVolume.dll
+D:\Git\activei_win_container\Activei\SystemVolume\bin\Release\SystemVolume.pdb
+D:\Git\activei_win_container\Activei\SystemVolume\bin\Release\NAudio.dll
+D:\Git\activei_win_container\Activei\SystemVolume\bin\Release\NAudio.xml
+D:\Git\activei_win_container\Activei\SystemVolume\obj\Release\SystemVolume.dll
+D:\Git\activei_win_container\Activei\SystemVolume\obj\Release\SystemVolume.pdb
+D:\Git\activei_win_container\Activei\SystemVolume\obj\Release\SystemVolume.csprojResolveAssemblyReference.cache

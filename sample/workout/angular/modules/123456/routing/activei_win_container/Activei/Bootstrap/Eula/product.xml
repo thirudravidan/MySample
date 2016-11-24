@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Product
+  xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"
+  ProductCode="EULA.Bootstrap.Component">
+  <!-- Defines list of files to be copied on build -->
+  <PackageFiles>
+    <PackageFile Name="en/About.exe"/>
+  </PackageFiles>
+
+  <Commands>
+    <Command PackageFile="en/About.exe"
+      Arguments='' >
+       <ExitCodes>
+         <ExitCode Value="0" Result="Success"/>
+       </ExitCodes>
+    </Command>
+  </Commands>
+</Product>

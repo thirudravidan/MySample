@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="PCOptimizationConsole.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DownloadedProgramFilesPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Windows\Downloaded Program Files</Value>
+    </Setting>
+    <Setting Name="JunkFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Windows\Minidump|C:\Windows\Temp|C:\Windows\Downloaded Program Files</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

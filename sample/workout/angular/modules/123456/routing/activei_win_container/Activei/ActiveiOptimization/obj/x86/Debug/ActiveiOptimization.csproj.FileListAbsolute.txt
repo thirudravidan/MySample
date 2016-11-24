@@ -1,0 +1,9 @@
+D:\Git\activei_win_container\Activei\ActiveiOptimization\bin\Debug\PCOptimizationConsole.exe.config
+D:\Git\activei_win_container\Activei\ActiveiOptimization\bin\Debug\PCOptimizationConsole.exe
+D:\Git\activei_win_container\Activei\ActiveiOptimization\bin\Debug\PCOptimizationConsole.pdb
+D:\Git\activei_win_container\Activei\ActiveiOptimization\bin\Debug\CustomizedClickOnce.Common.dll
+D:\Git\activei_win_container\Activei\ActiveiOptimization\bin\Debug\nClam.dll
+D:\Git\activei_win_container\Activei\ActiveiOptimization\bin\Debug\CustomizedClickOnce.Common.pdb
+D:\Git\activei_win_container\Activei\ActiveiOptimization\obj\x86\Debug\ActiveiOptimization.csprojResolveAssemblyReference.cache
+D:\Git\activei_win_container\Activei\ActiveiOptimization\obj\x86\Debug\PCOptimizationConsole.exe
+D:\Git\activei_win_container\Activei\ActiveiOptimization\obj\x86\Debug\PCOptimizationConsole.pdb

@@ -1,0 +1,11 @@
+D:\Git\activei_win_container\Activei\Bootstrap\bin\x64\Debug\ActiveiBootstrap.exe.manifest
+D:\Git\activei_win_container\Activei\Bootstrap\bin\x64\Debug\ActiveiBootstrap.application
+D:\Git\activei_win_container\Activei\Bootstrap\bin\x64\Debug\ActiveiBootstrap.exe
+D:\Git\activei_win_container\Activei\Bootstrap\bin\x64\Debug\ActiveiBootstrap.pdb
+D:\Git\activei_win_container\Activei\Bootstrap\obj\x64\Debug\NetgearGearHeadBootstrap.Bootstrap.resources
+D:\Git\activei_win_container\Activei\Bootstrap\obj\x64\Debug\NetgearGearHeadBootstrap.Properties.Resources.resources
+D:\Git\activei_win_container\Activei\Bootstrap\obj\x64\Debug\Bootstrap.csproj.GenerateResource.Cache
+D:\Git\activei_win_container\Activei\Bootstrap\obj\x64\Debug\ActiveiBootstrap.exe.manifest
+D:\Git\activei_win_container\Activei\Bootstrap\obj\x64\Debug\ActiveiBootstrap.application
+D:\Git\activei_win_container\Activei\Bootstrap\obj\x64\Debug\ActiveiBootstrap.exe
+D:\Git\activei_win_container\Activei\Bootstrap\obj\x64\Debug\ActiveiBootstrap.pdb

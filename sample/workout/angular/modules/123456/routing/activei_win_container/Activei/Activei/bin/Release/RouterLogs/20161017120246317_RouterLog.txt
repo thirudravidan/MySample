@@ -1,0 +1,6 @@
+[Access Control] Device HDC0007103 with MAC address C8:1F:66:43:31:52 is allowed to access the network, Sunday, October 16, 2016
+[admin login] from source 192.168.1.2, Sunday, October 16, 2016 22:26:54
+[admin login] from source 192.168.1.2, Sunday, October 16, 2016 21:43:31
+[DHCP IP: 192.168.1.6] to MAC address 34:36:3b:93:1a:3a, Sunday, October 16, 2016 21:23:18
+[admin login] from source 192.168.1.2, Sunday, October 16, 2016 21:21:16
+[Log Cleared] Sunday, October 16, 2016 21:05:16

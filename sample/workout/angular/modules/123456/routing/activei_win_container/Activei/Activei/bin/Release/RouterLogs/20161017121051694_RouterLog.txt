@@ -1,0 +1,5 @@
+[admin login] from source 192.168.1.2, Sunday, October 16, 2016 22:39:29
+[Time synchronized with NTP server] Sunday, October 16, 2016 22:37:48
+[Internet connected] IP address: 10.9.67.22, Sunday, October 16, 2016 22:37:42
+[Initialized, firmware version: V1.0.2.2] Sunday, October 16, 2016 22:37:39
+[DHCP IP: 192.168.1.2] to MAC address c8:1f:66:43:31:52, Sunday, October 16, 2016 22:37:32

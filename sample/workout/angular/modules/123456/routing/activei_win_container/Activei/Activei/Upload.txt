@@ -1,0 +1,1612 @@
+TotalSurvey TotalAttendees DropRequired NotAttendees
+----------- -------------- ------------ ------------
+649         612            190          39
+
+(1 row(s) affected)
+
+UserId     EMP_CODE             EMP_Name
+---------- -------------------- ----------------------------------------------------------------------------------------------------
+css00322   322                  Srinivasamohan Ponnusamy
+CSS03204   3204                 Gayatri Mohanakrishnan
+CSS05466   5466                 Vinoth Babu Narashimhan
+CSS05469   5469                 Chidambaram.s Subramani
+CSS05472   5472                 Devanand Chandrasekaran
+CSS05473   5473                 Saravanan Sugumaran
+css07835   7835                 Subrahmanyam Venkatraman
+css100051  100051               Padman Krishna Panikar Bhasuran
+css100063  100063               Rahul Prabakaran
+css100267  100267               Steffi Mary Yates
+css100273  100273               Rakesh Gopalakrishnan
+css100274  100274               Srinivasan Ranganathan
+css100294  100294               Packya Raj Stanislaus
+css100343  100343               Sree Kumar Krishnan
+css100458  100458               Sunil John Kanniakonil
+css100462  100462               Jaya Mareena Issac
+css100515  100515               Selva Lakshmanan
+css100540  100540               Griffin Solomon Herman
+css100557  100557               Rajesh Somarajan
+css100576  100576               Nitin Rajesh
+css100586  100586               Manoj Dhanasekar
+css100678  100678               Subhasish Chakrabarti
+css100715  100715               Bhuvaneswari Ramachandran
+css100717  100717               Srinidhi Venkatesh Nadig
+css100758  100758               Venkatesh Kumar
+css100786  100786               Safir Ahamed
+css100813  100813               Chirom Kusha Singh
+css100916  100916               Kannan Dakshanamoorthy
+css100941  100941               Jayashree Mohankumar
+css100970  100970               Amutha Kalichamy
+css101038  101038               Vishnu Priya Ravindrababu
+CSS101041  101041               Hyder Gani
+css101051  101051               Venu Nambiar
+css101220  101220               Rizwan Kadher
+css101264  101264               Stalin Baliah Thangavelu
+css101268  101268               Vaishnavi K R
+css101301  101301               Saravana Kumar Thumati Ravikumar
+css101305  101305               Aishwarya Manivannan
+css101306  101306               Balasubramanian Thuduchi Mothilal
+css101311  101311               Anila Brijit Mary Selvam
+css101367  101367               Ninu Nishanandan
+css101383  101383               Salu Sara Mathew
+css101472  101472               Elangovan Jagatheesan
+css101522  101522               Satya Datta Subramanya Sarma Kodamanchili
+css101577  101577               Radha Rani
+css101684  101684               Indrani Mitra
+css101710  101710               Ramasamy Raja
+css101731  101731               Nidhya Priya Selvaraj
+css101780  101780               Hemalatha Dhanasekaran
+css101821  101821               Sowmya Gopal
+css101881  101881               Amaladoss Gabriel
+css101922  101922               Cleona Abraham
+css102083  102083               Madhankumar Rajendran
+css102092  102092               Arun Muthukrishnan
+css102128  102128               Smitha Hemmigae
+css102134  102134               Prasanth Srinivasan
+css102135  102135               Ramesh Dorairaj
+css102205  102205               Ashok Anbazhagan
+css102206  102206               Shiny Ingrid Chellappa
+css102211  102211               Sunil Tripathi
+css102227  102227               Leonard Vijayaraj
+css102286  102286               Arshad Saajid
+css102288  102288               Vignesh Ramamurthy
+css102293  102293               Eswaraiah Kuruba
+css102625  102625               Sathish Manikandan
+css102627  102627               Mithila Dhanasekaran
+css102632  102632               Deebathra Gnanadass
+css102653  102653               Monalisha Ashok
+css102655  102655               Madhumitha Pradeep
+css102673  102673               Angel Jalis
+css102679  102679               Pruthvi Sagar
+css102690  102690               Fathima Bee Abubakkar
+css102745  102745               Srikamatchi Sreenivasan
+css102789  102789               Logeswaran Gunapalan
+css102829  102829               Arunvijay Madasamy
+css102844  102844               Aishwarya Ramabadran
+css102898  102898               Vijay Ganesh Ramesh
+css102942  102942               Madhavi Nair
+css102977  102977               Gayathri Bharani
+css102978  102978               Varalaxmi Ponnurangam
+css102998  102998               Arumuga Rajan Balasubramanian
+css103051  103051               Nisath Jabeen
+css103052  103052               Ganeshram Chenniappan
+css103122  103122               Archana Soundarajan
+css103124  103124               Sharmila Arumugam
+css103144  103144               Anand Chandrasekar
+css103145  103145               Arokyajohnprabeen Gunaseelan
+css103161  103161               Sriesaangher Alagusundar
+css103185  103185               Rajeev Murugan
+css103196  103196               Sushanth Desai
+css103219  103219               Vivek Chandrakumar
+css103251  103251               Amaravadi Lohitha Sowmya
+css103282  103282               Muthuvenkatesan Pandiyan
+css103325  103325               Renga Sankaranarayanan
+css103326  103326               Venugopal Adthya
+css103367  103367               Giridharan Venkatesan
+css103369  103369               Vinodhkumar Kumarasamy
+css103455  103455               Vignesh Jalendiran
+css103493  103493               Anitha Thiyagarajan
+css103547  103547               Mano Sugandhi
+css103554  103554               Poornima Mohan
+css103608  103608               Sunder Ganesh
+css103637  103637               Nandagopal Narayanamurthy
+css103638  103638               Prakhar Chanauria
+css103639  103639               Brahmaiah Bhupati
+css103664  103664               Mohammed Zaheer Rasheed
+css103667  103667               Jai Nithish
+css103685  103685               Sreenadh Kapa
+CSS103711  103711               Arun Kumar Ns
+css103716  103716               Ramaguru Narayanan
+css103727  103727               Vijayakumar Subramani
+css103732  103732               Aravind Yennati
+css103782  103782               Bhuvana Sridhar
+css103949  103949               Vimal Krishna
+css103954  103954               Vinoth Dhanapal
+css103958  103958               Archana Mishra
+css103963  103963               Venkat Dhandapani
+css104043  104043               Kamni Ramesh
+css104049  104049               Momi Roy
+css104130  104130               Krishnamohan Donga
+css104191  104191               Gajendran Sekar
+css104226  104226               Therance Joy
+css104227  104227               Tudil Elizabeth
+css104251  104251               Varun Venkat
+css104261  104261               Karthikeyan Kandasamy
+css104282  104282               Zeenath Naseer
+css104284  104284               Anitha Anbazhagan
+css104327  104327               Arun Kumar Thomas
+css104352  104352               Kabilesh Sethumani
+css104359  104359               Kasmoor Reddy Ravuru
+css104360  104360               Varahala Reddy Pallerla
+css104363  104363               Vivek Sundaresan
+css104401  104401               Franklin Ashley
+css104427  104427               Shravan Kumar Babu
+css104438  104438               Ferozkhan Rahamadullah
+css104451  104451               Kesavan Rajendran
+css104453  104453               Suhas Menon
+css104481  104481               Anish Mon Vadivel
+css104501  104501               Jayakumar Narayanamoorthy
+css104503  104503               Flex Clement
+css104513  104513               Naveen Kumar Gopalakrishnan
+css104559  104559               Kesavalu Ramanujam
+CSS104638  104638               Vignesh Narayanan
+css104706  104706               Prashanth Jerome
+css104707  104707               Kumara Guru
+css104734  104734               Sunil Virmani
+css104763  104763               Narenthiran Rajaram
+css104786  104786               Shyam Sundar Panneer Selvam
+css104810  104810               Fouzal Ameer Abubacker
+css104828  104828               Goutham Mani
+css104831  104831               Aasif Nour Hamidh
+css104832  104832               Renukadevi Marimuthu
+css104865  104865               Senthil Pugazhendi
+css104871  104871               Roshan Andrew Isaac
+css104920  104920               Abdul Rahman
+css104933  104933               Omprakash Rukmangathan
+CSS104937  104937               Bharath Kumar
+css104952  104952               Nachal Palaniappan
+css104994  104994               Gayathri Rajavelu
+css105011  105011               Suneel Kumar Raju Vysyaraju
+css105024  105024               Prabhu Srinivasan
+css105039  105039               Vethanayage Thiyagarajan
+css105062  105062               Thirumaran Dhanapal
+css105094  105094               Arthi Mahalingam
+css105095  105095               Saranyadevi Manoharan
+css105109  105109               Vijayakumar Jambulingam
+css105112  105112               Arun Kumar Thinagaran
+css105138  105138               Mahendra Singh
+css105168  105168               Surya Prakash Ahusula
+css105184  105184               Justus Jamieson
+css105202  105202               Sivaram Kanthimathinathan
+css105205  105205               Deepak Sharma
+css105218  105218               Karunya Ravichandran
+css105251  105251               Abinaya Dhiravidamani
+css105279  105279               Harriprasath Selvaraj
+css105281  105281               Kathiravan Radhakrishnan
+css105299  105299               Nanthakumar Rathinasamy
+css105310  105310               Sadhana Manickavel
+css105366  105366               Sripriya Balasubaramanian
+css105461  105461               Surya Elangovan
+css105478  105478               Arungunaranjan Arungunasekaran
+css105482  105482               Bhasker Thirumala
+css105511  105511               Rambrabu Jaganathan
+css105543  105543               Ramaraj Vanarajan
+css105554  105554               Mohana Vaijayanthi
+css105555  105555               Jaba Kumari
+css105571  105571               Amit Kumar Pandey
+css105575  105575               Yamuna Chalapathiraj
+css105640  105640               Sariga Sureshkumar
+css105657  105657               Devavarshini Santhosh Kumar
+css105663  105663               Raghunathan Kadirvel
+css105680  105680               Balaji Karunanithi
+css105722  105722               Libiya Nitin
+css105734  105734               Karthikh Jeeva
+css105766  105766               Sai Prashanthi Chandrasekar
+css105768  105768               Divya Bharathi Dilliraj
+css105775  105775               Rinu Kumar Rajeev
+css105779  105779               Nivya Sebastian
+css105790  105790               Raam Prassath
+css105796  105796               Ajay Kumar
+css105825  105825               Karthikeyan Boomilingam
+css105830  105830               Vivek Ravichandran
+css105848  105848               Ganesh Nagarajan
+css105879  105879               Vignesh Kunna Premkumar
+css105898  105898               Senthil Kumar Loganathan
+css105935  105935               Vishnu Teja Reddy Guggulla
+css106014  106014               Sathishkumar Ramakrishnan
+css106016  106016               Firoz Ahamed Naina Mohamed Gani
+css106032  106032               Puurnima Vasudevan
+css106035  106035               Ammu Suran
+css106036  106036               Hari Prasad Manisekaran
+css106037  106037               Sabarish Pattabiraman
+css106038  106038               Ramesh Kumar
+css106045  106045               Balaji Parthiban
+css106049  106049               Priya Madheswaran
+css106074  106074               Sridev Surendran
+css106094  106094               Saurav Ghosh
+css106136  106136               Safeer Ahmed Mastim
+css106154  106154               Vasanth Kumar Balakrishnan
+css106198  106198               Chandrasekar Parthasarathy
+css106201  106201               Ajith Mamolin
+css106226  106226               Dhilip Kumar
+css106266  106266               Gourinath Diojode
+css106274  106274               Prabhakaran Kuppan
+css106349  106349               Krishnan Ganesan
+css106367  106367               Srinivasa Rao
+css106387  106387               Dilli Babu
+css106388  106388               Chitra Bala
+css106405  106405               Shirke Pawan Shivaji
+css106406  106406               Sathyapriya Marimuthu
+css106462  106462               Samuel Ebenezer
+css106463  106463               Roshanraj Narayanan Muraleedharan
+css106477  106477               Arun Kumar
+css106541  106541               Vinoth Kumar
+css106550  106550               Raja Maharaja
+css106607  106607               Sangeeth Narayanan
+css106609  106609               Shonima Kunhikannan
+css106634  106634               Gunasegaran Annadurai
+css106647  106647               Sreeja Chandrasekhar Kakarla
+css106670  106670               Roseline Padmini
+css106679  106679               Pradeep Balasubramaniam
+css106688  106688               Abinaya Srinivasan
+css106691  106691               Sumathi Shekar
+css106696  106696               Jagajanani Ramakrishnan
+css106720  106720               Deborah Naomi Sebastian
+css106724  106724               Santhosh Kumar Ramachandran
+css106822  106822               Sri Raghava Kiran Javvaji
+css106842  106842               Sashidharan Kanagaraj
+css106913  106913               Raghunath Bukkapatnam
+css106937  106937               Sweadhini Murugan
+css106969  106969               Yuvaraj Loganathan
+CSS107009  107009               Priyanka Praveen
+CSS107010  107010               Swetha Thomas
+css107014  107014               Sathish Kumar Ramasamy
+css107032  107032               Naresh Kumar Shanmugam
+css107036  107036               Kalpana Devaraj
+css107039  107039               Aravindhan Jaya Kumar
+css107044  107044               Joveneshwar Vencatachellum
+css107091  107091               Yuvaraj Arulmozhi
+css107095  107095               Hemanth Bharadwaj
+CSS107139  107139               Ashish Kumar
+css107157  107157               Prason Selvanayagam
+css107221  107221               Abishek Reuben
+css107230  107230               Gautam Govinda
+css107235  107235               Shiva Prasad
+css107236  107236               Saranya Arikkrishnan
+css107261  107261               Saravanan Doss
+css107274  107274               Dinesh Ningaraj Chikkegowda
+css107279  107279               Karthik Ramesh
+css107284  107284               Soumiya Soumiya
+css107285  107285               Anjana Chimizh
+css107286  107286               Deepika Srinivasan
+css107289  107289               Chetan Lalith
+css107290  107290               Rajasekar Parimalam
+css107292  107292               Yuvith Kumar L
+css107293  107293               Aghoreshwaran Narayanan
+css107300  107300               Greeshma Jose
+css107301  107301               Priyanga Munuswamy Srinivasan
+css107320  107320               Vipul Vaidya
+css107322  107322               Nesha Subbiah
+css107345  107345               Rohit Sharma
+css107346  107346               Surya Teja
+css107400  107400               Abila Janet Devasagayam
+CSS107426  107426               Santhosh Kumar
+css107527  107527               Wesley Igwe
+css50809   50809                Prem Kumar Mv
+css55012   55012                Easwaramoorthy Damodaran
+CSS55155   55155                Sivaraman Shanmugam
+css60136   60136                Rajkumar Jegadish
+css60567   60567                Sathish M
+CSS60607   60607                Aparna Peethani
+CSS88136   88136                Venkateswarlu Konjeti
+CSS88720   88720                Karmughilan Ramasamy
+CSS89108   89108                Somasundaram P
+CSS89127   89127                Nandakumar Sadasiva Bhat
+CSS89215   89215                Vivek Devaraj
+CSS89728   89728                Sridhar Dharmalingam
+css89763   89763                Sumithra Veeraraghavan
+CSS89804   89804                Sunil Kumar Eswaran
+CSS92026   92026                Jayaprakash Lakshmanan
+CSS92815   92815                Gokulakrishnan Aruguham Kuppusamy
+CSS92955   92955                Gokul Raj Sampathraj
+CSS92979   92979                Selva Bharathi Gandhi
+CSS92997   92997                Ramya Supraja Rajan
+CSS93056   93056                Prakash Azhagesan
+CSS93115   93115                Suyambu Alagesan
+CSS93250   93250                Radhakrishnan Subramanian
+CSS93440   93440                Ramesh Gandepalli
+CSS93442   93442                Suman Ganta
+CSS93482   93482                Indrajeet Nag
+CSS93588   93588                Shalson Nagarajan
+CSS93696   93696                Jacob Jeevan Kumar Pagolu
+CSS93709   93709                Mohammad Ibrahim Khadar
+CSS93712   93712                Dhiraj Punjabi Manoharlal
+CSS93841   93841                Mohammed Imthiyas Gani
+CSS93906   93906                Vijay Mouli Chandramouleeshwaran
+CSS93911   93911                Amalamanoj Sowerimuthu
+CSS93931   93931                Bindhuja Krishnamoorthi
+CSS93988   93988                Pravinkumar Mohan
+CSS94000   94000                Praveen Panneerselvam
+CSS94036   94036                Prabu Margabandhu
+CSS94073   94073                Primrose Jasmin Ravi Manohar
+CSS94289   94289                Nazrul Haque Mohammed
+CSS94299   94299                Sukumar Ganapathy
+CSS94302   94302                Praveen Nageswaran
+CSS94327   94327                Ramesh Govindan
+CSS94394   94394                Anukumar Karunakaran
+CSS94472   94472                Vidhya Chandran
+CSS94527   94527                Sinthukavi Gajapathy
+CSS94600   94600                Arasu T.S.T
+CSS94899   94899                Yash Verma
+CSS94959   94959                Daniel Isaac
+CSS95215   95215                Raghuprasath Shanmugam
+CSS95285   95285                Aram Valartha Sundaram Subramani
+CSS95441   95441                Gopinath Nagarajan
+CSS95520   95520                Sateeshkumar Golusupudi
+CSS95715   95715                Ratna Kumar Yendluri
+CSS95779   95779                Lakshmisudha Parthasarathy
+CSS95949   95949                Amogh Arunkumar
+CSS95995   95995                Balaji Arulananthan
+CSS96088   96088                Kumaravel Mageshwaran
+css96200   96200                Bhavik Satish Kiri
+CSS96457   96457                Roland Michael George
+CSS96472   96472                Sreenivasulu Gannoj
+CSS96484   96484                Vinothkanna Chandrasekaran
+CSS96545   96545                Ramesh Kata
+CSS96554   96554                Sofiya Sulthana
+CSS96573   96573                Ezekiel Williams Moses
+CSS96703   96703                Dilip Kumar
+CSS96727   96727                Parthasarathy Jagannathan
+CSS96741   96741                Shanmuga Sundaram
+CSS96818   96818                Praveen Gopikrishnan
+CSS96886   96886                Jaiganesh Raman
+CSS96909   96909                Ajay Veeraiah
+CSS97092   97092                Jeniffar Clement
+CSS97165   97165                Jahnavi Vejalla
+CSS97235   97235                Sridhar Sivasundar Lal
+CSS97382   97382                Senthil Kumar Palanisamy
+CSS97535   97535                Sunil Sharma
+CSS97604   97604                Megha Anand Suraj
+css97819   97819                Karthik Subramanian
+CSS97949   97949                Gokulnarayanaswamy Athilingam
+CSS97950   97950                Pavithra Ayyadurai
+CSS97959   97959                Beulah Beryl Thangiah
+CSS97975   97975                Nirupam Dandapat
+CSS97985   97985                Shashikant Bhogshetty
+CSS97996   97996                Ramamoorthy Gomathinayagam
+CSS98080   98080                Senthil Kumar Manivannan
+CSS98237   98237                Krishna Moorthy
+CSS98281   98281                Veeramani Anandhan
+CSS98284   98284                Rajamanikkam Savurimuthu
+CSS98326   98326                Nikesh Jagadish
+CSS98356   98356                Hari Shanthilal
+CSS98380   98380                Rahul Kunju Raja
+CSS98511   98511                Pradeep Arumugam
+CSS98514   98514                Olaganathan Suyambulingam
+CSS98542   98542                Sathish Kumar Elumalai
+CSS98572   98572                Joe Prakash
+CSS98598   98598                Devilakshmi Gouthamar
+CSS98754   98754                Godson Kumar
+CSS98755   98755                Saravanan Rajendran
+CSS98756   98756                Sanjiv Kumar Selvaraj
+CSS98777   98777                Dharmalingam Dhakshinamoorthy
+CSS98803   98803                Annamalai Subbiah
+CSS98824   98824                Arun Kumar Ramakrishnan
+CSS98838   98838                Mohammed Khaleel
+CSS98859   98859                Karthikeyan Venkatraman
+CSS98878   98878                Vidhya Chandru
+CSS98939   98939                Asha Rajamani Thangarajan
+CSS98948   98948                Kamlesh Upadhyay
+css99053   99053                Balaji Chandaka
+css99063   99063                Johanna Pauline
+css99077   99077                Hemal Ramesh Parekh
+css99288   99288                Rathika Raja
+css99332   99332                Nithyanandh Manavalan
+css99392   99392                Pradeep Kumar Shankarbabu
+css99598   99598                Muthu Arunachalam
+css99624   99624                Kavi Kumaran Jayavel
+css99659   99659                Ram Kumar Ravikumar
+css99662   99662                Prasanna Baskaran
+css99695   99695                Sujitha Shanmugasundaram
+css99787   99787                Sathish Bhackta Bachalan
+css99871   99871                Sha Hussain Shahabudeen
+css99944   99944                Balaji Chadaram
+css99958   99958                Riyaz Hussain
+css99964   99964                Mekala Anandan
+Parallelsi NULL                 NULL
+SL000114   114                  Bobby Mathen Varghese
+sl000132   132                  Nirmal Kumar
+SL000205   205                  Ranjit Rao
+SL000254   254                  Vino Franklin N
+sl000447   447                  Shakheel Navaz
+sl000492   492                  Venkata Ramaraju P
+sl000551   551                  Kannan Venkatesan
+sl000560   560                  Raghavendran Krishnamurthy
+sl000617   617                  Devanand P S C
+sl000667   667                  Salahudin Ajmal
+SL000855   855                  Ram Kumar Pelasur Sridharan
+SL000948   948                  Ramesh Kumar Karri
+SL000955   955                  Dinesh Merrill M J
+SL000959   959                  Senthil Sugunan
+SL000972   972                  Don Antony Rao
+SL000973   973                  Bala Venkatesh Sah P E
+SL001130   1130                 Arvind Kingsly Appavu
+sl001316   1316                 Ezhilarasan Ponnivalavan
+SL001357   1357                 Sadeesh Kumar Mani
+SL001471   1471                 Anbazagan Neelakandan
+SL001485   1485                 Sowmyalakshmi Seshadri
+SL001486   1486                 Sarin Ravindranath Kollarkand
+sl001512   1512                 Thangarajan Gopala Krishnan
+SL001957   1957                 Ramamurthy Raghu
+SL002086   2086                 Jinoy Jose
+SL002120   2120                 Selvamuthukumar Janardhan
+SL002216   2216                 Babu Vengalathur Ganesan
+SL002227   2227                 Sashi Kanth Katragadda
+SL002233   2233                 Sachin Rao
+SL002247   2247                 Tonmoy Gohain
+SL002249   2249                 Gopiraj Rajamani
+SL003010   3010                 Karthikeyan Mohanadoss
+SL003050   3050                 Vinod Balan
+SL003078   3078                 Surendhra Shiva Shankar
+SL003127   3127                 Prasath Panneerselvam
+SL003402   3402                 Rangamani Krishnan
+SL003475   3475                 Vijay Kumar Sethuraman
+sl004320   4320                 Marian Ann D Cruz
+sl004331   4331                 Ganesh Pillai
+sl004491   4491                 Sivanarumugam Mookiah
+sl004642   4642                 Rathnasabapathy Namasivayam
+SL004685   4685                 Balaji Lakshmipathy
+sl004906   4906                 Aruna Hariohm
+sl004950   4950                 Srilatha Sirijala
+SL005016   5016                 Vivek Bharath Kumar Arumugam
+sl005032   5032                 Panneerselvam Alagesan
+sl005044   5044                 Suman Gokul
+sl005048   5048                 Kural Ovian Ganesan
+sl005052   5052                 Chandra Mouli V
+sl005057   5057                 Ramesh Eswaran
+sl005058   5058                 Sankara Narayanan
+sl005095   5095                 Usha Rani S
+SL005111   5111                 Jennila Charlin
+SL005148   5148                 Rajendraprasad Vishwanath
+SL005154   5154                 Hari Krishnan T Narayanan
+SL005171   5171                 Saravanakumar Varadharajan
+sl005208   5208                 Kalaivani Rajendran
+SL005223   5223                 Jaishankar Rathna Sabapathy
+SL005303   5303                 Pradeep Thangaraj
+SL005371   5371                 Shabu Shine Nivas Sadanandan
+SL005376   5376                 Chidambaram Muthu
+SL005459   5459                 Dinesh Bhaskaran
+SL005461   5461                 Ramesh Perumal
+SL005463   5463                 Esther Devaraj
+SL005470   5470                 Sundaram Chidambaram
+sl005498   5498                 Girinath Kumar Chinthavali
+SL006545   6545                 Muralidharan Balan
+SL006593   6593                 Ammani Priavardhini T Santhana
+SL006740   6740                 Madhira Venkata Durga Prasad
+SL006777   6777                 Rony Mathew Zacharia
+SL006852   6852                 Pravin Chozhiparambil Pratap
+SL007128   7128                 Durairaj Govindarajan
+sl007174   7174                 Jayachithra Anthony
+SL007851   7851                 Jolly Pravin Joshi
+SL007951   7951                 Lakshmi Narayan Kothanda Raman
+sl008017   8017                 Vijaya Kumar Bommasamudram
+SL008804   8804                 Rajesh Mohan
+sl009078   9078                 Vinodh Rajan
+SL009239   9239                 Somasundaraam Kasiraman
+SL009245   9245                 Vidyasagar Panchatcharam
+SL009391   9391                 Mohan Suppu
+SL009587   9587                 Shyamala Sabapathy
+sl010231   10231                Lijo Cherian Eapen
+SL010343   10343                Manimozhi Karuppannan
+SL010829   10829                Yuvaraj D. Ramamoorthy
+SL010882   10882                Rakesh Nagabushanam
+sl010988   10988                Vinoth Mohanan
+SL011060   11060                Shamshij Padayantavida
+SL011094   11094                Yuvaraj Ganesan
+SL011201   11201                Sivanandh Sudarsanan
+sl011431   11431                Satish Kumar Gopalakrishna
+sl011460   11460                Vijayakumar Panneer Selvam
+SL011527   11527                Gunasekaran M
+SL011711   11711                Gaspar Lawrence
+sl011774   11774                Dinesh Kumar Babu
+sl011781   11781                Nagarajan Murthy
+SL011994   11994                Nanda Krishna Pasupula
+SL012074   12074                Shaick Mohammed Rizwan
+sl012204   12204                Victoria Jeeva Rathnam Raja
+sl012456   12456                Norton Jude O Brien
+SL013051   13051                Vasu Raju
+sl013145   13145                Satharak Selvaraj
+SL013463   13463                Dinesh Kannappan
+SL013969   13969                Rohini Durai
+SL014951   14951                Rajiv Nagarajan
+SL051223   51223                Jayganesh Sambath
+SL051473   51473                Senthilkumar Sethurambabu
+SL051486   51486                Nagasubramani Rajamohan
+SL051496   51496                Murugesh Ganesan
+SL051499   51499                Sivakumar Sivaprakasam
+SL051564   51564                Jayaraj Murugaiyan
+sl051696   51696                Anandhan Srinivasan
+SL051908   51908                Annie Mathew Joseph
+SL051996   51996                Shajin Appalose Xavier
+sl052042   52042                Vaseegaran Asirvatham Azariah
+SL052221   52221                Satyanarayanan Visvanathan
+SL052242   52242                Mukundan Raghavan
+SL052264   52264                Sakthivel Nagaraj
+SL055118   55118                Sriram Chandrasekharan
+sl060108   60108                Edwin Raj I
+SL060111   60111                Lenora Smith
+SL060393   60393                Venkateswarlu R
+SL060394   60394                Marneni V R
+SL060458   60458                Gnanaprakasam D
+SL060523   60523                R K Sre Suganthi
+SL060551   60551                Shinoy Balan
+SL060602   60602                Giribabu Erigineni
+SL060629   60629                Jayaraman M
+SL060634   60634                Srinivas Rao A
+SL087412   87412                Christy Jebamalar
+SL087443   87443                Seetharaman Machavallavan
+SL087603   87603                Marian Jude Pradeep
+SL087639   87639                Srinivas Anappindi
+SL087832   87832                Deepak Prabhakaran
+SL087986   87986                Sathish Babu Sukumar
+sl088096   88096                Arsha Mercy Antony
+sl088132   88132                Lakshminarayanan Jayakumar
+sl088157   88157                Nicoletta Wylde
+SL088571   88571                Sivakumar Somaskandan
+SL088660   88660                Senthilkumar Sathasivam
+SL088957   88957                Bala Gopalan Dharmarajan
+sl088978   88978                Saravanamuthukumar Esackiappan
+sl089013   89013                Venkataraman Narayanan
+SL089214   89214                Kavitha Palani
+SL089304   89304                Suresh Kumar Guntuka
+sl089345   89345                Prabhaharan Duraimoni Sivathanulingam
+SL089376   89376                James Leo Ithayan Jegaraj
+SL089455   89455                Ramesh Ramachandran Oduru
+SL089609   89609                Harikrishnan Baskaran
+sl089921   89921                Nina Singh
+SL089924   89924                Vigneshbabu Basavaraj
+SL090011   90011                Praneeth Bammidi
+SL090113   90113                Horatius Joachim
+SL090173   90173                Sajeevemmanueljoseph Sudhakaran
+sl090236   90236                Charles Jayaraj
+SL090340   90340                Santhosh Venugopalan
+SL090341   90341                Manibharathi Ramanathan
+sl090434   90434                Nagabhushana Rao Seera
+sl090496   90496                Sakthiswaraan Venkatapathy
+SL090558   90558                Karthik Kannan
+SL090598   90598                Koteswaramma Chevuru
+SL090632   90632                Vignesh Sachidhanandam
+sl090678   90678                Mohammed Atif
+SL090825   90825                Arjunthanjavur Muniyandhi
+SL091026   91026                Lakshmanan Krishnan
+sl091029   91029                Ranjith Ravishankar
+SL091036   91036                Karthik Paramasivan
+SL091148   91148                Krishnan Saranathan
+SL091181   91181                Sindhuja Lakshminarayanan
+sl091635   91635                Rajesh Chandrasekar
+SL091737   91737                Manikandan Arumugam
+SL091814   91814                Andrew Watson Johnpeter
+SL091816   91816                Ramesh Kumar Sunderraj
+SL091945   91945                Elangovan Srinivasan
+SL092001   92001                Johnson Kumar
+SL092211   92211                Krishnan Chakrapani Gopalrao
+SL092292   92292                Sakubar Sathik Khan
+SL092344   92344                Gopinath Gurushave
+SL092369   92369                Chandramohan Krishnamoorthy
+SL092453   92453                Stalin Ravindar Singh
+sl092560   92560                Jakeer Shaik
+SL092561   92561                Srinivasa Sastry Pothukuchi
+SL092880   92880                Kavitha Natarajan
+SL092904   92904                Abila Kamatchi Jeevanandham
+SL092905   92905                Hari Krishna Movva
+SLV104293  104293               Kavya Tangatoor
+SLV105216  105216               Vijay Balaji
+SLV106891  106891               Niveatha Thirumalai
+SLV107241  107241               Arvind Muralidharan
+SLV107457  107457               Pritish Sasidaran
+SLV15934   NULL                 NULL
+SLV2100921 2100921              Sunkara Kalyan
+SS2100019  2100019              Prasath Subbiah Masilamani
+SS2100052  2100052              Kannan Sellakkannu
+SS2100053  2100053              Naren Kumar Padmanabhan
+SS2100056  2100056              Vinodh Durai Madasamychelladurai
+SS2100098  2100098              Uma Maheswari Thiyagarajan
+SS2100108  2100108              Sooriyaprabu Veerasamy
+SS2100109  2100109              Mohamedfarooq Aslambasha
+SS2100122  2100122              Sudharshini Nagarajan
+SS2100123  2100123              Dineshbala Kuppan
+ss2100164  2100164              Sughal Manivel
+SS2100177  2100177              Mohanapriya Devaraj
+SS2100214  2100214              Vinayagamoorthy Sathyamoorthy
+SS2100219  2100219              Suresh Kumar Boddapu
+SS2100238  2100238              Christilla Sujithra
+ss2100242  2100242              Anand Ss
+SS2100270  2100270              Balajee Madhavan
+SS2100358  2100358              Stanley Varghese
+SS2100371  2100371              Rajasekaran Panneerselvam
+SS2100373  2100373              Mastanrao Gatram
+SS2100411  2100411              Kesavan Dhanasekaran
+SS2100413  2100413              Mohamed Ameen Abdul Wajid
+SS2100417  2100417              Santhosh Kumar Sundarrajan
+SS2100418  2100418              Hemachandran Bakthavachalam
+SS2100428  2100428              Arun Prasath
+SS2100450  2100450              Karthik Raja Appar
+SS2100466  2100466              Akarsh Gangadharan Pattani
+SS2100492  2100492              Adithya Soundararajan
+SS2100516  2100516              Prakash Angappan
+SS2100546  2100546              Raj Kumar Balasubramanian
+SS2100548  2100548              Murali Chevireddy
+SS2100573  2100573              Obul Reddy Nimmakayala
+SS2100594  2100594              Pavan Kumar Ravilla
+ss2100596  2100596              Ankur Bhusan Saikia
+SS2100611  2100611              Praveen Kumar Selvaraju
+SS2100645  2100645              Pavithra Prabhakaran
+SS2100646  2100646              Valliyammai Rajaram
+SS2100680  2100680              Jeeva Murugesan
+SS2100721  2100721              Shyam Prasanna Ramalingam
+SS2100841  2100841              Dinesh Kannan Alagesan
+SS2100894  2100894              Gladson Anbarasan
+SS2100906  2100906              Vijaya Lakshmi Subbarao Nunna
+SS2100915  2100915              Benhar Selva Ananth
+SS2100916  2100916              Sivasailam Nithyanandam
+SS2100971  2100971              Haripriya Muralidharan
+SS2100991  2100991              Karthikeyan Rajasundaram
+SS2100994  2100994              Krunal Panchal
+SS2100996  2100996              Balasubramanian Sayiraman
+SS2101003  2101003              Alaister Azariah
+SS2101033  2101033              Sagul Ameed Kaja Mohideen
+SS2101038  2101038              Vijaya Sreemathy
+
+(649 row(s) affected)
+
+UserId     EMP_CODE             EMP_Name
+---------- -------------------- ----------------------------------------------------------------------------------------------------
+css00322   322                  Srinivasamohan Ponnusamy
+CSS05466   5466                 Vinoth Babu Narashimhan
+CSS05469   5469                 Chidambaram.s Subramani
+CSS05472   5472                 Devanand Chandrasekaran
+CSS05473   5473                 Saravanan Sugumaran
+css07835   7835                 Subrahmanyam Venkatraman
+css100051  100051               Padman Krishna Panikar Bhasuran
+css100063  100063               Rahul Prabakaran
+css100267  100267               Steffi Mary Yates
+css100273  100273               Rakesh Gopalakrishnan
+css100294  100294               Packya Raj Stanislaus
+css100343  100343               Sree Kumar Krishnan
+css100458  100458               Sunil John Kanniakonil
+css100462  100462               Jaya Mareena Issac
+css100515  100515               Selva Lakshmanan
+css100540  100540               Griffin Solomon Herman
+css100557  100557               Rajesh Somarajan
+css100586  100586               Manoj Dhanasekar
+css100678  100678               Subhasish Chakrabarti
+css100715  100715               Bhuvaneswari Ramachandran
+css100717  100717               Srinidhi Venkatesh Nadig
+css100758  100758               Venkatesh Kumar
+css100786  100786               Safir Ahamed
+css100813  100813               Chirom Kusha Singh
+css100916  100916               Kannan Dakshanamoorthy
+css100941  100941               Jayashree Mohankumar
+css101038  101038               Vishnu Priya Ravindrababu
+CSS101041  101041               Hyder Gani
+css101051  101051               Venu Nambiar
+css101264  101264               Stalin Baliah Thangavelu
+css101268  101268               Vaishnavi K R
+css101301  101301               Saravana Kumar Thumati Ravikumar
+css101305  101305               Aishwarya Manivannan
+css101306  101306               Balasubramanian Thuduchi Mothilal
+css101311  101311               Anila Brijit Mary Selvam
+css101367  101367               Ninu Nishanandan
+css101383  101383               Salu Sara Mathew
+css101472  101472               Elangovan Jagatheesan
+css101522  101522               Satya Datta Subramanya Sarma Kodamanchili
+css101577  101577               Radha Rani
+css101684  101684               Indrani Mitra
+css101710  101710               Ramasamy Raja
+css101731  101731               Nidhya Priya Selvaraj
+css101780  101780               Hemalatha Dhanasekaran
+css101821  101821               Sowmya Gopal
+css101881  101881               Amaladoss Gabriel
+css101922  101922               Cleona Abraham
+css102083  102083               Madhankumar Rajendran
+css102092  102092               Arun Muthukrishnan
+css102128  102128               Smitha Hemmigae
+css102134  102134               Prasanth Srinivasan
+css102135  102135               Ramesh Dorairaj
+css102205  102205               Ashok Anbazhagan
+css102206  102206               Shiny Ingrid Chellappa
+css102211  102211               Sunil Tripathi
+css102227  102227               Leonard Vijayaraj
+css102286  102286               Arshad Saajid
+css102288  102288               Vignesh Ramamurthy
+css102293  102293               Eswaraiah Kuruba
+css102625  102625               Sathish Manikandan
+css102627  102627               Mithila Dhanasekaran
+css102632  102632               Deebathra Gnanadass
+css102653  102653               Monalisha Ashok
+css102655  102655               Madhumitha Pradeep
+css102673  102673               Angel Jalis
+css102679  102679               Pruthvi Sagar
+css102690  102690               Fathima Bee Abubakkar
+css102745  102745               Srikamatchi Sreenivasan
+css102789  102789               Logeswaran Gunapalan
+css102829  102829               Arunvijay Madasamy
+css102844  102844               Aishwarya Ramabadran
+css102898  102898               Vijay Ganesh Ramesh
+css102942  102942               Madhavi Nair
+css102977  102977               Gayathri Bharani
+css102978  102978               Varalaxmi Ponnurangam
+css102998  102998               Arumuga Rajan Balasubramanian
+css103051  103051               Nisath Jabeen
+css103052  103052               Ganeshram Chenniappan
+css103122  103122               Archana Soundarajan
+css103124  103124               Sharmila Arumugam
+css103144  103144               Anand Chandrasekar
+css103145  103145               Arokyajohnprabeen Gunaseelan
+css103161  103161               Sriesaangher Alagusundar
+css103185  103185               Rajeev Murugan
+css103196  103196               Sushanth Desai
+css103219  103219               Vivek Chandrakumar
+css103251  103251               Amaravadi Lohitha Sowmya
+css103325  103325               Renga Sankaranarayanan
+css103326  103326               Venugopal Adthya
+css103367  103367               Giridharan Venkatesan
+css103369  103369               Vinodhkumar Kumarasamy
+css103455  103455               Vignesh Jalendiran
+css103493  103493               Anitha Thiyagarajan
+css103547  103547               Mano Sugandhi
+css103554  103554               Poornima Mohan
+css103608  103608               Sunder Ganesh
+css103637  103637               Nandagopal Narayanamurthy
+css103638  103638               Prakhar Chanauria
+css103639  103639               Brahmaiah Bhupati
+css103664  103664               Mohammed Zaheer Rasheed
+css103667  103667               Jai Nithish
+css103685  103685               Sreenadh Kapa
+CSS103711  103711               Arun Kumar Ns
+css103716  103716               Ramaguru Narayanan
+css103727  103727               Vijayakumar Subramani
+css103732  103732               Aravind Yennati
+css103782  103782               Bhuvana Sridhar
+css103949  103949               Vimal Krishna
+css103954  103954               Vinoth Dhanapal
+css103958  103958               Archana Mishra
+css103963  103963               Venkat Dhandapani
+css104043  104043               Kamni Ramesh
+css104049  104049               Momi Roy
+css104130  104130               Krishnamohan Donga
+css104191  104191               Gajendran Sekar
+css104226  104226               Therance Joy
+css104227  104227               Tudil Elizabeth
+css104251  104251               Varun Venkat
+css104261  104261               Karthikeyan Kandasamy
+css104282  104282               Zeenath Naseer
+css104284  104284               Anitha Anbazhagan
+css104327  104327               Arun Kumar Thomas
+css104352  104352               Kabilesh Sethumani
+css104359  104359               Kasmoor Reddy Ravuru
+css104360  104360               Varahala Reddy Pallerla
+css104363  104363               Vivek Sundaresan
+css104401  104401               Franklin Ashley
+css104427  104427               Shravan Kumar Babu
+css104438  104438               Ferozkhan Rahamadullah
+css104451  104451               Kesavan Rajendran
+css104453  104453               Suhas Menon
+css104481  104481               Anish Mon Vadivel
+css104501  104501               Jayakumar Narayanamoorthy
+css104503  104503               Flex Clement
+css104513  104513               Naveen Kumar Gopalakrishnan
+css104559  104559               Kesavalu Ramanujam
+CSS104638  104638               Vignesh Narayanan
+css104706  104706               Prashanth Jerome
+css104707  104707               Kumara Guru
+css104734  104734               Sunil Virmani
+css104763  104763               Narenthiran Rajaram
+css104786  104786               Shyam Sundar Panneer Selvam
+css104810  104810               Fouzal Ameer Abubacker
+css104828  104828               Goutham Mani
+css104831  104831               Aasif Nour Hamidh
+css104832  104832               Renukadevi Marimuthu
+css104865  104865               Senthil Pugazhendi
+css104871  104871               Roshan Andrew Isaac
+css104920  104920               Abdul Rahman
+css104933  104933               Omprakash Rukmangathan
+CSS104937  104937               Bharath Kumar
+css104952  104952               Nachal Palaniappan
+css104994  104994               Gayathri Rajavelu
+css105011  105011               Suneel Kumar Raju Vysyaraju
+css105024  105024               Prabhu Srinivasan
+css105039  105039               Vethanayage Thiyagarajan
+css105062  105062               Thirumaran Dhanapal
+css105094  105094               Arthi Mahalingam
+css105095  105095               Saranyadevi Manoharan
+css105109  105109               Vijayakumar Jambulingam
+css105112  105112               Arun Kumar Thinagaran
+css105138  105138               Mahendra Singh
+css105168  105168               Surya Prakash Ahusula
+css105184  105184               Justus Jamieson
+css105202  105202               Sivaram Kanthimathinathan
+css105205  105205               Deepak Sharma
+css105218  105218               Karunya Ravichandran
+css105251  105251               Abinaya Dhiravidamani
+css105279  105279               Harriprasath Selvaraj
+css105281  105281               Kathiravan Radhakrishnan
+css105366  105366               Sripriya Balasubaramanian
+css105461  105461               Surya Elangovan
+css105478  105478               Arungunaranjan Arungunasekaran
+css105482  105482               Bhasker Thirumala
+css105511  105511               Rambrabu Jaganathan
+css105543  105543               Ramaraj Vanarajan
+css105554  105554               Mohana Vaijayanthi
+css105555  105555               Jaba Kumari
+css105571  105571               Amit Kumar Pandey
+css105575  105575               Yamuna Chalapathiraj
+css105640  105640               Sariga Sureshkumar
+css105657  105657               Devavarshini Santhosh Kumar
+css105663  105663               Raghunathan Kadirvel
+css105680  105680               Balaji Karunanithi
+css105734  105734               Karthikh Jeeva
+css105766  105766               Sai Prashanthi Chandrasekar
+css105768  105768               Divya Bharathi Dilliraj
+css105775  105775               Rinu Kumar Rajeev
+css105779  105779               Nivya Sebastian
+css105790  105790               Raam Prassath
+css105796  105796               Ajay Kumar
+css105825  105825               Karthikeyan Boomilingam
+css105830  105830               Vivek Ravichandran
+css105848  105848               Ganesh Nagarajan
+css105879  105879               Vignesh Kunna Premkumar
+css105898  105898               Senthil Kumar Loganathan
+css105935  105935               Vishnu Teja Reddy Guggulla
+css106014  106014               Sathishkumar Ramakrishnan
+css106016  106016               Firoz Ahamed Naina Mohamed Gani
+css106032  106032               Puurnima Vasudevan
+css106035  106035               Ammu Suran
+css106036  106036               Hari Prasad Manisekaran
+css106037  106037               Sabarish Pattabiraman
+css106038  106038               Ramesh Kumar
+css106045  106045               Balaji Parthiban
+css106049  106049               Priya Madheswaran
+css106074  106074               Sridev Surendran
+css106094  106094               Saurav Ghosh
+css106136  106136               Safeer Ahmed Mastim
+css106154  106154               Vasanth Kumar Balakrishnan
+css106198  106198               Chandrasekar Parthasarathy
+css106201  106201               Ajith Mamolin
+css106226  106226               Dhilip Kumar
+css106266  106266               Gourinath Diojode
+css106274  106274               Prabhakaran Kuppan
+css106349  106349               Krishnan Ganesan
+css106367  106367               Srinivasa Rao
+css106388  106388               Chitra Bala
+css106405  106405               Shirke Pawan Shivaji
+css106406  106406               Sathyapriya Marimuthu
+css106462  106462               Samuel Ebenezer
+css106463  106463               Roshanraj Narayanan Muraleedharan
+css106477  106477               Arun Kumar
+css106541  106541               Vinoth Kumar
+css106550  106550               Raja Maharaja
+css106607  106607               Sangeeth Narayanan
+css106609  106609               Shonima Kunhikannan
+css106634  106634               Gunasegaran Annadurai
+css106647  106647               Sreeja Chandrasekhar Kakarla
+css106670  106670               Roseline Padmini
+css106679  106679               Pradeep Balasubramaniam
+css106688  106688               Abinaya Srinivasan
+css106691  106691               Sumathi Shekar
+css106696  106696               Jagajanani Ramakrishnan
+css106720  106720               Deborah Naomi Sebastian
+css106724  106724               Santhosh Kumar Ramachandran
+css106822  106822               Sri Raghava Kiran Javvaji
+css106842  106842               Sashidharan Kanagaraj
+css106913  106913               Raghunath Bukkapatnam
+css106937  106937               Sweadhini Murugan
+css106969  106969               Yuvaraj Loganathan
+CSS107009  107009               Priyanka Praveen
+CSS107010  107010               Swetha Thomas
+css107014  107014               Sathish Kumar Ramasamy
+css107032  107032               Naresh Kumar Shanmugam
+css107039  107039               Aravindhan Jaya Kumar
+css107044  107044               Joveneshwar Vencatachellum
+css107091  107091               Yuvaraj Arulmozhi
+css107095  107095               Hemanth Bharadwaj
+CSS107139  107139               Ashish Kumar
+css107157  107157               Prason Selvanayagam
+css107221  107221               Abishek Reuben
+css107230  107230               Gautam Govinda
+css107235  107235               Shiva Prasad
+css107236  107236               Saranya Arikkrishnan
+css107261  107261               Saravanan Doss
+css107274  107274               Dinesh Ningaraj Chikkegowda
+css107279  107279               Karthik Ramesh
+css107284  107284               Soumiya Soumiya
+css107285  107285               Anjana Chimizh
+css107286  107286               Deepika Srinivasan
+css107289  107289               Chetan Lalith
+css107290  107290               Rajasekar Parimalam
+css107292  107292               Yuvith Kumar L
+css107293  107293               Aghoreshwaran Narayanan
+css107300  107300               Greeshma Jose
+css107301  107301               Priyanga Munuswamy Srinivasan
+css107320  107320               Vipul Vaidya
+css107322  107322               Nesha Subbiah
+css107345  107345               Rohit Sharma
+css107346  107346               Surya Teja
+css107400  107400               Abila Janet Devasagayam
+CSS107426  107426               Santhosh Kumar
+css107527  107527               Wesley Igwe
+css50809   50809                Prem Kumar Mv
+css55012   55012                Easwaramoorthy Damodaran
+CSS55155   55155                Sivaraman Shanmugam
+css60567   60567                Sathish M
+CSS60607   60607                Aparna Peethani
+CSS88136   88136                Venkateswarlu Konjeti
+CSS88720   88720                Karmughilan Ramasamy
+CSS89108   89108                Somasundaram P
+CSS89127   89127                Nandakumar Sadasiva Bhat
+CSS89215   89215                Vivek Devaraj
+CSS89728   89728                Sridhar Dharmalingam
+css89763   89763                Sumithra Veeraraghavan
+CSS89804   89804                Sunil Kumar Eswaran
+CSS92026   92026                Jayaprakash Lakshmanan
+CSS92955   92955                Gokul Raj Sampathraj
+CSS92997   92997                Ramya Supraja Rajan
+CSS93056   93056                Prakash Azhagesan
+CSS93115   93115                Suyambu Alagesan
+CSS93250   93250                Radhakrishnan Subramanian
+CSS93440   93440                Ramesh Gandepalli
+CSS93442   93442                Suman Ganta
+CSS93482   93482                Indrajeet Nag
+CSS93588   93588                Shalson Nagarajan
+CSS93696   93696                Jacob Jeevan Kumar Pagolu
+CSS93712   93712                Dhiraj Punjabi Manoharlal
+CSS93841   93841                Mohammed Imthiyas Gani
+CSS93906   93906                Vijay Mouli Chandramouleeshwaran
+CSS93911   93911                Amalamanoj Sowerimuthu
+CSS93931   93931                Bindhuja Krishnamoorthi
+CSS93988   93988                Pravinkumar Mohan
+CSS94000   94000                Praveen Panneerselvam
+CSS94036   94036                Prabu Margabandhu
+CSS94073   94073                Primrose Jasmin Ravi Manohar
+CSS94289   94289                Nazrul Haque Mohammed
+CSS94299   94299                Sukumar Ganapathy
+CSS94302   94302                Praveen Nageswaran
+CSS94327   94327                Ramesh Govindan
+CSS94472   94472                Vidhya Chandran
+CSS94527   94527                Sinthukavi Gajapathy
+CSS94600   94600                Arasu T.S.T
+CSS94899   94899                Yash Verma
+CSS94959   94959                Daniel Isaac
+CSS95215   95215                Raghuprasath Shanmugam
+CSS95285   95285                Aram Valartha Sundaram Subramani
+CSS95441   95441                Gopinath Nagarajan
+CSS95520   95520                Sateeshkumar Golusupudi
+CSS95715   95715                Ratna Kumar Yendluri
+CSS95779   95779                Lakshmisudha Parthasarathy
+CSS95949   95949                Amogh Arunkumar
+CSS95995   95995                Balaji Arulananthan
+css96200   96200                Bhavik Satish Kiri
+CSS96457   96457                Roland Michael George
+CSS96472   96472                Sreenivasulu Gannoj
+CSS96545   96545                Ramesh Kata
+CSS96554   96554                Sofiya Sulthana
+CSS96703   96703                Dilip Kumar
+CSS96727   96727                Parthasarathy Jagannathan
+CSS96741   96741                Shanmuga Sundaram
+CSS96818   96818                Praveen Gopikrishnan
+CSS96886   96886                Jaiganesh Raman
+CSS96909   96909                Ajay Veeraiah
+CSS97092   97092                Jeniffar Clement
+CSS97235   97235                Sridhar Sivasundar Lal
+CSS97535   97535                Sunil Sharma
+CSS97604   97604                Megha Anand Suraj
+css97819   97819                Karthik Subramanian
+CSS97949   97949                Gokulnarayanaswamy Athilingam
+CSS97950   97950                Pavithra Ayyadurai
+CSS97959   97959                Beulah Beryl Thangiah
+CSS97985   97985                Shashikant Bhogshetty
+CSS97996   97996                Ramamoorthy Gomathinayagam
+CSS98080   98080                Senthil Kumar Manivannan
+CSS98237   98237                Krishna Moorthy
+CSS98281   98281                Veeramani Anandhan
+CSS98284   98284                Rajamanikkam Savurimuthu
+CSS98326   98326                Nikesh Jagadish
+CSS98356   98356                Hari Shanthilal
+CSS98380   98380                Rahul Kunju Raja
+CSS98511   98511                Pradeep Arumugam
+CSS98514   98514                Olaganathan Suyambulingam
+CSS98572   98572                Joe Prakash
+CSS98598   98598                Devilakshmi Gouthamar
+CSS98754   98754                Godson Kumar
+CSS98755   98755                Saravanan Rajendran
+CSS98756   98756                Sanjiv Kumar Selvaraj
+CSS98777   98777                Dharmalingam Dhakshinamoorthy
+CSS98803   98803                Annamalai Subbiah
+CSS98824   98824                Arun Kumar Ramakrishnan
+CSS98838   98838                Mohammed Khaleel
+CSS98859   98859                Karthikeyan Venkatraman
+CSS98878   98878                Vidhya Chandru
+CSS98939   98939                Asha Rajamani Thangarajan
+CSS98948   98948                Kamlesh Upadhyay
+css99053   99053                Balaji Chandaka
+css99063   99063                Johanna Pauline
+css99288   99288                Rathika Raja
+css99332   99332                Nithyanandh Manavalan
+css99392   99392                Pradeep Kumar Shankarbabu
+css99598   99598                Muthu Arunachalam
+css99624   99624                Kavi Kumaran Jayavel
+css99659   99659                Ram Kumar Ravikumar
+css99662   99662                Prasanna Baskaran
+css99695   99695                Sujitha Shanmugasundaram
+css99787   99787                Sathish Bhackta Bachalan
+css99871   99871                Sha Hussain Shahabudeen
+css99944   99944                Balaji Chadaram
+css99958   99958                Riyaz Hussain
+css99964   99964                Mekala Anandan
+Parallelsi NULL                 NULL
+SL000114   114                  Bobby Mathen Varghese
+sl000132   132                  Nirmal Kumar
+SL000205   205                  Ranjit Rao
+SL000254   254                  Vino Franklin N
+sl000492   492                  Venkata Ramaraju P
+sl000551   551                  Kannan Venkatesan
+sl000560   560                  Raghavendran Krishnamurthy
+sl000617   617                  Devanand P S C
+sl000667   667                  Salahudin Ajmal
+SL000855   855                  Ram Kumar Pelasur Sridharan
+SL000948   948                  Ramesh Kumar Karri
+SL000955   955                  Dinesh Merrill M J
+SL000959   959                  Senthil Sugunan
+SL000972   972                  Don Antony Rao
+SL000973   973                  Bala Venkatesh Sah P E
+SL001130   1130                 Arvind Kingsly Appavu
+sl001316   1316                 Ezhilarasan Ponnivalavan
+SL001357   1357                 Sadeesh Kumar Mani
+SL001471   1471                 Anbazagan Neelakandan
+SL001485   1485                 Sowmyalakshmi Seshadri
+SL001486   1486                 Sarin Ravindranath Kollarkand
+sl001512   1512                 Thangarajan Gopala Krishnan
+SL001957   1957                 Ramamurthy Raghu
+SL002086   2086                 Jinoy Jose
+SL002120   2120                 Selvamuthukumar Janardhan
+SL002216   2216                 Babu Vengalathur Ganesan
+SL002227   2227                 Sashi Kanth Katragadda
+SL002247   2247                 Tonmoy Gohain
+SL002249   2249                 Gopiraj Rajamani
+SL003010   3010                 Karthikeyan Mohanadoss
+SL003050   3050                 Vinod Balan
+SL003078   3078                 Surendhra Shiva Shankar
+SL003127   3127                 Prasath Panneerselvam
+SL003475   3475                 Vijay Kumar Sethuraman
+sl004320   4320                 Marian Ann D Cruz
+sl004331   4331                 Ganesh Pillai
+sl004491   4491                 Sivanarumugam Mookiah
+sl004642   4642                 Rathnasabapathy Namasivayam
+SL004685   4685                 Balaji Lakshmipathy
+sl004906   4906                 Aruna Hariohm
+sl004950   4950                 Srilatha Sirijala
+SL005016   5016                 Vivek Bharath Kumar Arumugam
+sl005032   5032                 Panneerselvam Alagesan
+sl005044   5044                 Suman Gokul
+sl005048   5048                 Kural Ovian Ganesan
+sl005052   5052                 Chandra Mouli V
+sl005057   5057                 Ramesh Eswaran
+sl005058   5058                 Sankara Narayanan
+sl005095   5095                 Usha Rani S
+SL005111   5111                 Jennila Charlin
+SL005148   5148                 Rajendraprasad Vishwanath
+SL005154   5154                 Hari Krishnan T Narayanan
+SL005171   5171                 Saravanakumar Varadharajan
+SL005223   5223                 Jaishankar Rathna Sabapathy
+SL005303   5303                 Pradeep Thangaraj
+SL005371   5371                 Shabu Shine Nivas Sadanandan
+SL005376   5376                 Chidambaram Muthu
+SL005459   5459                 Dinesh Bhaskaran
+SL005461   5461                 Ramesh Perumal
+SL005463   5463                 Esther Devaraj
+SL005470   5470                 Sundaram Chidambaram
+sl005498   5498                 Girinath Kumar Chinthavali
+SL006545   6545                 Muralidharan Balan
+SL006593   6593                 Ammani Priavardhini T Santhana
+SL006740   6740                 Madhira Venkata Durga Prasad
+SL006777   6777                 Rony Mathew Zacharia
+SL006852   6852                 Pravin Chozhiparambil Pratap
+SL007128   7128                 Durairaj Govindarajan
+sl007174   7174                 Jayachithra Anthony
+SL007851   7851                 Jolly Pravin Joshi
+SL007951   7951                 Lakshmi Narayan Kothanda Raman
+sl008017   8017                 Vijaya Kumar Bommasamudram
+SL008804   8804                 Rajesh Mohan
+sl009078   9078                 Vinodh Rajan
+SL009239   9239                 Somasundaraam Kasiraman
+SL009245   9245                 Vidyasagar Panchatcharam
+SL009391   9391                 Mohan Suppu
+SL009587   9587                 Shyamala Sabapathy
+sl010231   10231                Lijo Cherian Eapen
+SL010343   10343                Manimozhi Karuppannan
+SL010829   10829                Yuvaraj D. Ramamoorthy
+SL010882   10882                Rakesh Nagabushanam
+sl010988   10988                Vinoth Mohanan
+SL011060   11060                Shamshij Padayantavida
+SL011094   11094                Yuvaraj Ganesan
+SL011201   11201                Sivanandh Sudarsanan
+sl011431   11431                Satish Kumar Gopalakrishna
+sl011460   11460                Vijayakumar Panneer Selvam
+SL011527   11527                Gunasekaran M
+SL011711   11711                Gaspar Lawrence
+sl011774   11774                Dinesh Kumar Babu
+sl011781   11781                Nagarajan Murthy
+SL011994   11994                Nanda Krishna Pasupula
+SL012074   12074                Shaick Mohammed Rizwan
+sl012204   12204                Victoria Jeeva Rathnam Raja
+sl012456   12456                Norton Jude O Brien
+SL013051   13051                Vasu Raju
+sl013145   13145                Satharak Selvaraj
+SL013969   13969                Rohini Durai
+SL014951   14951                Rajiv Nagarajan
+SL051223   51223                Jayganesh Sambath
+SL051473   51473                Senthilkumar Sethurambabu
+SL051486   51486                Nagasubramani Rajamohan
+SL051496   51496                Murugesh Ganesan
+SL051499   51499                Sivakumar Sivaprakasam
+SL051564   51564                Jayaraj Murugaiyan
+sl051696   51696                Anandhan Srinivasan
+SL051908   51908                Annie Mathew Joseph
+SL051996   51996                Shajin Appalose Xavier
+sl052042   52042                Vaseegaran Asirvatham Azariah
+SL052221   52221                Satyanarayanan Visvanathan
+SL052264   52264                Sakthivel Nagaraj
+SL055118   55118                Sriram Chandrasekharan
+sl060108   60108                Edwin Raj I
+SL060111   60111                Lenora Smith
+SL060393   60393                Venkateswarlu R
+SL060394   60394                Marneni V R
+SL060458   60458                Gnanaprakasam D
+SL060551   60551                Shinoy Balan
+SL060602   60602                Giribabu Erigineni
+SL060629   60629                Jayaraman M
+SL060634   60634                Srinivas Rao A
+SL087412   87412                Christy Jebamalar
+SL087443   87443                Seetharaman Machavallavan
+SL087603   87603                Marian Jude Pradeep
+SL087639   87639                Srinivas Anappindi
+SL087832   87832                Deepak Prabhakaran
+SL087986   87986                Sathish Babu Sukumar
+sl088096   88096                Arsha Mercy Antony
+sl088132   88132                Lakshminarayanan Jayakumar
+sl088157   88157                Nicoletta Wylde
+SL088571   88571                Sivakumar Somaskandan
+SL088660   88660                Senthilkumar Sathasivam
+SL088957   88957                Bala Gopalan Dharmarajan
+sl088978   88978                Saravanamuthukumar Esackiappan
+SL089304   89304                Suresh Kumar Guntuka
+sl089345   89345                Prabhaharan Duraimoni Sivathanulingam
+SL089376   89376                James Leo Ithayan Jegaraj
+SL089455   89455                Ramesh Ramachandran Oduru
+SL089609   89609                Harikrishnan Baskaran
+sl089921   89921                Nina Singh
+SL089924   89924                Vigneshbabu Basavaraj
+SL090011   90011                Praneeth Bammidi
+SL090113   90113                Horatius Joachim
+SL090173   90173                Sajeevemmanueljoseph Sudhakaran
+sl090236   90236                Charles Jayaraj
+SL090340   90340                Santhosh Venugopalan
+SL090341   90341                Manibharathi Ramanathan
+sl090434   90434                Nagabhushana Rao Seera
+sl090496   90496                Sakthiswaraan Venkatapathy
+SL090558   90558                Karthik Kannan
+SL090598   90598                Koteswaramma Chevuru
+SL090632   90632                Vignesh Sachidhanandam
+sl090678   90678                Mohammed Atif
+SL090825   90825                Arjunthanjavur Muniyandhi
+SL091026   91026                Lakshmanan Krishnan
+sl091029   91029                Ranjith Ravishankar
+SL091036   91036                Karthik Paramasivan
+SL091148   91148                Krishnan Saranathan
+SL091181   91181                Sindhuja Lakshminarayanan
+sl091635   91635                Rajesh Chandrasekar
+SL091737   91737                Manikandan Arumugam
+SL091814   91814                Andrew Watson Johnpeter
+SL091816   91816                Ramesh Kumar Sunderraj
+SL091945   91945                Elangovan Srinivasan
+SL092001   92001                Johnson Kumar
+SL092211   92211                Krishnan Chakrapani Gopalrao
+SL092292   92292                Sakubar Sathik Khan
+SL092344   92344                Gopinath Gurushave
+SL092369   92369                Chandramohan Krishnamoorthy
+SL092453   92453                Stalin Ravindar Singh
+sl092560   92560                Jakeer Shaik
+SL092561   92561                Srinivasa Sastry Pothukuchi
+SL092880   92880                Kavitha Natarajan
+SL092904   92904                Abila Kamatchi Jeevanandham
+SL092905   92905                Hari Krishna Movva
+SLV104293  104293               Kavya Tangatoor
+SLV106891  106891               Niveatha Thirumalai
+SLV107241  107241               Arvind Muralidharan
+SLV107457  107457               Pritish Sasidaran
+SLV15934   NULL                 NULL
+SS2100019  2100019              Prasath Subbiah Masilamani
+SS2100052  2100052              Kannan Sellakkannu
+SS2100053  2100053              Naren Kumar Padmanabhan
+SS2100056  2100056              Vinodh Durai Madasamychelladurai
+SS2100098  2100098              Uma Maheswari Thiyagarajan
+SS2100108  2100108              Sooriyaprabu Veerasamy
+SS2100109  2100109              Mohamedfarooq Aslambasha
+SS2100122  2100122              Sudharshini Nagarajan
+SS2100123  2100123              Dineshbala Kuppan
+ss2100164  2100164              Sughal Manivel
+SS2100177  2100177              Mohanapriya Devaraj
+SS2100214  2100214              Vinayagamoorthy Sathyamoorthy
+SS2100219  2100219              Suresh Kumar Boddapu
+ss2100242  2100242              Anand Ss
+SS2100270  2100270              Balajee Madhavan
+SS2100358  2100358              Stanley Varghese
+SS2100371  2100371              Rajasekaran Panneerselvam
+SS2100373  2100373              Mastanrao Gatram
+SS2100411  2100411              Kesavan Dhanasekaran
+SS2100413  2100413              Mohamed Ameen Abdul Wajid
+SS2100417  2100417              Santhosh Kumar Sundarrajan
+SS2100418  2100418              Hemachandran Bakthavachalam
+SS2100428  2100428              Arun Prasath
+SS2100450  2100450              Karthik Raja Appar
+SS2100466  2100466              Akarsh Gangadharan Pattani
+SS2100492  2100492              Adithya Soundararajan
+SS2100516  2100516              Prakash Angappan
+SS2100546  2100546              Raj Kumar Balasubramanian
+SS2100548  2100548              Murali Chevireddy
+SS2100573  2100573              Obul Reddy Nimmakayala
+SS2100594  2100594              Pavan Kumar Ravilla
+SS2100611  2100611              Praveen Kumar Selvaraju
+SS2100645  2100645              Pavithra Prabhakaran
+SS2100646  2100646              Valliyammai Rajaram
+SS2100680  2100680              Jeeva Murugesan
+SS2100721  2100721              Shyam Prasanna Ramalingam
+SS2100841  2100841              Dinesh Kannan Alagesan
+SS2100894  2100894              Gladson Anbarasan
+SS2100906  2100906              Vijaya Lakshmi Subbarao Nunna
+SS2100915  2100915              Benhar Selva Ananth
+SS2100916  2100916              Sivasailam Nithyanandam
+SS2100971  2100971              Haripriya Muralidharan
+SS2100991  2100991              Karthikeyan Rajasundaram
+SS2100994  2100994              Krunal Panchal
+SS2100996  2100996              Balasubramanian Sayiraman
+SS2101003  2101003              Alaister Azariah
+SS2101033  2101033              Sagul Ameed Kaja Mohideen
+SS2101038  2101038              Vijaya Sreemathy
+
+(612 row(s) affected)
+
+UserId     EMP_CODE             EMP_Name                                                                                             CommonLocation
+---------- -------------------- ---------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CSS05466   5466                 Vinoth Babu Narashimhan                                                                              Vysarpadi (Route 3 - Chetpet to Redhills )
+CSS05472   5472                 Devanand Chandrasekaran                                                                              Selaiyur (Route 7 - Chetpet to East Tambaram )
+css100063  100063               Rahul Prabakaran                                                                                     Villivakkam (Route 8 - Chetpet to Redhills )
+css100267  100267               Steffi Mary Yates                                                                                    GKM Colony (Route 8 - Chetpet to Redhills )
+css100294  100294               Packya Raj Stanislaus                                                                                Porur (Route 6 - Chetpet to Guduvanchery )
+css100343  100343               Sree Kumar Krishnan                                                                                  Valsaravakkam (Route 10 - Chetpet to Ponnammalle )
+css100462  100462               Jaya Mareena Issac                                                                                   Irumbliyur (Route 6 - Chetpet to Guduvanchery )
+css100678  100678               Subhasish Chakrabarti                                                                                Ambattur Depot (Route 1 - Chetpet to Pattabiram )
+css100916  100916               Kannan Dakshanamoorthy                                                                               Perungalathur (Route 6 - Chetpet to Guduvanchery )
+css100941  100941               Jayashree Mohankumar                                                                                 Cholaimedu (Route 10 - Chetpet to Ponnammalle )
+css101268  101268               Vaishnavi K R                                                                                        Thirumangalam (Route 1 - Chetpet to Pattabiram )
+css101305  101305               Aishwarya Manivannan                                                                                 Camp Road (Route 7 - Chetpet to East Tambaram )
+css101311  101311               Anila Brijit Mary Selvam                                                                             Thiruvanmiyur (Route 5 - Chetpet to Shollinganallur )
+css101383  101383               Salu Sara Mathew                                                                                     East Tambaram (Route 7 - Chetpet to East Tambaram )
+css101522  101522               Satya Datta Subramanya Sarma Kodamanchili                                                            Ambattur Depot (Route 1 - Chetpet to Pattabiram )
+css101577  101577               Radha Rani                                                                                           Ashok Nagar (Route 7 - Chetpet to East Tambaram )
+css101684  101684               Indrani Mitra                                                                                        Velachery Bus Stand (Route 11 - Chetpet to Velachery )
+css101731  101731               Nidhya Priya Selvaraj                                                                                Tambaram (Route 6 - Chetpet to Guduvanchery )
+css101780  101780               Hemalatha Dhanasekaran                                                                               Tambaram (Route 6 - Chetpet to Guduvanchery )
+css101821  101821               Sowmya Gopal                                                                                         Sembakkam (Route 7 - Chetpet to East Tambaram )
+css101881  101881               Amaladoss Gabriel                                                                                    RA Puram (Route 5 - Chetpet to Shollinganallur )
+css102135  102135               Ramesh Dorairaj                                                                                      Chrompet (Route 6 - Chetpet to Guduvanchery )
+css102206  102206               Shiny Ingrid Chellappa                                                                               Kolathur (Route 8 - Chetpet to Redhills )
+css102655  102655               Madhumitha Pradeep                                                                                   Ambattur (Route 1 - Chetpet to Pattabiram )
+css102673  102673               Angel Jalis                                                                                          Avadi (Route 1 - Chetpet to Pattabiram )
+css102679  102679               Pruthvi Sagar                                                                                        Thousand Lights (Route 2 - Chetpet to Triplicane )
+css102690  102690               Fathima Bee Abubakkar                                                                                Thirumangalam (Route 1 - Chetpet to Pattabiram )
+css102745  102745               Srikamatchi Sreenivasan                                                                              East Tambaram (Route 7 - Chetpet to East Tambaram )
+css102942  102942               Madhavi Nair                                                                                         DMS (Route 5 - Chetpet to Shollinganallur )
+css102977  102977               Gayathri Bharani                                                                                     MKB Nagar (Route 3 - Chetpet to Redhills )
+css103051  103051               Nisath Jabeen                                                                                        Guindy Estate (Route 11 - Chetpet to Velachery )
+css103052  103052               Ganeshram Chenniappan                                                                                Jafferkhanpet (Route 7 - Chetpet to East Tambaram )
+css103122  103122               Archana Soundarajan                                                                                  Cholaimedu (Route 10 - Chetpet to Ponnammalle )
+css103124  103124               Sharmila Arumugam                                                                                    Perungalathur (Route 6 - Chetpet to Guduvanchery )
+css103144  103144               Anand Chandrasekar                                                                                   Camp Road (Route 7 - Chetpet to East Tambaram )
+css103219  103219               Vivek Chandrakumar                                                                                   Central (Route 9 - Chetpet to Thiruvottiyur )
+css103367  103367               Giridharan Venkatesan                                                                                Ambattur (Route 1 - Chetpet to Pattabiram )
+css103369  103369               Vinodhkumar Kumarasamy                                                                               G3 Police Station (Route 3 - Chetpet to Redhills )
+css103455  103455               Vignesh Jalendiran                                                                                   100 Feet Road (Route 10 - Chetpet to Ponnammalle )
+css103493  103493               Anitha Thiyagarajan                                                                                  Ambattur Depot (Route 1 - Chetpet to Pattabiram )
+css103554  103554               Poornima Mohan                                                                                       Mylapore (Route 5 - Chetpet to Shollinganallur )
+css103685  103685               Sreenadh Kapa                                                                                        Perungalathur (Route 6 - Chetpet to Guduvanchery )
+CSS103711  103711               Arun Kumar Ns                                                                                        Ambattur (Route 1 - Chetpet to Pattabiram )
+css103716  103716               Ramaguru Narayanan                                                                                   Gowriwakkam (Route 7 - Chetpet to East Tambaram )
+css103958  103958               Archana Mishra                                                                                       Ambattur (Route 1 - Chetpet to Pattabiram )
+css104043  104043               Kamni Ramesh                                                                                         Tondairpet (Route 9 - Chetpet to Thiruvottiyur )
+css104130  104130               Krishnamohan Donga                                                                                   Ambattur (Route 1 - Chetpet to Pattabiram )
+css104191  104191               Gajendran Sekar                                                                                      Thiruvottiyur (Route 9 - Chetpet to Thiruvottiyur )
+css104282  104282               Zeenath Naseer                                                                                       Perambur (Route 3 - Chetpet to Redhills )
+css104284  104284               Anitha Anbazhagan                                                                                    Moggappair  (Route 1 - Chetpet to Pattabiram )
+css104360  104360               Varahala Reddy Pallerla                                                                              Pallavaram (Route 6 - Chetpet to Guduvanchery )
+css104427  104427               Shravan Kumar Babu                                                                                   Kodambakkam (Route 7 - Chetpet to East Tambaram )
+CSS104638  104638               Vignesh Narayanan                                                                                    Bhai Kadai (Route 6 - Chetpet to Guduvanchery )
+css104763  104763               Narenthiran Rajaram                                                                                  Santhosh puram (Route 7 - Chetpet to East Tambaram )
+css104831  104831               Aasif Nour Hamidh                                                                                    Kodambakkam (Route 7 - Chetpet to East Tambaram )
+css105011  105011               Suneel Kumar Raju Vysyaraju                                                                          Ambattur Depot (Route 1 - Chetpet to Pattabiram )
+css105039  105039               Vethanayage Thiyagarajan                                                                             Perungalathur (Route 6 - Chetpet to Guduvanchery )
+css105094  105094               Arthi Mahalingam                                                                                     100 Feet Road (Route 10 - Chetpet to Ponnammalle )
+css105095  105095               Saranyadevi Manoharan                                                                                Kodambakkam (Route 7 - Chetpet to East Tambaram )
+css105109  105109               Vijayakumar Jambulingam                                                                              Ambattur Depot (Route 1 - Chetpet to Pattabiram )
+css105138  105138               Mahendra Singh                                                                                       Perungalathur (Route 6 - Chetpet to Guduvanchery )
+css105168  105168               Surya Prakash Ahusula                                                                                Neelankari (Route 5 - Chetpet to Shollinganallur )
+css105202  105202               Sivaram Kanthimathinathan                                                                            Velachery Bus Stand (Route 11 - Chetpet to Velachery )
+css105279  105279               Harriprasath Selvaraj                                                                                Ambattur Depot (Route 1 - Chetpet to Pattabiram )
+css105281  105281               Kathiravan Radhakrishnan                                                                             Villivakkam (Route 8 - Chetpet to Redhills )
+css105482  105482               Bhasker Thirumala                                                                                    Kodungaiyur (Route 3 - Chetpet to Redhills )
+css105511  105511               Rambrabu Jaganathan                                                                                  Ashok Nagar (Route 7 - Chetpet to East Tambaram )
+css105543  105543               Ramaraj Vanarajan                                                                                    Palavakkam (Route 5 - Chetpet to Shollinganallur )
+css105575  105575               Yamuna Chalapathiraj                                                                                 Avadi (Route 1 - Chetpet to Pattabiram )
+css105640  105640               Sariga Sureshkumar                                                                                   Pullianthope (Route 3 - Chetpet to Redhills )
+css105657  105657               Devavarshini Santhosh Kumar                                                                          Ambattur Depot (Route 1 - Chetpet to Pattabiram )
+css105680  105680               Balaji Karunanithi                                                                                   100 Feet Road (Route 10 - Chetpet to Ponnammalle )
+css105768  105768               Divya Bharathi Dilliraj                                                                              Ambattur Depot (Route 1 - Chetpet to Pattabiram )
+css105775  105775               Rinu Kumar Rajeev                                                                                    Pammal (Route 6 - Chetpet to Guduvanchery )
+css105779  105779               Nivya Sebastian                                                                                      Irumbliyur (Route 6 - Chetpet to Guduvanchery )
+css105825  105825               Karthikeyan Boomilingam                                                                              Avadi (Route 1 - Chetpet to Pattabiram )
+css105898  105898               Senthil Kumar Loganathan                                                                             Sembakkam (Route 7 - Chetpet to East Tambaram )
+css106014  106014               Sathishkumar Ramakrishnan                                                                            Tambaram (Route 6 - Chetpet to Guduvanchery )
+css106032  106032               Puurnima Vasudevan                                                                                   Ambattur Depot (Route 1 - Chetpet to Pattabiram )
+css106035  106035               Ammu Suran                                                                                           Urapakkam (Route 6 - Chetpet to Guduvanchery )
+css106045  106045               Balaji Parthiban                                                                                     Perambur (Route 3 - Chetpet to Redhills )
+css106074  106074               Sridev Surendran                                                                                     Tambaram (Route 6 - Chetpet to Guduvanchery )
+css106094  106094               Saurav Ghosh                                                                                         Chrompet (Route 6 - Chetpet to Guduvanchery )
+css106201  106201               Ajith Mamolin                                                                                        Kodungaiyur (Route 3 - Chetpet to Redhills )
+css106349  106349               Krishnan Ganesan                                                                                     Guindy (Route 7 - Chetpet to East Tambaram )
+css106388  106388               Chitra Bala                                                                                          Royapuram (Route 9 - Chetpet to Thiruvottiyur )
+css106541  106541               Vinoth Kumar                                                                                         Ambattur Depot (Route 1 - Chetpet to Pattabiram )
+css106609  106609               Shonima Kunhikannan                                                                                  Irumbliyur (Route 6 - Chetpet to Guduvanchery )
+css106720  106720               Deborah Naomi Sebastian                                                                              100 Feet Road (Route 10 - Chetpet to Ponnammalle )
+css106842  106842               Sashidharan Kanagaraj                                                                                Tambaram (Route 6 - Chetpet to Guduvanchery )
+css106913  106913               Raghunath Bukkapatnam                                                                                Moggappair  (Route 1 - Chetpet to Pattabiram )
+css106937  106937               Sweadhini Murugan                                                                                    Moolakadai (Route 3 - Chetpet to Redhills )
+css107014  107014               Sathish Kumar Ramasamy                                                                               Palavakkam (Route 5 - Chetpet to Shollinganallur )
+css107039  107039               Aravindhan Jaya Kumar                                                                                Adyar (Route 5 - Chetpet to Shollinganallur )
+css107044  107044               Joveneshwar Vencatachellum                                                                           Vepery (Route 9 - Chetpet to Thiruvottiyur )
+css107091  107091               Yuvaraj Arulmozhi                                                                                    Pallavaram (Route 6 - Chetpet to Guduvanchery )
+css107095  107095               Hemanth Bharadwaj                                                                                    Moggappair  (Route 1 - Chetpet to Pattabiram )
+CSS107139  107139               Ashish Kumar                                                                                         Moggappair  (Route 1 - Chetpet to Pattabiram )
+css107157  107157               Prason Selvanayagam                                                                                  Camp Road (Route 7 - Chetpet to East Tambaram )
+css107221  107221               Abishek Reuben                                                                                       Avadi (Route 1 - Chetpet to Pattabiram )
+css107235  107235               Shiva Prasad                                                                                         Kolathur (Route 8 - Chetpet to Redhills )
+css107236  107236               Saranya Arikkrishnan                                                                                 Irumbliyur (Route 6 - Chetpet to Guduvanchery )
+css107261  107261               Saravanan Doss                                                                                       Velachery Bus Stand (Route 11 - Chetpet to Velachery )
+css107279  107279               Karthik Ramesh                                                                                       Ashok Nagar (Route 7 - Chetpet to East Tambaram )
+css107284  107284               Soumiya Soumiya                                                                                      Moggappair  (Route 1 - Chetpet to Pattabiram )
+css107285  107285               Anjana Chimizh                                                                                       Mylapore (Route 5 - Chetpet to Shollinganallur )
+css107286  107286               Deepika Srinivasan                                                                                   Perambur (Route 3 - Chetpet to Redhills )
+css107289  107289               Chetan Lalith                                                                                        T Nagar (Route 4 - Chetpet to Saidapet )
+css107290  107290               Rajasekar Parimalam                                                                                  Camp Road (Route 7 - Chetpet to East Tambaram )
+css107292  107292               Yuvith Kumar L                                                                                       Cholaimedu (Route 10 - Chetpet to Ponnammalle )
+css107293  107293               Aghoreshwaran Narayanan                                                                              Nanganallur (Route 7 - Chetpet to East Tambaram )
+css107300  107300               Greeshma Jose                                                                                        Avadi (Route 1 - Chetpet to Pattabiram )
+css107301  107301               Priyanga Munuswamy Srinivasan                                                                        Nungambakkam (Route 4 - Chetpet to Saidapet )
+css107527  107527               Wesley Igwe                                                                                          Guindy Estate (Route 11 - Chetpet to Velachery )
+CSS55155   55155                Sivaraman Shanmugam                                                                                  Shollinganallur (Route 5 - Chetpet to Shollinganallur )
+CSS88720   88720                Karmughilan Ramasamy                                                                                 T Nagar (Route 4 - Chetpet to Saidapet )
+CSS89108   89108                Somasundaram P                                                                                       Pattabiram (Route 1 - Chetpet to Pattabiram )
+CSS89728   89728                Sridhar Dharmalingam                                                                                 Ambattur (Route 1 - Chetpet to Pattabiram )
+css89763   89763                Sumithra Veeraraghavan                                                                               T Nagar (Route 4 - Chetpet to Saidapet )
+CSS92026   92026                Jayaprakash Lakshmanan                                                                               Guduvanchery (Route 6 - Chetpet to Guduvanchery )
+CSS92997   92997                Ramya Supraja Rajan                                                                                  Puzhal (Route 8 - Chetpet to Redhills )
+CSS93250   93250                Radhakrishnan Subramanian                                                                            East Tambaram (Route 7 - Chetpet to East Tambaram )
+CSS94289   94289                Nazrul Haque Mohammed                                                                                Medavakkam Koot Road (Route 7 - Chetpet to East Tambaram )
+CSS94299   94299                Sukumar Ganapathy                                                                                    Madipakkam (Route 7 - Chetpet to East Tambaram )
+CSS94302   94302                Praveen Nageswaran                                                                                   East Tambaram (Route 7 - Chetpet to East Tambaram )
+CSS94899   94899                Yash Verma                                                                                           Karapakkam (Route 5 - Chetpet to Shollinganallur )
+CSS95715   95715                Ratna Kumar Yendluri                                                                                 Pattabiram (Route 1 - Chetpet to Pattabiram )
+CSS95779   95779                Lakshmisudha Parthasarathy                                                                           Ice House (Route 2 - Chetpet to Triplicane )
+CSS96554   96554                Sofiya Sulthana                                                                                      Ambattur Depot (Route 1 - Chetpet to Pattabiram )
+CSS96909   96909                Ajay Veeraiah                                                                                        Anna Nagar (Route 1 - Chetpet to Pattabiram )
+CSS97604   97604                Megha Anand Suraj                                                                                    Anna Nagar (Route 1 - Chetpet to Pattabiram )
+CSS97959   97959                Beulah Beryl Thangiah                                                                                Selaiyur (Route 7 - Chetpet to East Tambaram )
+CSS97985   97985                Shashikant Bhogshetty                                                                                Ambattur Depot (Route 1 - Chetpet to Pattabiram )
+CSS98284   98284                Rajamanikkam Savurimuthu                                                                             Kodambakkam (Route 7 - Chetpet to East Tambaram )
+CSS98514   98514                Olaganathan Suyambulingam                                                                            Central (Route 9 - Chetpet to Thiruvottiyur )
+CSS98598   98598                Devilakshmi Gouthamar                                                                                100 Feet Road (Route 10 - Chetpet to Ponnammalle )
+CSS98838   98838                Mohammed Khaleel                                                                                     Perambur (Route 3 - Chetpet to Redhills )
+CSS98939   98939                Asha Rajamani Thangarajan                                                                            Moggappair  (Route 1 - Chetpet to Pattabiram )
+CSS98948   98948                Kamlesh Upadhyay                                                                                     Kodambakkam (Route 7 - Chetpet to East Tambaram )
+css99053   99053                Balaji Chandaka                                                                                      Santhosh puram (Route 7 - Chetpet to East Tambaram )
+css99288   99288                Rathika Raja                                                                                         Ambattur Depot (Route 1 - Chetpet to Pattabiram )
+css99332   99332                Nithyanandh Manavalan                                                                                MKB Nagar (Route 3 - Chetpet to Redhills )
+css99598   99598                Muthu Arunachalam                                                                                    Ambattur (Route 1 - Chetpet to Pattabiram )
+css99695   99695                Sujitha Shanmugasundaram                                                                             Jafferkhanpet (Route 7 - Chetpet to East Tambaram )
+css99944   99944                Balaji Chadaram                                                                                      Vandalur (Route 6 - Chetpet to Guduvanchery )
+Parallelsi NULL                 NULL                                                                                                 100 Feet Road (Route 10 - Chetpet to Ponnammalle )
+SL001485   1485                 Sowmyalakshmi Seshadri                                                                               Mylapore (Route 5 - Chetpet to Shollinganallur )
+SL003050   3050                 Vinod Balan                                                                                          MKB Nagar (Route 3 - Chetpet to Redhills )
+SL003078   3078                 Surendhra Shiva Shankar                                                                              Poonnamallee (Route 10 - Chetpet to Ponnammalle )
+SL005016   5016                 Vivek Bharath Kumar Arumugam                                                                         Pallavaram (Route 6 - Chetpet to Guduvanchery )
+sl005032   5032                 Panneerselvam Alagesan                                                                               Killkattalai (Route 7 - Chetpet to East Tambaram )
+sl005095   5095                 Usha Rani S                                                                                          Ambattur (Route 1 - Chetpet to Pattabiram )
+SL005111   5111                 Jennila Charlin                                                                                      Vadapalani (Route 7 - Chetpet to East Tambaram )
+SL005148   5148                 Rajendraprasad Vishwanath                                                                            Poonnamallee (Route 10 - Chetpet to Ponnammalle )
+SL005154   5154                 Hari Krishnan T Narayanan                                                                            Avadi (Route 1 - Chetpet to Pattabiram )
+SL005371   5371                 Shabu Shine Nivas Sadanandan                                                                         Iyyappanthangal (Route 10 - Chetpet to Ponnammalle )
+SL005470   5470                 Sundaram Chidambaram                                                                                 100 Feet Road (Route 10 - Chetpet to Ponnammalle )
+SL006593   6593                 Ammani Priavardhini T Santhana                                                                       Ayanavaram (Route 8 - Chetpet to Redhills )
+sl007174   7174                 Jayachithra Anthony                                                                                  Konithope (Route 9 - Chetpet to Thiruvottiyur )
+sl010231   10231                Lijo Cherian Eapen                                                                                   Moggappair  (Route 1 - Chetpet to Pattabiram )
+sl010988   10988                Vinoth Mohanan                                                                                       Nanganallur (Route 7 - Chetpet to East Tambaram )
+SL011094   11094                Yuvaraj Ganesan                                                                                      Porur (Route 10 - Chetpet to Ponnammalle )
+SL011201   11201                Sivanandh Sudarsanan                                                                                 Guindy (Route 7 - Chetpet to East Tambaram )
+sl011431   11431                Satish Kumar Gopalakrishna                                                                           Mint (Route 9 - Chetpet to Thiruvottiyur )
+sl011460   11460                Vijayakumar Panneer Selvam                                                                           100 Feet Road (Route 10 - Chetpet to Ponnammalle )
+SL013051   13051                Vasu Raju                                                                                            Selaiyur (Route 7 - Chetpet to East Tambaram )
+SL013969   13969                Rohini Durai                                                                                         100 Feet Road (Route 10 - Chetpet to Ponnammalle )
+sl051696   51696                Anandhan Srinivasan                                                                                  Tambaram (Route 6 - Chetpet to Guduvanchery )
+SL055118   55118                Sriram Chandrasekharan                                                                               Alwarthiru Nagar (Route 10 - Chetpet to Ponnammalle )
+SL060111   60111                Lenora Smith                                                                                         Moolakadai (Route 3 - Chetpet to Redhills )
+SL060551   60551                Shinoy Balan                                                                                         Anna Nagar (Route 1 - Chetpet to Pattabiram )
+SL060602   60602                Giribabu Erigineni                                                                                   Urapakkam (Route 6 - Chetpet to Guduvanchery )
+SL060629   60629                Jayaraman M                                                                                          Camp Road (Route 7 - Chetpet to East Tambaram )
+SL089609   89609                Harikrishnan Baskaran                                                                                Retteri (Route 8 - Chetpet to Redhills )
+sl090434   90434                Nagabhushana Rao Seera                                                                               Perungalathur (Route 6 - Chetpet to Guduvanchery )
+SL090632   90632                Vignesh Sachidhanandam                                                                               Chrompet (Route 6 - Chetpet to Guduvanchery )
+SL092905   92905                Hari Krishna Movva                                                                                   Pallavaram (Route 6 - Chetpet to Guduvanchery )
+SLV106891  106891               Niveatha Thirumalai                                                                                  Iyyappanthangal (Route 10 - Chetpet to Ponnammalle )
+SLV15934   NULL                 NULL                                                                                                 Kodambakkam (Route 7 - Chetpet to East Tambaram )
+SS2100098  2100098              Uma Maheswari Thiyagarajan                                                                           Selaiyur (Route 7 - Chetpet to East Tambaram )
+SS2100122  2100122              Sudharshini Nagarajan                                                                                Ashok Nagar (Route 7 - Chetpet to East Tambaram )
+SS2100177  2100177              Mohanapriya Devaraj                                                                                  Selaiyur (Route 7 - Chetpet to East Tambaram )
+SS2100466  2100466              Akarsh Gangadharan Pattani                                                                           Velachery Bus Stand (Route 11 - Chetpet to Velachery )
+SS2100492  2100492              Adithya Soundararajan                                                                                Camp Road (Route 7 - Chetpet to East Tambaram )
+SS2100516  2100516              Prakash Angappan                                                                                     100 Feet Road (Route 10 - Chetpet to Ponnammalle )
+SS2100573  2100573              Obul Reddy Nimmakayala                                                                               Madipakkam (Route 7 - Chetpet to East Tambaram )
+SS2100594  2100594              Pavan Kumar Ravilla                                                                                  Madipakkam (Route 7 - Chetpet to East Tambaram )
+SS2100894  2100894              Gladson Anbarasan                                                                                    Ashok Nagar (Route 7 - Chetpet to East Tambaram )
+SS2100991  2100991              Karthikeyan Rajasundaram                                                                             Iyyappanthangal (Route 10 - Chetpet to Ponnammalle )
+SS2100996  2100996              Balasubramanian Sayiraman                                                                            Perungalathur (Route 6 - Chetpet to Guduvanchery )
+
+(190 row(s) affected)
+
+UserId     EMP_CODE             EMP_Name
+---------- -------------------- ----------------------------------------------------------------------------------------------------
+CSS03204   3204                 Gayatri Mohanakrishnan
+css100274  100274               Srinivasan Ranganathan
+css100515  100515               Selva Lakshmanan
+css100576  100576               Nitin Rajesh
+css100970  100970               Amutha Kalichamy
+css101220  101220               Rizwan Kadher
+css103282  103282               Muthuvenkatesan Pandiyan
+css105299  105299               Nanthakumar Rathinasamy
+css105310  105310               Sadhana Manickavel
+css105722  105722               Libiya Nitin
+css106387  106387               Dilli Babu
+css107036  107036               Kalpana Devaraj
+css60136   60136                Rajkumar Jegadish
+CSS92815   92815                Gokulakrishnan Aruguham Kuppusamy
+CSS92979   92979                Selva Bharathi Gandhi
+CSS93709   93709                Mohammad Ibrahim Khadar
+CSS94394   94394                Anukumar Karunakaran
+CSS96088   96088                Kumaravel Mageshwaran
+CSS96484   96484                Vinothkanna Chandrasekaran
+CSS96573   96573                Ezekiel Williams Moses
+CSS97165   97165                Jahnavi Vejalla
+CSS97382   97382                Senthil Kumar Palanisamy
+CSS97975   97975                Nirupam Dandapat
+CSS98542   98542                Sathish Kumar Elumalai
+CSS98598   98598                Devilakshmi Gouthamar
+css99077   99077                Hemal Ramesh Parekh
+sl000447   447                  Shakheel Navaz
+SL002233   2233                 Sachin Rao
+SL003402   3402                 Rangamani Krishnan
+sl005208   5208                 Kalaivani Rajendran
+SL013463   13463                Dinesh Kannappan
+SL052242   52242                Mukundan Raghavan
+SL060523   60523                R K Sre Suganthi
+sl089013   89013                Venkataraman Narayanan
+SL089214   89214                Kavitha Palani
+SLV105216  105216               Vijay Balaji
+SLV2100921 2100921              Sunkara Kalyan
+SS2100238  2100238              Christilla Sujithra
+ss2100596  2100596              Ankur Bhusan Saikia
+
+(39 row(s) affected)
+
+RouteNO    Route                                                                                                DropCount
+---------- ---------------------------------------------------------------------------------------------------- -----------
+Route 1    Chetpet to Pattabiram                                                                                45
+Route 7    Chetpet to East Tambaram                                                                             44
+Route 6    Chetpet to Guduvanchery                                                                              31
+Route 10   Chetpet to Ponnammalle                                                                               21
+Route 3    Chetpet to Redhills                                                                                  14
+Route 5    Chetpet to Shollinganallur                                                                           14
+Route 9    Chetpet to Thiruvottiyur                                                                             8
+Route 8    Chetpet to Redhills                                                                                  8
+Route 11   Chetpet to Velachery                                                                                 6
+Route 4    Chetpet to Saidapet                                                                                  4
+Route 2    Chetpet to Triplicane                                                                                2
+
+(11 row(s) affected)
+
+CommonLocation                                                                                       DropCount   CommonLocation
+---------------------------------------------------------------------------------------------------- ----------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ambattur Depot                                                                                       13          Ambattur Depot (Route 1 - Chetpet to Pattabiram )
+100 Feet Road                                                                                        10          100 Feet Road (Route 10 - Chetpet to Ponnammalle )
+Avadi                                                                                                8           Avadi (Route 1 - Chetpet to Pattabiram )
+Ambattur                                                                                             8           Ambattur (Route 1 - Chetpet to Pattabiram )
+Kodambakkam                                                                                          7           Kodambakkam (Route 7 - Chetpet to East Tambaram )
+Moggappair                                                                                           7           Moggappair  (Route 1 - Chetpet to Pattabiram )
+Perungalathur                                                                                        7           Perungalathur (Route 6 - Chetpet to Guduvanchery )
+Tambaram                                                                                             6           Tambaram (Route 6 - Chetpet to Guduvanchery )
+Camp Road                                                                                            6           Camp Road (Route 7 - Chetpet to East Tambaram )
+Selaiyur                                                                                             5           Selaiyur (Route 7 - Chetpet to East Tambaram )
+Mylapore                                                                                             5           Mylapore (Route 5 - Chetpet to Shollinganallur )
+Ashok Nagar                                                                                          5           Ashok Nagar (Route 7 - Chetpet to East Tambaram )
+Irumbliyur                                                                                           4           Irumbliyur (Route 6 - Chetpet to Guduvanchery )
+Pallavaram                                                                                           4           Pallavaram (Route 6 - Chetpet to Guduvanchery )
+Perambur                                                                                             4           Perambur (Route 3 - Chetpet to Redhills )
+Velachery Bus Stand                                                                                  4           Velachery Bus Stand (Route 11 - Chetpet to Velachery )
+Anna Nagar                                                                                           4           Anna Nagar (Route 1 - Chetpet to Pattabiram )
+East Tambaram                                                                                        4           East Tambaram (Route 7 - Chetpet to East Tambaram )
+Cholaimedu                                                                                           3           Cholaimedu (Route 10 - Chetpet to Ponnammalle )
+Chrompet                                                                                             3           Chrompet (Route 6 - Chetpet to Guduvanchery )
+T Nagar                                                                                              3           T Nagar (Route 4 - Chetpet to Saidapet )
+Pattabiram                                                                                           3           Pattabiram (Route 1 - Chetpet to Pattabiram )
+MKB Nagar                                                                                            3           MKB Nagar (Route 3 - Chetpet to Redhills )
+Madipakkam                                                                                           3           Madipakkam (Route 7 - Chetpet to East Tambaram )
+Iyyappanthangal                                                                                      3           Iyyappanthangal (Route 10 - Chetpet to Ponnammalle )
+Jafferkhanpet                                                                                        2           Jafferkhanpet (Route 7 - Chetpet to East Tambaram )
+Kodungaiyur                                                                                          2           Kodungaiyur (Route 3 - Chetpet to Redhills )
+Kolathur                                                                                             2           Kolathur (Route 8 - Chetpet to Redhills )
+Moolakadai                                                                                           2           Moolakadai (Route 3 - Chetpet to Redhills )
+Palavakkam                                                                                           2           Palavakkam (Route 5 - Chetpet to Shollinganallur )
+Nanganallur                                                                                          2           Nanganallur (Route 7 - Chetpet to East Tambaram )
+Poonnamallee                                                                                         2           Poonnamallee (Route 10 - Chetpet to Ponnammalle )
+Santhosh puram                                                                                       2           Santhosh puram (Route 7 - Chetpet to East Tambaram )
+Urapakkam                                                                                            2           Urapakkam (Route 6 - Chetpet to Guduvanchery )
+Sembakkam                                                                                            2           Sembakkam (Route 7 - Chetpet to East Tambaram )
+Thirumangalam                                                                                        2           Thirumangalam (Route 1 - Chetpet to Pattabiram )
+Guindy                                                                                               2           Guindy (Route 7 - Chetpet to East Tambaram )
+Guindy Estate                                                                                        2           Guindy Estate (Route 11 - Chetpet to Velachery )
+Villivakkam                                                                                          2           Villivakkam (Route 8 - Chetpet to Redhills )
+Central                                                                                              2           Central (Route 9 - Chetpet to Thiruvottiyur )
+Adyar                                                                                                1           Adyar (Route 5 - Chetpet to Shollinganallur )
+Bhai Kadai                                                                                           1           Bhai Kadai (Route 6 - Chetpet to Guduvanchery )
+Vysarpadi                                                                                            1           Vysarpadi (Route 3 - Chetpet to Redhills )
+Porur                                                                                                1           Porur (Route 10 - Chetpet to Ponnammalle )
+Ice House                                                                                            1           Ice House (Route 2 - Chetpet to Triplicane )
+DMS                                                                                                  1           DMS (Route 5 - Chetpet to Shollinganallur )
+G3 Police Station                                                                                    1           G3 Police Station (Route 3 - Chetpet to Redhills )
+GKM Colony                                                                                           1           GKM Colony (Route 8 - Chetpet to Redhills )
+Gowriwakkam                                                                                          1           Gowriwakkam (Route 7 - Chetpet to East Tambaram )
+Guduvanchery                                                                                         1           Guduvanchery (Route 6 - Chetpet to Guduvanchery )
+Thiruvanmiyur                                                                                        1           Thiruvanmiyur (Route 5 - Chetpet to Shollinganallur )
+Thiruvottiyur                                                                                        1           Thiruvottiyur (Route 9 - Chetpet to Thiruvottiyur )
+Thousand Lights                                                                                      1           Thousand Lights (Route 2 - Chetpet to Triplicane )
+Shollinganallur                                                                                      1           Shollinganallur (Route 5 - Chetpet to Shollinganallur )
+Royapuram                                                                                            1           Royapuram (Route 9 - Chetpet to Thiruvottiyur )
+Vadapalani                                                                                           1           Vadapalani (Route 7 - Chetpet to East Tambaram )
+Valsaravakkam                                                                                        1           Valsaravakkam (Route 10 - Chetpet to Ponnammalle )
+Vandalur                                                                                             1           Vandalur (Route 6 - Chetpet to Guduvanchery )
+Vepery                                                                                               1           Vepery (Route 9 - Chetpet to Thiruvottiyur )
+Ayanavaram                                                                                           1           Ayanavaram (Route 8 - Chetpet to Redhills )
+Tondairpet                                                                                           1           Tondairpet (Route 9 - Chetpet to Thiruvottiyur )
+Porur                                                                                                1           Porur (Route 6 - Chetpet to Guduvanchery )
+Pullianthope                                                                                         1           Pullianthope (Route 3 - Chetpet to Redhills )
+Puzhal                                                                                               1           Puzhal (Route 8 - Chetpet to Redhills )
+RA Puram                                                                                             1           RA Puram (Route 5 - Chetpet to Shollinganallur )
+Retteri                                                                                              1           Retteri (Route 8 - Chetpet to Redhills )
+Neelankari                                                                                           1           Neelankari (Route 5 - Chetpet to Shollinganallur )
+Nungambakkam                                                                                         1           Nungambakkam (Route 4 - Chetpet to Saidapet )
+Pammal                                                                                               1           Pammal (Route 6 - Chetpet to Guduvanchery )
+Medavakkam Koot Road                                                                                 1           Medavakkam Koot Road (Route 7 - Chetpet to East Tambaram )
+Mint                                                                                                 1           Mint (Route 9 - Chetpet to Thiruvottiyur )
+Alwarthiru Nagar                                                                                     1           Alwarthiru Nagar (Route 10 - Chetpet to Ponnammalle )
+Konithope                                                                                            1           Konithope (Route 9 - Chetpet to Thiruvottiyur )
+Karapakkam                                                                                           1           Karapakkam (Route 5 - Chetpet to Shollinganallur )
+Killkattalai                                                                                         1           Killkattalai (Route 7 - Chetpet to East Tambaram )
+
+(75 row(s) affected)
+

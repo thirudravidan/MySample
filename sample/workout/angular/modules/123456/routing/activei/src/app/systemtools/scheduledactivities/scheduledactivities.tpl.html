@@ -1,0 +1,312 @@
+<form class="form-horizontal" name="ScheduledForm">
+<div class="right_bg_cont" ng-init="dateTimeControls();">
+    <div class="data_cont rightdivHeight">
+        <div class="rightdivnewTick">
+                <div class="cont_title">
+                    <span>Scheduled Activities</span>
+                </div>
+                 <div class="container_mid" id="dv1"> 
+                
+  <div class="tuner_cont_schedule-activ">
+        <div class=" internetoptimize_cont ">
+            <i class="icon-junkfiles junk_icon_schedule"></i>
+        </div>  
+        <span class="file_folder_schedule">Junk Files &amp; Folders</span>
+    </div>
+    <div class="tuner_cont_schedule-activ">
+        <div class=" internetoptimize_cont">
+            <i class=" icon-internet junk_icon_schedule"></i>
+        </div>
+    <span class="file_folder_schedule">Internet Optimizer</span>
+    </div>
+    <div class="tuner_cont_schedule-activ">
+        <div class=" internetoptimize_cont">
+            <i class="icon-discperformance junk_icon_schedule"></i>
+        </div>
+      <span class="file_folder_schedule">Disk Performance &amp; <br> Space Scan     </span>
+      
+    </div>
+      <div class="tuner_cont_schedule-activ">
+        <div class=" internetoptimize_cont">
+       <i class=" icon-antivirus junk_icon_schedule"></i>
+        </div>
+     <span class="file_folder_schedule">Disk Antivirus     </span>
+        
+    </div>
+
+
+
+    <div class="cdrive2">
+      <fieldset class="trigger_field">
+      <legend>Trigger:</legend>   
+    <span class="cdrive_radio">
+    <input type="radio" onclick="rdbChangeEvent();" checked  name="rdodaily" value="daily">
+    </span>
+    <span class="cdrive_text">Daily </span>
+    <span class="cdrive_radio">
+    <input type="radio" name="rdodaily" onclick="rdbChangeEvent();" value="weekly">
+    </span>
+    <span class="cdrive_text">Weekly</span>
+    <span class="cdrive_radio">
+    <input type="radio" name="rdodaily" onclick="rdbChangeEvent();" value="monthly">
+    </span>
+    <span class="cdrive_text">Monthly</span>
+    <span class="cdrive_radio">
+    <input type="radio" name="rdodaily" onclick="rdbChangeEvent();" value="onetime">
+    </span>
+    <span class="cdrive_text">One Time</span>
+    </fieldset>
+
+<div id="daily" class="dvscheduler" style="display:block;">
+<div class="date-time-field">
+<label class="date-time-lab">Start: </label>
+ <input id="txtDate" tabindex="1" readonly="readonly" name="Date" />
+
+&nbsp; <input type="text" tabindex="2" class="txttimepicker" id="txtTime" readonly="readonly" ng-model="frmData.txtTime" name="Time"/>
+</div>
+
+<div class="date-time-field">
+<label class="date-time-lab">Recur every:</label>
+<input type="text" maxlength="3" tabindex="3" onkeypress="javascript:return isNumber(event)" id="txtdays" ng-model="frmData.txtdays" name="days">days
+</div> 
+</div>
+
+
+
+<div id="weekly" class="dvscheduler">
+    <div class="date-time-field">
+    <label class="date-time-lab">Start: </label>
+     <input id="txtweekDate" readonly="readonly"  name="Date" />
+
+    &nbsp; <input type="text" class="txttimepicker" id="txtweekTime" readonly="readonly" ng-model="frmData.txtweekTime" name="Time"/>
+    </div>
+
+    <div class="date-time-field">
+    <label class="date-time-lab">Days:</label> 
+    <div class="date-time-days">
+    <div class="pad_bot22">
+    <input type="checkbox" value="Sunday" name="weekdays"><span class="pad_bot2-tex">Sunday</span>
+    </div>
+    <div class="pad_bot22">
+    <input type="checkbox" value="Monday" name="weekdays"><span class="pad_bot2-tex">Monday</span>
+    </div>
+    </div>
+
+    <div class="date-time-days">
+    <div class="pad_bot22">
+    <input type="checkbox" value="Tuesday" name="weekdays"><span class="pad_bot2-tex">Tuesday</span>
+    </div>
+    <div class="pad_bot22">
+    <input type="checkbox" value="Wednesday" name="weekdays"><span class="pad_bot2-tex">Wednesday</span>
+    </div>
+    </div> 
+    <div class="date-time-days">
+    <div class="pad_bot22">
+    <input type="checkbox" value="Thursday" name="weekdays"><span class="pad_bot2-tex">Thursday</span>
+    </div>
+    <div class="pad_bot22">
+    <input type="checkbox" value="Friday" name="weekdays"><span class="pad_bot2-tex">Friday</span>
+    </div>
+    </div>
+
+    <div class="date-time-days">
+    <div class="pad_bot22">
+    <input type="checkbox" value="Saturday" name="weekdays"><span class="pad_bot2-tex">Saturday</span>
+    </div>
+     
+    </div> 
+
+    </div>
+
+    <div class="date-time-field">
+    <label class="date-time-lab">Recur every:</label> 
+    <input type="text" maxlength="2" id="txtweekdays"  ng-model="frmData.txtweekdays" onkeypress="javascript:return isNumber(event)" name="days">Weeks
+    </div> 
+</div>
+
+<div id="monthly" class="dvscheduler">
+<div class="date-time-field">
+<label class="date-time-lab">Start: </label>
+ <input id="txtmonthlyDate" readonly="readonly"  name="Date" />
+
+&nbsp; <input type="text" class="txttimepicker" readonly="readonly"  id="txtmonthlyTime" ng-model="frmData.txtmonthlyTime"  name="Time"/>
+</div>
+
+<div class="date-time-field_scroll">
+<label class="date-time-lab">Days:</label>
+
+
+<div class="month_scroll">
+<div class="date-time-days">
+<div class="pad_bot22">
+<input type="checkbox" value="01" name="monthlydays"><span class="pad_bot2-tex">01</span>
+</div>
+<div class="pad_bot22">
+<input type="checkbox" value="02" name="monthlydays"><span class="pad_bot2-tex">02</span>
+</div>
+</div>
+
+<div class="date-time-days">
+<div class="pad_bot22">
+<input type="checkbox" value="03" name="monthlydays"><span class="pad_bot2-tex">03</span>
+</div>
+<div class="pad_bot22">
+<input type="checkbox" value="04" name="monthlydays"><span class="pad_bot2-tex">04</span>
+</div>
+</div>
+
+<div class="date-time-days">
+<div class="pad_bot22">
+<input type="checkbox" value="05" name="monthlydays"><span class="pad_bot2-tex">05</span>
+</div>
+<div class="pad_bot22">
+<input type="checkbox" value="06" name="monthlydays"><span class="pad_bot2-tex">06</span>
+</div>
+</div>
+
+
+<div class="date-time-days">
+<div class="pad_bot22">
+<input type="checkbox" value="07" name="monthlydays"><span class="pad_bot2-tex">07</span>
+</div>
+<div class="pad_bot22">
+<input type="checkbox" value="08" name="monthlydays"><span class="pad_bot2-tex">08</span>
+</div>
+</div>
+
+<div class="date-time-days">
+<div class="pad_bot22">
+<input type="checkbox" value="09" name="monthlydays"><span class="pad_bot2-tex">09</span>
+</div>
+<div class="pad_bot22">
+<input type="checkbox" value="10" name="monthlydays"><span class="pad_bot2-tex">10</span>
+</div>
+</div>
+
+<div class="date-time-days">
+<div class="pad_bot22">
+<input type="checkbox" value="11" name="monthlydays"><span class="pad_bot2-tex">11</span>
+</div>
+<div class="pad_bot22">
+<input type="checkbox" value="12" name="monthlydays"><span class="pad_bot2-tex">12</span>
+</div>
+</div>
+
+<div class="date-time-days">
+<div class="pad_bot22">
+<input type="checkbox" value="13" name="monthlydays"><span class="pad_bot2-tex">13</span>
+</div>
+<div class="pad_bot22">
+<input type="checkbox" value="14" name="monthlydays"><span class="pad_bot2-tex">14</span>
+</div>
+</div>
+
+<div class="date-time-days">
+<div class="pad_bot22">
+<input type="checkbox" value="15" name="monthlydays"><span class="pad_bot2-tex">15</span>
+</div>
+<div class="pad_bot22">
+<input type="checkbox" value="16" name="monthlydays"><span class="pad_bot2-tex">16</span>
+</div>
+</div>
+
+<div class="date-time-days">
+<div class="pad_bot22">
+<input type="checkbox" value="17" name="monthlydays"><span class="pad_bot2-tex">17</span>
+</div>
+<div class="pad_bot22">
+<input type="checkbox" value="18" name="monthlydays"><span class="pad_bot2-tex">18</span>
+</div>
+</div>
+
+<div class="date-time-days">
+<div class="pad_bot22">
+<input type="checkbox" value="19" name="monthlydays"><span class="pad_bot2-tex">19</span>
+</div>
+<div class="pad_bot22">
+<input type="checkbox" value="20" name="monthlydays"><span class="pad_bot2-tex">20</span>
+</div>
+</div>
+
+<div class="date-time-days">
+<div class="pad_bot22">
+<input type="checkbox" value="21" name="monthlydays"><span class="pad_bot2-tex">21</span>
+</div>
+<div class="pad_bot22">
+<input type="checkbox" value="22" name="monthlydays"><span class="pad_bot2-tex">22</span>
+</div>
+</div>
+
+<div class="date-time-days">
+<div class="pad_bot22">
+<input type="checkbox" value="23" name="monthlydays"><span class="pad_bot2-tex">23</span>
+</div>
+<div class="pad_bot22">
+<input type="checkbox" value="24" name="monthlydays"><span class="pad_bot2-tex">24</span>
+</div>
+</div>
+
+<div class="date-time-days">
+<div class="pad_bot22">
+<input type="checkbox" value="25" name="monthlydays"><span class="pad_bot2-tex">25</span>
+</div>
+<div class="pad_bot22">
+<input type="checkbox" value="26" name="monthlydays"><span class="pad_bot2-tex">26</span>
+</div>
+</div>
+
+<div class="date-time-days">
+<div class="pad_bot22">
+<input type="checkbox" value="27" name="monthlydays"><span class="pad_bot2-tex">27</span>
+</div>
+<div class="pad_bot22">
+<input type="checkbox" value="28" name="monthlydays"><span class="pad_bot2-tex">28</span>
+</div>
+</div>
+
+<div class="date-time-days">
+<div class="pad_bot22">
+<input type="checkbox" value="29" name="monthlydays"><span class="pad_bot2-tex">29</span>
+</div>
+<div class="pad_bot22">
+<input type="checkbox" value="30" name="monthlydays"><span class="pad_bot2-tex">30</span>
+</div>
+</div>
+
+<div class="date-time-days">
+<div class="pad_bot22">
+<input type="checkbox" value="31" name="monthlydays"><span class="pad_bot2-tex">31</span>
+</div> 
+</div>
+
+</div>
+
+<div class="date-time-field" style="display:none;">
+<label class="date-time-lab">Recur Eevery:</label>
+<input type="text" maxlength="3" id="txtmonthlydays"  ng-model="frmData.txtmonthlydays" onkeypress="javascript:return isNumber(event)" name="days">days
+</div> 
+</div>
+</div>
+
+<div id="onetime" class="dvscheduler">
+<div class="date-time-field">
+<label class="date-time-lab">Start: </label>
+ <input id="txtonetimeDate" readonly="readonly"   name="Date" />
+
+&nbsp; <input type="text" id="txtoneTime" onkeypress="javascript:return isNumber(event)" class="txttimepicker" readonly="readonly"  ng-model="frmData.txtoneTime" name="Time"/>
+</div>
+ 
+</div> 
+
+</div>
+
+ <div class="foot-button"> 
+                    <input type="submit" id="btnSched" ng-click="schedulerActivities();" class="orange_color align_but btn_scheduled" value="Schedule">
+                     
+ </div> 
+                </div> 
+
+                </div>
+    </div>
+</div>
+</form>

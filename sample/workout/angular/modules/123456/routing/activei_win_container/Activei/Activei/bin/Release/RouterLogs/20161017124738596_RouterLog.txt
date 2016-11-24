@@ -1,0 +1,12 @@
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Sunday, October 16, 2016 23:17:29
+[WLAN access rejected: incorrect security] from MAC address 34:36:3b:93:1a:3a, Sunday, October 16, 2016 23:16:55
+[WLAN access rejected: incorrect security] from MAC address 34:36:3b:93:1a:3a, Sunday, October 16, 2016 23:16:38
+[WLAN access rejected: incorrect security] from MAC address 34:36:3b:93:1a:3a, Sunday, October 16, 2016 23:16:21
+[WLAN access rejected: incorrect security] from MAC address 34:36:3b:93:1a:3a, Sunday, October 16, 2016 23:16:18
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Sunday, October 16, 2016 23:16:14
+[admin login] from source 192.168.1.2, Sunday, October 16, 2016 23:15:45
+[DoS Attack: ACK Scan] from source: 10.40.2.46, port 27017, Sunday, October 16, 2016 23:14:59
+[Time synchronized with NTP server] Sunday, October 16, 2016 23:12:30
+[Internet connected] IP address: 10.9.67.22, Sunday, October 16, 2016 23:12:25
+[Initialized, firmware version: V1.0.2.4] Sunday, October 16, 2016 23:12:22
+[DHCP IP: 192.168.1.2] to MAC address c8:1f:66:43:31:52, Sunday, October 16, 2016 23:12:13

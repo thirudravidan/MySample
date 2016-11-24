@@ -1,0 +1,2 @@
+[admin login] from source 192.168.1.2, Sunday, October 16, 2016 21:21:16
+[Log Cleared] Sunday, October 16, 2016 21:05:16

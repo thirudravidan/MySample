@@ -1,0 +1,5 @@
+D:\CSSConnect\PCOptimizationConsole\bin\Debug\PCOptimizationConsole.exe.config
+D:\CSSConnect\PCOptimizationConsole\bin\Debug\PCOptimizationConsole.exe
+D:\CSSConnect\PCOptimizationConsole\bin\Debug\PCOptimizationConsole.pdb
+D:\CSSConnect\PCOptimizationConsole\obj\x86\Debug\PCOptimizationConsole.exe
+D:\CSSConnect\PCOptimizationConsole\obj\x86\Debug\PCOptimizationConsole.pdb

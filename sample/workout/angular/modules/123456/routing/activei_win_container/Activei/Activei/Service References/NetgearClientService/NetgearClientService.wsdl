@@ -1,0 +1,2440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s1="http://microsoft.com/wsdl/types/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:import namespace="http://microsoft.com/wsdl/types/" />
+      <s:element name="CustomerLogin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CustomerLoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerLoginResult" type="tns:CustomerItems" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CustomerItems">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SessionId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerEmail" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PortalId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Country" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CustomerSearch">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="customerId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="phoneNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="isoCountry" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="companyName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="exactPhone" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CustomerSearchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerSearchResult" type="tns:CustomerItems" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetContractsAvailabilitybyCustomerId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="customerId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetContractsAvailabilitybyCustomerIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetContractsAvailabilitybyCustomerIdResult" type="tns:ContractInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ContractInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ContractAvailability" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="RemainingDays" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ContractId" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CustomerGetProduct">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="customerId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="phoneNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="isoCountry" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="companyName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="exactPhone" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CustomerGetProductResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerGetProductResult" type="tns:ArrayOfProductItems" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProductItems">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ProductItems" nillable="true" type="tns:ProductItems" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ProductItems">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="RegistrationId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="SerialNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProductName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PurchaseDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CountryPurchase" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProductExpired" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SwExpired" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProductWarranty" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Amount" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CustomerGetRenewProduct">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="customerId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="phoneNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="isoCountry" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="companyName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="exactPhone" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CustomerGetRenewProductResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerGetRenewProductResult" type="tns:ArrayOfProductItems" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDrpDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="typeName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDrpDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDrpDetailsResult" type="tns:ArrayOfDrpDetails" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfDrpDetails">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DrpDetails" nillable="true" type="tns:DrpDetails" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DrpDetails">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="DrpText" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DrpValue" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CustomerGetProductInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="customerID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="address" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CustomerGetProductInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerGetProductInfoResult" type="tns:ArrayOfProductItems" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EcoLogout">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sessionId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EcoLogoutResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EcoLogoutResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetContractsbyCustomerId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="customerId" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetContractsbyCustomerIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetContractsbyCustomerIdResult" type="tns:ArrayOfCustomerContractItems" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCustomerContractItems">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CustomerContractItems" nillable="true" type="tns:CustomerContractItems" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CustomerContractItems">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ContractId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Type" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PurchaseDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PurchasedFrom" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExpiryDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Linkedto" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Available" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RemainingDays" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CustomerGetCases">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="customerId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="customerEmail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="customerPhoneNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="customerIsoCountry" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="customerExactPhone" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CustomerGetCasesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerGetCasesResult" type="tns:ArrayOfCaseItems" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCaseItems">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CaseItems" nillable="true" type="tns:CaseItems" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CaseItems">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CaseId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CaseNo" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CaseProduct" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CaseSummary" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CaseProblem" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CaseCause" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CaseNotes" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CaseSource" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CaseAssignTo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CaseQueueId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CaseStatus" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ScheduleDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ScheduleTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ScheduleTimeStamp" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Phone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RegistrationId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SerialNo" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CustomerGetVideoCases">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="customerId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="customerEmail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="customerPhoneNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="customerIsoCountry" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="customerExactPhone" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CustomerGetVideoCasesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerGetVideoCasesResult" type="tns:ArrayOfCaseItems" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateCase">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="customerId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="registrationId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="serialNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="caseSummary" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="caseProblem" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="caseCauses" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="caseNotes" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="caseSource" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="caseAssingTo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="caseQueueId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateCaseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateCaseResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateVideoCase">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="customerId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="registrationId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="serialNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="caseSummary" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="caseProblem" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="caseCauses" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="caseNotes" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="caseSource" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="caseAssingTo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="caseQueueId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="caseType" type="s1:char" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateVideoCaseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateVideoCaseResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ScheduleaCall">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="customerId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="registrationId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="serialNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="caseSummary" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="caseProblem" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="caseCauses" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="caseNotes" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="caseSource" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="caseAssingTo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="caseQueueId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ScheduleaCallResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ScheduleaCallResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MyScheduleCases">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="customerId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MyScheduleCasesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MyScheduleCasesResult" type="tns:ArrayOfCaseItems" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CustomerChangePassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NewPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CustomerChangePasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerChangePasswordResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CustomerForgetPasswordRecovery">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CustomerForgetPasswordRecoveryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerForgetPasswordRecoveryResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDslWiFiStatus">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetDslWiFiStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDslWiFiStatusResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CustomerGetContracts">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="customerId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CustomerGetContractsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerGetContractsResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CustomerGetContractsByContractId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="customerId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CustomerGetContractsByContractIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerGetContractsByContractIdResult" type="tns:ArrayOfCustomerContractItems" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ScanPort">
+        <s:complexType />
+      </s:element>
+      <s:element name="ScanPortResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ScanPortResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNetgearToolUniqueID">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetNetgearToolUniqueIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetNetgearToolUniqueIDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NetgearToolDownloadDetails">
+        <s:complexType />
+      </s:element>
+      <s:element name="NetgearToolDownloadDetailsResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="NetgearToolInstallationDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="uniqueID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="loginID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="initialVersion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="installationdate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NetgearToolInstallationDetailsResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="NetgearToolCurrentVersionDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="uniqueID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="loginID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lastVersion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="currentVersion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="updateddate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NetgearToolCurrentVersionDetailsResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="NetgearToolUninstallationDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="uniqueID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="loginID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="uninstallationdate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NetgearToolUninstallationDetailsResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="NetgearToolLoginDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="uniqueID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="loginID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="updatedDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NetgearToolLoginDetailsResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetNGToolDownloadDetails">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetNGToolDownloadDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetNGToolDownloadDetailsResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetmessageDetails">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetmessageDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetmessageDetailsResult" type="tns:ArrayOfPublishedMessage" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfPublishedMessage">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="PublishedMessage" nillable="true" type="tns:PublishedMessage" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PublishedMessage">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="MessageTitle" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="CategoryName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShortDescription" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="MessageID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Isimportant" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Publishedon" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="referenceURL" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetmessageDetailswithStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="customerID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetmessageDetailswithStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetmessageDetailswithStatusResult" type="tns:ArrayOfPublishedMessage" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUnreadMessageCount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="customerID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUnreadMessageCountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetUnreadMessageCountResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetallmessageDetails">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetallmessageDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetallmessageDetailsResult" type="tns:ArrayOfPublishedMessage" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetmessageviewDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="msgID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetmessageviewDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetmessageviewDetailsResult" type="tns:ArrayOfPublishedMessage" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveReadMessageDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="msgID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveReadMessageDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SaveReadMessageDetailsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveFeedBackDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="customerID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="feedbackMessage" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="rating" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveFeedBackDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveFeedBackDetailsResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFeedBackDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="customerID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFeedBackDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFeedBackDetailsResult" type="tns:MessageFeedBackDetails" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="MessageFeedBackDetails">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CustomrId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Message" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Rating" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAllFeedBackDetails">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllFeedBackDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllFeedBackDetailsResult" type="tns:ArrayOfMessageFeedBackDetails" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfMessageFeedBackDetails">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="MessageFeedBackDetails" nillable="true" type="tns:MessageFeedBackDetails" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAllTimeZones">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllTimeZonesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllTimeZonesResult" type="tns:ArrayOfTimeZoneDetails" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTimeZoneDetails">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TimeZoneDetails" nillable="true" type="tns:TimeZoneDetails" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TimeZoneDetails">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="TimeZoneID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="TimeZone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Time" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Country" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SearchContent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="searchTerm" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="startIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="limit" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchContentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchContentResult" type="tns:ArrayOfKBSearchResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfKBSearchResponse">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="KBSearchResponse" nillable="true" type="tns:KBSearchResponse" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="KBSearchResponse">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="TotalResults" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="Title" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Excerpt" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Url" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ContentOriginID" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="ContentOriginName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetPopularContent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="limit" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPopularContentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPopularContentResult" type="tns:ArrayOfKBSearchResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetKBRecommendedContent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="limit" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="productName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetKBRecommendedContentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetKBRecommendedContentResult" type="tns:ArrayOfKBSearchResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetContent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="answerContentID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="viewOriginID" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="viewOriginName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetContentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetContentResult" type="tns:KBSearchResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetriveALLParental">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="customerID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetriveALLParentalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RetriveALLParentalResult" type="tns:ArrayOfParental" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfParental">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Parental" nillable="true" type="tns:Parental" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Parental">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Slno" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Blocked" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Type" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BlockedOnForSerialization" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="BlockedOn" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Customer_ID" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AddParental">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="parentalDetails" type="tns:Parental" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddParentalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddParentalResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveParental">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="slno" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveParentalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RemoveParentalResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetriveALLPromotiongroup">
+        <s:complexType />
+      </s:element>
+      <s:element name="RetriveALLPromotiongroupResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RetriveALLPromotiongroupResult" type="tns:ArrayOfPromotiongroup" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfPromotiongroup">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Promotiongroup" nillable="true" type="tns:Promotiongroup" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Promotiongroup">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="promotiongroupid" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="promoname" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RetriveALLPromotion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="subscriptionid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetriveALLPromotionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RetriveALLPromotionResult" type="tns:ArrayOfPromotion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfPromotion">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Promotion" nillable="true" type="tns:Promotion" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Promotion">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="promotionid" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="promocode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="retriveProduct">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="promotionid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="retriveProductResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="retriveProductResult" type="tns:ArrayOfPromProd" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfPromProd">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="PromProd" nillable="true" type="tns:PromProd" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PromProd">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="promcode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="promname" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="prodcode" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="prodname" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="promotionid" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RetriveALLproductprice">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="productid" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetriveALLproductpriceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RetriveALLproductpriceResult" type="tns:ArrayOfProductprice" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProductprice">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="productprice" nillable="true" type="tns:productprice" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="productprice">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="productid" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="cost" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RenewSubscription">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SubcriptionId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CreditCardNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CardName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CreditCardType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CVVNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ExpiryMonth" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ExpiryYear" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Amount" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RenewSubscriptionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RenewSubscriptionResult" type="tns:RenewDetails" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="RenewDetails">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="StatusMessage" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="isSuccess" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UpgradeSubscription">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="promotionName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="productId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="SubcriptionId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CreditCardNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CardName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CreditCardType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CVVNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ExpiryMonth" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ExpiryYear" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Amount" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpgradeSubscriptionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpgradeSubscriptionResult" type="tns:UpgradeDetails" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="UpgradeDetails">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="StatusMessage" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="isSuccess" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://microsoft.com/wsdl/types/">
+      <s:simpleType name="char">
+        <s:restriction base="s:unsignedShort" />
+      </s:simpleType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CustomerLoginSoapIn">
+    <wsdl:part name="parameters" element="tns:CustomerLogin" />
+  </wsdl:message>
+  <wsdl:message name="CustomerLoginSoapOut">
+    <wsdl:part name="parameters" element="tns:CustomerLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="CustomerSearchSoapIn">
+    <wsdl:part name="parameters" element="tns:CustomerSearch" />
+  </wsdl:message>
+  <wsdl:message name="CustomerSearchSoapOut">
+    <wsdl:part name="parameters" element="tns:CustomerSearchResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetContractsAvailabilitybyCustomerIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetContractsAvailabilitybyCustomerId" />
+  </wsdl:message>
+  <wsdl:message name="GetContractsAvailabilitybyCustomerIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetContractsAvailabilitybyCustomerIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="CustomerGetProductSoapIn">
+    <wsdl:part name="parameters" element="tns:CustomerGetProduct" />
+  </wsdl:message>
+  <wsdl:message name="CustomerGetProductSoapOut">
+    <wsdl:part name="parameters" element="tns:CustomerGetProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="CustomerGetRenewProductSoapIn">
+    <wsdl:part name="parameters" element="tns:CustomerGetRenewProduct" />
+  </wsdl:message>
+  <wsdl:message name="CustomerGetRenewProductSoapOut">
+    <wsdl:part name="parameters" element="tns:CustomerGetRenewProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDrpDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDrpDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetDrpDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDrpDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="CustomerGetProductInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:CustomerGetProductInfo" />
+  </wsdl:message>
+  <wsdl:message name="CustomerGetProductInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:CustomerGetProductInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="EcoLogoutSoapIn">
+    <wsdl:part name="parameters" element="tns:EcoLogout" />
+  </wsdl:message>
+  <wsdl:message name="EcoLogoutSoapOut">
+    <wsdl:part name="parameters" element="tns:EcoLogoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetContractsbyCustomerIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetContractsbyCustomerId" />
+  </wsdl:message>
+  <wsdl:message name="GetContractsbyCustomerIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetContractsbyCustomerIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="CustomerGetCasesSoapIn">
+    <wsdl:part name="parameters" element="tns:CustomerGetCases" />
+  </wsdl:message>
+  <wsdl:message name="CustomerGetCasesSoapOut">
+    <wsdl:part name="parameters" element="tns:CustomerGetCasesResponse" />
+  </wsdl:message>
+  <wsdl:message name="CustomerGetVideoCasesSoapIn">
+    <wsdl:part name="parameters" element="tns:CustomerGetVideoCases" />
+  </wsdl:message>
+  <wsdl:message name="CustomerGetVideoCasesSoapOut">
+    <wsdl:part name="parameters" element="tns:CustomerGetVideoCasesResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateCaseSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateCase" />
+  </wsdl:message>
+  <wsdl:message name="CreateCaseSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateCaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateVideoCaseSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateVideoCase" />
+  </wsdl:message>
+  <wsdl:message name="CreateVideoCaseSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateVideoCaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ScheduleaCallSoapIn">
+    <wsdl:part name="parameters" element="tns:ScheduleaCall" />
+  </wsdl:message>
+  <wsdl:message name="ScheduleaCallSoapOut">
+    <wsdl:part name="parameters" element="tns:ScheduleaCallResponse" />
+  </wsdl:message>
+  <wsdl:message name="MyScheduleCasesSoapIn">
+    <wsdl:part name="parameters" element="tns:MyScheduleCases" />
+  </wsdl:message>
+  <wsdl:message name="MyScheduleCasesSoapOut">
+    <wsdl:part name="parameters" element="tns:MyScheduleCasesResponse" />
+  </wsdl:message>
+  <wsdl:message name="CustomerChangePasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:CustomerChangePassword" />
+  </wsdl:message>
+  <wsdl:message name="CustomerChangePasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:CustomerChangePasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="CustomerForgetPasswordRecoverySoapIn">
+    <wsdl:part name="parameters" element="tns:CustomerForgetPasswordRecovery" />
+  </wsdl:message>
+  <wsdl:message name="CustomerForgetPasswordRecoverySoapOut">
+    <wsdl:part name="parameters" element="tns:CustomerForgetPasswordRecoveryResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDslWiFiStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDslWiFiStatus" />
+  </wsdl:message>
+  <wsdl:message name="GetDslWiFiStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDslWiFiStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="CustomerGetContractsSoapIn">
+    <wsdl:part name="parameters" element="tns:CustomerGetContracts" />
+  </wsdl:message>
+  <wsdl:message name="CustomerGetContractsSoapOut">
+    <wsdl:part name="parameters" element="tns:CustomerGetContractsResponse" />
+  </wsdl:message>
+  <wsdl:message name="CustomerGetContractsByContractIdSoapIn">
+    <wsdl:part name="parameters" element="tns:CustomerGetContractsByContractId" />
+  </wsdl:message>
+  <wsdl:message name="CustomerGetContractsByContractIdSoapOut">
+    <wsdl:part name="parameters" element="tns:CustomerGetContractsByContractIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ScanPortSoapIn">
+    <wsdl:part name="parameters" element="tns:ScanPort" />
+  </wsdl:message>
+  <wsdl:message name="ScanPortSoapOut">
+    <wsdl:part name="parameters" element="tns:ScanPortResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetNetgearToolUniqueIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNetgearToolUniqueID" />
+  </wsdl:message>
+  <wsdl:message name="GetNetgearToolUniqueIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNetgearToolUniqueIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="NetgearToolDownloadDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:NetgearToolDownloadDetails" />
+  </wsdl:message>
+  <wsdl:message name="NetgearToolDownloadDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:NetgearToolDownloadDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="NetgearToolInstallationDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:NetgearToolInstallationDetails" />
+  </wsdl:message>
+  <wsdl:message name="NetgearToolInstallationDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:NetgearToolInstallationDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="NetgearToolCurrentVersionDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:NetgearToolCurrentVersionDetails" />
+  </wsdl:message>
+  <wsdl:message name="NetgearToolCurrentVersionDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:NetgearToolCurrentVersionDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="NetgearToolUninstallationDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:NetgearToolUninstallationDetails" />
+  </wsdl:message>
+  <wsdl:message name="NetgearToolUninstallationDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:NetgearToolUninstallationDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="NetgearToolLoginDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:NetgearToolLoginDetails" />
+  </wsdl:message>
+  <wsdl:message name="NetgearToolLoginDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:NetgearToolLoginDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetNGToolDownloadDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNGToolDownloadDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetNGToolDownloadDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNGToolDownloadDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetmessageDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetmessageDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetmessageDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetmessageDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetmessageDetailswithStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:GetmessageDetailswithStatus" />
+  </wsdl:message>
+  <wsdl:message name="GetmessageDetailswithStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:GetmessageDetailswithStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUnreadMessageCountSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUnreadMessageCount" />
+  </wsdl:message>
+  <wsdl:message name="GetUnreadMessageCountSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUnreadMessageCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetallmessageDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetallmessageDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetallmessageDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetallmessageDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetmessageviewDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetmessageviewDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetmessageviewDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetmessageviewDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveReadMessageDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveReadMessageDetails" />
+  </wsdl:message>
+  <wsdl:message name="SaveReadMessageDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveReadMessageDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveFeedBackDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveFeedBackDetails" />
+  </wsdl:message>
+  <wsdl:message name="SaveFeedBackDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveFeedBackDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFeedBackDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFeedBackDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetFeedBackDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFeedBackDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllFeedBackDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllFeedBackDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetAllFeedBackDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllFeedBackDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllTimeZonesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllTimeZones" />
+  </wsdl:message>
+  <wsdl:message name="GetAllTimeZonesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllTimeZonesResponse" />
+  </wsdl:message>
+  <wsdl:message name="SearchContentSoapIn">
+    <wsdl:part name="parameters" element="tns:SearchContent" />
+  </wsdl:message>
+  <wsdl:message name="SearchContentSoapOut">
+    <wsdl:part name="parameters" element="tns:SearchContentResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPopularContentSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPopularContent" />
+  </wsdl:message>
+  <wsdl:message name="GetPopularContentSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPopularContentResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetKBRecommendedContentSoapIn">
+    <wsdl:part name="parameters" element="tns:GetKBRecommendedContent" />
+  </wsdl:message>
+  <wsdl:message name="GetKBRecommendedContentSoapOut">
+    <wsdl:part name="parameters" element="tns:GetKBRecommendedContentResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetContentSoapIn">
+    <wsdl:part name="parameters" element="tns:GetContent" />
+  </wsdl:message>
+  <wsdl:message name="GetContentSoapOut">
+    <wsdl:part name="parameters" element="tns:GetContentResponse" />
+  </wsdl:message>
+  <wsdl:message name="RetriveALLParentalSoapIn">
+    <wsdl:part name="parameters" element="tns:RetriveALLParental" />
+  </wsdl:message>
+  <wsdl:message name="RetriveALLParentalSoapOut">
+    <wsdl:part name="parameters" element="tns:RetriveALLParentalResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddParentalSoapIn">
+    <wsdl:part name="parameters" element="tns:AddParental" />
+  </wsdl:message>
+  <wsdl:message name="AddParentalSoapOut">
+    <wsdl:part name="parameters" element="tns:AddParentalResponse" />
+  </wsdl:message>
+  <wsdl:message name="RemoveParentalSoapIn">
+    <wsdl:part name="parameters" element="tns:RemoveParental" />
+  </wsdl:message>
+  <wsdl:message name="RemoveParentalSoapOut">
+    <wsdl:part name="parameters" element="tns:RemoveParentalResponse" />
+  </wsdl:message>
+  <wsdl:message name="RetriveALLPromotiongroupSoapIn">
+    <wsdl:part name="parameters" element="tns:RetriveALLPromotiongroup" />
+  </wsdl:message>
+  <wsdl:message name="RetriveALLPromotiongroupSoapOut">
+    <wsdl:part name="parameters" element="tns:RetriveALLPromotiongroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="RetriveALLPromotionSoapIn">
+    <wsdl:part name="parameters" element="tns:RetriveALLPromotion" />
+  </wsdl:message>
+  <wsdl:message name="RetriveALLPromotionSoapOut">
+    <wsdl:part name="parameters" element="tns:RetriveALLPromotionResponse" />
+  </wsdl:message>
+  <wsdl:message name="retriveProductSoapIn">
+    <wsdl:part name="parameters" element="tns:retriveProduct" />
+  </wsdl:message>
+  <wsdl:message name="retriveProductSoapOut">
+    <wsdl:part name="parameters" element="tns:retriveProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="RetriveALLproductpriceSoapIn">
+    <wsdl:part name="parameters" element="tns:RetriveALLproductprice" />
+  </wsdl:message>
+  <wsdl:message name="RetriveALLproductpriceSoapOut">
+    <wsdl:part name="parameters" element="tns:RetriveALLproductpriceResponse" />
+  </wsdl:message>
+  <wsdl:message name="RenewSubscriptionSoapIn">
+    <wsdl:part name="parameters" element="tns:RenewSubscription" />
+  </wsdl:message>
+  <wsdl:message name="RenewSubscriptionSoapOut">
+    <wsdl:part name="parameters" element="tns:RenewSubscriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpgradeSubscriptionSoapIn">
+    <wsdl:part name="parameters" element="tns:UpgradeSubscription" />
+  </wsdl:message>
+  <wsdl:message name="UpgradeSubscriptionSoapOut">
+    <wsdl:part name="parameters" element="tns:UpgradeSubscriptionResponse" />
+  </wsdl:message>
+  <wsdl:portType name="NetgearClientServiceSoap">
+    <wsdl:operation name="CustomerLogin">
+      <wsdl:input message="tns:CustomerLoginSoapIn" />
+      <wsdl:output message="tns:CustomerLoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CustomerSearch">
+      <wsdl:input message="tns:CustomerSearchSoapIn" />
+      <wsdl:output message="tns:CustomerSearchSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContractsAvailabilitybyCustomerId">
+      <wsdl:input message="tns:GetContractsAvailabilitybyCustomerIdSoapIn" />
+      <wsdl:output message="tns:GetContractsAvailabilitybyCustomerIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CustomerGetProduct">
+      <wsdl:input message="tns:CustomerGetProductSoapIn" />
+      <wsdl:output message="tns:CustomerGetProductSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CustomerGetRenewProduct">
+      <wsdl:input message="tns:CustomerGetRenewProductSoapIn" />
+      <wsdl:output message="tns:CustomerGetRenewProductSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDrpDetails">
+      <wsdl:input message="tns:GetDrpDetailsSoapIn" />
+      <wsdl:output message="tns:GetDrpDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CustomerGetProductInfo">
+      <wsdl:input message="tns:CustomerGetProductInfoSoapIn" />
+      <wsdl:output message="tns:CustomerGetProductInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EcoLogout">
+      <wsdl:input message="tns:EcoLogoutSoapIn" />
+      <wsdl:output message="tns:EcoLogoutSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContractsbyCustomerId">
+      <wsdl:input message="tns:GetContractsbyCustomerIdSoapIn" />
+      <wsdl:output message="tns:GetContractsbyCustomerIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CustomerGetCases">
+      <wsdl:input message="tns:CustomerGetCasesSoapIn" />
+      <wsdl:output message="tns:CustomerGetCasesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CustomerGetVideoCases">
+      <wsdl:input message="tns:CustomerGetVideoCasesSoapIn" />
+      <wsdl:output message="tns:CustomerGetVideoCasesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateCase">
+      <wsdl:input message="tns:CreateCaseSoapIn" />
+      <wsdl:output message="tns:CreateCaseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateVideoCase">
+      <wsdl:input message="tns:CreateVideoCaseSoapIn" />
+      <wsdl:output message="tns:CreateVideoCaseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleaCall">
+      <wsdl:input message="tns:ScheduleaCallSoapIn" />
+      <wsdl:output message="tns:ScheduleaCallSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MyScheduleCases">
+      <wsdl:input message="tns:MyScheduleCasesSoapIn" />
+      <wsdl:output message="tns:MyScheduleCasesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CustomerChangePassword">
+      <wsdl:input message="tns:CustomerChangePasswordSoapIn" />
+      <wsdl:output message="tns:CustomerChangePasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CustomerForgetPasswordRecovery">
+      <wsdl:input message="tns:CustomerForgetPasswordRecoverySoapIn" />
+      <wsdl:output message="tns:CustomerForgetPasswordRecoverySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDslWiFiStatus">
+      <wsdl:input message="tns:GetDslWiFiStatusSoapIn" />
+      <wsdl:output message="tns:GetDslWiFiStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CustomerGetContracts">
+      <wsdl:input message="tns:CustomerGetContractsSoapIn" />
+      <wsdl:output message="tns:CustomerGetContractsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CustomerGetContractsByContractId">
+      <wsdl:input message="tns:CustomerGetContractsByContractIdSoapIn" />
+      <wsdl:output message="tns:CustomerGetContractsByContractIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ScanPort">
+      <wsdl:input message="tns:ScanPortSoapIn" />
+      <wsdl:output message="tns:ScanPortSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNetgearToolUniqueID">
+      <wsdl:input message="tns:GetNetgearToolUniqueIDSoapIn" />
+      <wsdl:output message="tns:GetNetgearToolUniqueIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NetgearToolDownloadDetails">
+      <wsdl:input message="tns:NetgearToolDownloadDetailsSoapIn" />
+      <wsdl:output message="tns:NetgearToolDownloadDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NetgearToolInstallationDetails">
+      <wsdl:input message="tns:NetgearToolInstallationDetailsSoapIn" />
+      <wsdl:output message="tns:NetgearToolInstallationDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NetgearToolCurrentVersionDetails">
+      <wsdl:input message="tns:NetgearToolCurrentVersionDetailsSoapIn" />
+      <wsdl:output message="tns:NetgearToolCurrentVersionDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NetgearToolUninstallationDetails">
+      <wsdl:input message="tns:NetgearToolUninstallationDetailsSoapIn" />
+      <wsdl:output message="tns:NetgearToolUninstallationDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NetgearToolLoginDetails">
+      <wsdl:input message="tns:NetgearToolLoginDetailsSoapIn" />
+      <wsdl:output message="tns:NetgearToolLoginDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNGToolDownloadDetails">
+      <wsdl:input message="tns:GetNGToolDownloadDetailsSoapIn" />
+      <wsdl:output message="tns:GetNGToolDownloadDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetmessageDetails">
+      <wsdl:input message="tns:GetmessageDetailsSoapIn" />
+      <wsdl:output message="tns:GetmessageDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetmessageDetailswithStatus">
+      <wsdl:input message="tns:GetmessageDetailswithStatusSoapIn" />
+      <wsdl:output message="tns:GetmessageDetailswithStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUnreadMessageCount">
+      <wsdl:input message="tns:GetUnreadMessageCountSoapIn" />
+      <wsdl:output message="tns:GetUnreadMessageCountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetallmessageDetails">
+      <wsdl:input message="tns:GetallmessageDetailsSoapIn" />
+      <wsdl:output message="tns:GetallmessageDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetmessageviewDetails">
+      <wsdl:input message="tns:GetmessageviewDetailsSoapIn" />
+      <wsdl:output message="tns:GetmessageviewDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveReadMessageDetails">
+      <wsdl:input message="tns:SaveReadMessageDetailsSoapIn" />
+      <wsdl:output message="tns:SaveReadMessageDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveFeedBackDetails">
+      <wsdl:input message="tns:SaveFeedBackDetailsSoapIn" />
+      <wsdl:output message="tns:SaveFeedBackDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFeedBackDetails">
+      <wsdl:input message="tns:GetFeedBackDetailsSoapIn" />
+      <wsdl:output message="tns:GetFeedBackDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllFeedBackDetails">
+      <wsdl:input message="tns:GetAllFeedBackDetailsSoapIn" />
+      <wsdl:output message="tns:GetAllFeedBackDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllTimeZones">
+      <wsdl:input message="tns:GetAllTimeZonesSoapIn" />
+      <wsdl:output message="tns:GetAllTimeZonesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchContent">
+      <wsdl:input message="tns:SearchContentSoapIn" />
+      <wsdl:output message="tns:SearchContentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPopularContent">
+      <wsdl:input message="tns:GetPopularContentSoapIn" />
+      <wsdl:output message="tns:GetPopularContentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetKBRecommendedContent">
+      <wsdl:input message="tns:GetKBRecommendedContentSoapIn" />
+      <wsdl:output message="tns:GetKBRecommendedContentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContent">
+      <wsdl:input message="tns:GetContentSoapIn" />
+      <wsdl:output message="tns:GetContentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RetriveALLParental">
+      <wsdl:input message="tns:RetriveALLParentalSoapIn" />
+      <wsdl:output message="tns:RetriveALLParentalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddParental">
+      <wsdl:input message="tns:AddParentalSoapIn" />
+      <wsdl:output message="tns:AddParentalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveParental">
+      <wsdl:input message="tns:RemoveParentalSoapIn" />
+      <wsdl:output message="tns:RemoveParentalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RetriveALLPromotiongroup">
+      <wsdl:input message="tns:RetriveALLPromotiongroupSoapIn" />
+      <wsdl:output message="tns:RetriveALLPromotiongroupSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RetriveALLPromotion">
+      <wsdl:input message="tns:RetriveALLPromotionSoapIn" />
+      <wsdl:output message="tns:RetriveALLPromotionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="retriveProduct">
+      <wsdl:input message="tns:retriveProductSoapIn" />
+      <wsdl:output message="tns:retriveProductSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RetriveALLproductprice">
+      <wsdl:input message="tns:RetriveALLproductpriceSoapIn" />
+      <wsdl:output message="tns:RetriveALLproductpriceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RenewSubscription">
+      <wsdl:input message="tns:RenewSubscriptionSoapIn" />
+      <wsdl:output message="tns:RenewSubscriptionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpgradeSubscription">
+      <wsdl:input message="tns:UpgradeSubscriptionSoapIn" />
+      <wsdl:output message="tns:UpgradeSubscriptionSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="NetgearClientServiceSoap" type="tns:NetgearClientServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CustomerLogin">
+      <soap:operation soapAction="http://tempuri.org/CustomerLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerSearch">
+      <soap:operation soapAction="http://tempuri.org/CustomerSearch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContractsAvailabilitybyCustomerId">
+      <soap:operation soapAction="http://tempuri.org/GetContractsAvailabilitybyCustomerId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerGetProduct">
+      <soap:operation soapAction="http://tempuri.org/CustomerGetProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerGetRenewProduct">
+      <soap:operation soapAction="http://tempuri.org/CustomerGetRenewProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDrpDetails">
+      <soap:operation soapAction="http://tempuri.org/GetDrpDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerGetProductInfo">
+      <soap:operation soapAction="http://tempuri.org/CustomerGetProductInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EcoLogout">
+      <soap:operation soapAction="http://tempuri.org/EcoLogout" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContractsbyCustomerId">
+      <soap:operation soapAction="http://tempuri.org/GetContractsbyCustomerId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerGetCases">
+      <soap:operation soapAction="http://tempuri.org/CustomerGetCases" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerGetVideoCases">
+      <soap:operation soapAction="http://tempuri.org/CustomerGetVideoCases" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateCase">
+      <soap:operation soapAction="http://tempuri.org/CreateCase" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateVideoCase">
+      <soap:operation soapAction="http://tempuri.org/CreateVideoCase" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleaCall">
+      <soap:operation soapAction="http://tempuri.org/ScheduleaCall" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MyScheduleCases">
+      <soap:operation soapAction="http://tempuri.org/MyScheduleCases" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerChangePassword">
+      <soap:operation soapAction="http://tempuri.org/CustomerChangePassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerForgetPasswordRecovery">
+      <soap:operation soapAction="http://tempuri.org/CustomerForgetPasswordRecovery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDslWiFiStatus">
+      <soap:operation soapAction="http://tempuri.org/GetDslWiFiStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerGetContracts">
+      <soap:operation soapAction="http://tempuri.org/CustomerGetContracts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerGetContractsByContractId">
+      <soap:operation soapAction="http://tempuri.org/CustomerGetContractsByContractId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ScanPort">
+      <soap:operation soapAction="http://tempuri.org/ScanPort" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNetgearToolUniqueID">
+      <soap:operation soapAction="http://tempuri.org/GetNetgearToolUniqueID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetgearToolDownloadDetails">
+      <soap:operation soapAction="http://tempuri.org/NetgearToolDownloadDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetgearToolInstallationDetails">
+      <soap:operation soapAction="http://tempuri.org/NetgearToolInstallationDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetgearToolCurrentVersionDetails">
+      <soap:operation soapAction="http://tempuri.org/NetgearToolCurrentVersionDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetgearToolUninstallationDetails">
+      <soap:operation soapAction="http://tempuri.org/NetgearToolUninstallationDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetgearToolLoginDetails">
+      <soap:operation soapAction="http://tempuri.org/NetgearToolLoginDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNGToolDownloadDetails">
+      <soap:operation soapAction="http://tempuri.org/GetNGToolDownloadDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetmessageDetails">
+      <soap:operation soapAction="http://tempuri.org/GetmessageDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetmessageDetailswithStatus">
+      <soap:operation soapAction="http://tempuri.org/GetmessageDetailswithStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUnreadMessageCount">
+      <soap:operation soapAction="http://tempuri.org/GetUnreadMessageCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetallmessageDetails">
+      <soap:operation soapAction="http://tempuri.org/GetallmessageDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetmessageviewDetails">
+      <soap:operation soapAction="http://tempuri.org/GetmessageviewDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveReadMessageDetails">
+      <soap:operation soapAction="http://tempuri.org/SaveReadMessageDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveFeedBackDetails">
+      <soap:operation soapAction="http://tempuri.org/SaveFeedBackDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFeedBackDetails">
+      <soap:operation soapAction="http://tempuri.org/GetFeedBackDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllFeedBackDetails">
+      <soap:operation soapAction="http://tempuri.org/GetAllFeedBackDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllTimeZones">
+      <soap:operation soapAction="http://tempuri.org/GetAllTimeZones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchContent">
+      <soap:operation soapAction="http://tempuri.org/SearchContent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPopularContent">
+      <soap:operation soapAction="http://tempuri.org/GetPopularContent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetKBRecommendedContent">
+      <soap:operation soapAction="http://tempuri.org/GetKBRecommendedContent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContent">
+      <soap:operation soapAction="http://tempuri.org/GetContent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetriveALLParental">
+      <soap:operation soapAction="http://tempuri.org/RetriveALLParental" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddParental">
+      <soap:operation soapAction="http://tempuri.org/AddParental" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveParental">
+      <soap:operation soapAction="http://tempuri.org/RemoveParental" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetriveALLPromotiongroup">
+      <soap:operation soapAction="http://tempuri.org/RetriveALLPromotiongroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetriveALLPromotion">
+      <soap:operation soapAction="http://tempuri.org/RetriveALLPromotion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retriveProduct">
+      <soap:operation soapAction="http://tempuri.org/retriveProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetriveALLproductprice">
+      <soap:operation soapAction="http://tempuri.org/RetriveALLproductprice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RenewSubscription">
+      <soap:operation soapAction="http://tempuri.org/RenewSubscription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpgradeSubscription">
+      <soap:operation soapAction="http://tempuri.org/UpgradeSubscription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="NetgearClientServiceSoap12" type="tns:NetgearClientServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CustomerLogin">
+      <soap12:operation soapAction="http://tempuri.org/CustomerLogin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerSearch">
+      <soap12:operation soapAction="http://tempuri.org/CustomerSearch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContractsAvailabilitybyCustomerId">
+      <soap12:operation soapAction="http://tempuri.org/GetContractsAvailabilitybyCustomerId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerGetProduct">
+      <soap12:operation soapAction="http://tempuri.org/CustomerGetProduct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerGetRenewProduct">
+      <soap12:operation soapAction="http://tempuri.org/CustomerGetRenewProduct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDrpDetails">
+      <soap12:operation soapAction="http://tempuri.org/GetDrpDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerGetProductInfo">
+      <soap12:operation soapAction="http://tempuri.org/CustomerGetProductInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EcoLogout">
+      <soap12:operation soapAction="http://tempuri.org/EcoLogout" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContractsbyCustomerId">
+      <soap12:operation soapAction="http://tempuri.org/GetContractsbyCustomerId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerGetCases">
+      <soap12:operation soapAction="http://tempuri.org/CustomerGetCases" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerGetVideoCases">
+      <soap12:operation soapAction="http://tempuri.org/CustomerGetVideoCases" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateCase">
+      <soap12:operation soapAction="http://tempuri.org/CreateCase" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateVideoCase">
+      <soap12:operation soapAction="http://tempuri.org/CreateVideoCase" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleaCall">
+      <soap12:operation soapAction="http://tempuri.org/ScheduleaCall" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MyScheduleCases">
+      <soap12:operation soapAction="http://tempuri.org/MyScheduleCases" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerChangePassword">
+      <soap12:operation soapAction="http://tempuri.org/CustomerChangePassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerForgetPasswordRecovery">
+      <soap12:operation soapAction="http://tempuri.org/CustomerForgetPasswordRecovery" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDslWiFiStatus">
+      <soap12:operation soapAction="http://tempuri.org/GetDslWiFiStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerGetContracts">
+      <soap12:operation soapAction="http://tempuri.org/CustomerGetContracts" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerGetContractsByContractId">
+      <soap12:operation soapAction="http://tempuri.org/CustomerGetContractsByContractId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ScanPort">
+      <soap12:operation soapAction="http://tempuri.org/ScanPort" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNetgearToolUniqueID">
+      <soap12:operation soapAction="http://tempuri.org/GetNetgearToolUniqueID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetgearToolDownloadDetails">
+      <soap12:operation soapAction="http://tempuri.org/NetgearToolDownloadDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetgearToolInstallationDetails">
+      <soap12:operation soapAction="http://tempuri.org/NetgearToolInstallationDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetgearToolCurrentVersionDetails">
+      <soap12:operation soapAction="http://tempuri.org/NetgearToolCurrentVersionDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetgearToolUninstallationDetails">
+      <soap12:operation soapAction="http://tempuri.org/NetgearToolUninstallationDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetgearToolLoginDetails">
+      <soap12:operation soapAction="http://tempuri.org/NetgearToolLoginDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNGToolDownloadDetails">
+      <soap12:operation soapAction="http://tempuri.org/GetNGToolDownloadDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetmessageDetails">
+      <soap12:operation soapAction="http://tempuri.org/GetmessageDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetmessageDetailswithStatus">
+      <soap12:operation soapAction="http://tempuri.org/GetmessageDetailswithStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUnreadMessageCount">
+      <soap12:operation soapAction="http://tempuri.org/GetUnreadMessageCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetallmessageDetails">
+      <soap12:operation soapAction="http://tempuri.org/GetallmessageDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetmessageviewDetails">
+      <soap12:operation soapAction="http://tempuri.org/GetmessageviewDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveReadMessageDetails">
+      <soap12:operation soapAction="http://tempuri.org/SaveReadMessageDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveFeedBackDetails">
+      <soap12:operation soapAction="http://tempuri.org/SaveFeedBackDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFeedBackDetails">
+      <soap12:operation soapAction="http://tempuri.org/GetFeedBackDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllFeedBackDetails">
+      <soap12:operation soapAction="http://tempuri.org/GetAllFeedBackDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllTimeZones">
+      <soap12:operation soapAction="http://tempuri.org/GetAllTimeZones" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchContent">
+      <soap12:operation soapAction="http://tempuri.org/SearchContent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPopularContent">
+      <soap12:operation soapAction="http://tempuri.org/GetPopularContent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetKBRecommendedContent">
+      <soap12:operation soapAction="http://tempuri.org/GetKBRecommendedContent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContent">
+      <soap12:operation soapAction="http://tempuri.org/GetContent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetriveALLParental">
+      <soap12:operation soapAction="http://tempuri.org/RetriveALLParental" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddParental">
+      <soap12:operation soapAction="http://tempuri.org/AddParental" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveParental">
+      <soap12:operation soapAction="http://tempuri.org/RemoveParental" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetriveALLPromotiongroup">
+      <soap12:operation soapAction="http://tempuri.org/RetriveALLPromotiongroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetriveALLPromotion">
+      <soap12:operation soapAction="http://tempuri.org/RetriveALLPromotion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retriveProduct">
+      <soap12:operation soapAction="http://tempuri.org/retriveProduct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetriveALLproductprice">
+      <soap12:operation soapAction="http://tempuri.org/RetriveALLproductprice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RenewSubscription">
+      <soap12:operation soapAction="http://tempuri.org/RenewSubscription" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpgradeSubscription">
+      <soap12:operation soapAction="http://tempuri.org/UpgradeSubscription" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="NetgearClientService">
+    <wsdl:port name="NetgearClientServiceSoap" binding="tns:NetgearClientServiceSoap">
+      <soap:address location="http://10.20.28.29/CssconnectClientService/CSSNetgearService/NetgearClientService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="NetgearClientServiceSoap12" binding="tns:NetgearClientServiceSoap12">
+      <soap12:address location="http://10.20.28.29/CssconnectClientService/CSSNetgearService/NetgearClientService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
